@@ -55,6 +55,10 @@
     padding: 10% 30% 0% 30%;
 }
 
+.latest .imgbx img {
+    padding: 0;
+}
+
 @media (max-width: 768px) {
     .till {
         display: flex;

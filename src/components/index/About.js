@@ -3,7 +3,7 @@ import './About.css'
 function About(props) {
     return (<>
         <div class="col-12 mt-3">
-            <div class="card yellow">
+            <div class={props.Aboutstyle}>
                 <div class="card-horizontal">
                     <div class="img-square-wrapper">
                         <img class="aboutimg" src={props.Aboutlogo} alt="Card image cap" />

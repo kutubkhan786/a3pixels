@@ -1,0 +1,25 @@
+/* --------------------------------------------------------------
+# Footer
+-------------------------------------------------------------- */
+
+.footer {
+    height: 45vh;
+    padding: 0;
+    padding-top: 10px;
+    background-color: #898989;
+    color: #ffffff;
+}
+
+.footer h3 {
+    padding: 1vh;
+    background-color: #ffffff;
+    border-radius: 1vh;
+}
+
+.footer h3 img {
+    height: auto;
+    width: 100%;
+    color: #ffffff;
+    margin: 0 0 10px;
+    height: 8vh;
+}
