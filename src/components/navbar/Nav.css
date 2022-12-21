@@ -11,16 +11,16 @@
 }
 
 #header .logo {
-    margin-left: 5vh;
     position: relative;
-    margin-right: 5vh;
-    background-color: #f6f6f6;
+    background-color: #fff;
     border-radius: 20vh;
     z-index: -1;
     height: auto;
-    width: 25vw;
+    width: 20vw;
     transition: ease-out 0.5s;
     margin-top: 7vh;
+    padding: 10px 0 10px 0;
+    align-items: center;
 }
 
 #header.header-scrolled {

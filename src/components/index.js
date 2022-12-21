@@ -35,11 +35,11 @@ function App() {
                     {/* <div class="bg-box"> */}
                     <img src="/img/banner.png" />
 
-                    <p > WE ARE<br />
-                        <b>A3PIXELS</b><br />
-                        AN E-LEARNING DESIGN AND PRODUCTION HOUSE.<br />
-                        We design & develop effective e-learning programs, websites and prints.<br />
-                        With us, your project is sure to deliver results.</p>
+                    <p > WE ARE 
+                        <b>  A3PIXELS  </b>
+                        AN E-LEARNING DESIGN AND PRODUCTION HOUSE.
+                        <p class="para">We design & develop effective e-learning programs, websites and prints.
+                        With us, your project is sure to deliver results.</p></p>
                     </div>
                 </div>
            
@@ -69,7 +69,7 @@ function App() {
             <div class="container">
                 <div class="section-title mb-2" data-aos="zoom-out">
                     <p>About Us</p>
-                    <h2>Below you can find more information about our company</h2>
+                    {/* <h2>Below you can find more information about our company</h2> */}
                 </div>
 
 
@@ -80,28 +80,28 @@ function App() {
                         in revenues in every successive year since inception.</p>
                     <ul>
                         <li>
-                            <h4 class="section-title"><b>OUR MISSION:</b></h4>
+                            <h4 class="section-title mb-0"><b>OUR MISSION:</b></h4>
                         </li>
-                        <li> To provide our customers timely and cost-effective e-learning solutions and services aligned to their business goals. </li>
+                        <li class="mt-0"> To provide our customers timely and cost-effective e-learning solutions and services aligned to their business goals. </li>
                     </ul>
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-lg-6">
+                                <h4 class="section-title  mb-0"><b>WHAT WE DO</b></h4>
                                 <img class='img-fluid about0' src="/img/logos/about-side.png" alt="" />
                             </div>
                             <div class="col-lg-6 pt-4 pt-lg-0 ">
-                                <h4 class="section-title ml-3"><b>WHAT WE DO</b></h4>
                                 <div class="row content yello-box">
 
                                 </div>
                                 <div class="container-fluid">
                                     <div class="row">
-                                        <About Aboutstyle="card yellow" Aboutlogo="/img/logos/1.png" Aboutdec="Good user interface design helps people work more assertively, complete tasks more efficiently and build brand loyalty at the same time." AboutTitle="UI DESIGN" />
-                                        <About Aboutstyle="card grey " Aboutlogo="/img/logos/2.png" Aboutdec="We specialize in creating customized learning solutions with latest technical language to cultivate visually outstanding, animated text, frame and more informative design.
+                                        <About Aboutstyle="card yellow" Aboutlogo="\img\about\Icon_01.png" Aboutdec="Good user interface design helps people work more assertively, complete tasks more efficiently and build brand loyalty at the same time." AboutTitle="UI DESIGN" />
+                                        <About Aboutstyle="card grey " Aboutlogo="\img\about\Icon_02.png" Aboutdec="We specialize in creating customized learning solutions with latest technical language to cultivate visually outstanding, animated text, frame and more informative design.
                                                " AboutTitle="CUSTOMIZE SOLUTION" />
-                                        <About Aboutstyle="card yellow" Aboutlogo="/img/logos/3.png" Aboutdec="Our experienced & talented professionals analyse the existing website and identify the most vital content for mobile browser compatibility.
+                                        <About Aboutstyle="card yellow" Aboutlogo="\img\about\Icon_03.png" Aboutdec="Our experienced & talented professionals analyse the existing website and identify the most vital content for mobile browser compatibility.
                                                     " AboutTitle="MOBILE WEBSITE DESIGN" />
-                                        <About Aboutstyle="card grey" Aboutlogo="/img/logos/4.png" Aboutdec=" Our innovative graphic designers create brochure designs, flyers, business cards, datasheets, magazines, post cards, booklets, newsletters." AboutTitle="BRANDING DESIGN" />
+                                        <About Aboutstyle="card grey" Aboutlogo="\img\about\Icon_04.png" Aboutdec=" Our innovative graphic designers create brochure designs, flyers, business cards, datasheets, magazines, post cards, booklets, newsletters." AboutTitle="BRANDING DESIGN" />
                                     </div>
                                 </div>                        </div>
                         </div>
@@ -165,7 +165,7 @@ function App() {
             <div class="fix-latest">
                     <div class="section-title ml-4 mb-3 pl-0 w-" data-aos="zoom-out">
                     <p >OUR LATEST WORK</p>
-                    <h2>jreiute5yhguteh eurhwe </h2>
+                    {/* <h2>jreiute5yhguteh eurhwe </h2> */}
                 </div>
                 <div class="row m-0 p-0">
 <div class="col  ">

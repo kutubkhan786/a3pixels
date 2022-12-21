@@ -88,11 +88,11 @@ export default function Footer() {
                                                   
                         
                         </MDBCol>
+                    </MDBRow>
                         <p>
-                                <MDBIcon color='secondary' icon='envelope' className='me-2 d-flex align-items-center' />
+                                <MDBIcon color='secondary' icon='envelope' className='me-2d-flex align-items-center' />
                                 © 2021 Copyright: A3pixels.com
                             </p>
-                    </MDBRow>
                 </MDBContainer>
             </section>
 
