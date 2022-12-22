@@ -3,8 +3,9 @@ import Services from './index/Services.js';
 import About from './index/About.js';
 import Career from './index/Career';
 import Portfolio from './index/Portfolio.js';
+import Testimonial from './index/testimonial';
 import Company from './index/company.js';
-import Navbar from './navbar/nav.js';
+import Navbar from './navbar/Nav.js';
 import Footer from './footer/Footer.js';
 import { useEffect } from 'react';
 
@@ -169,7 +170,7 @@ function App() {
                 </div>
                 <div class="row m-0 p-0">
 <div class="col  ">
-                <Career logo="/img/portfolio/print_01.jpg" CareerTitle="Our Work" CareerDec="Lorem ipsum dolor sit amet consectetur adipisicing elit. At numquam velit maiores, doloribus quae architecto error. Incidunt alias blanditiis tempore?" />
+                <Career logo="/img/portfolio/print_01.jpg" CareerTitle="Our Work" CareerDec="Lorem ipsum dolor sit amet consectetur adipisicing elit. At numquam velit maiores, doloribus quae architecto error. Incidunt alias blanditiis tempore?" CareerTitle="Web Solution"/>
                 </div>
                 <div class="col">
                 <Career logo="/img/portfolio/work10.jpg" CareerTitle="Our Work" CareerDec="Lorem ipsum dolor sit amet consectetur adipisicing elit. At numquam velit maiores, doloribus quae architecto error. Incidunt alias blanditiis tempore?" />
@@ -186,6 +187,11 @@ function App() {
             </div>
         </section>
 
+    {/* <!-- ======= Testimonials Section ======= --> */}
+
+        <Testimonial/>
+
+        {/* <!-- End Testimonials Section --> */}
 
         {/* <!-- ======= Portfolio Section ======= --> */}
         <section id="portfolio" class="portfolio">
@@ -384,20 +390,6 @@ function App() {
         </section>
         {/* <!-- End Portfolio Section --> */}
 
-
-        {/* <!-- ======= Testimonials Section ======= --> */}
-
-
-                {/* <div class="section-title" data-aos="zoom-out">
-                    <p>Testimonials</p>
-                    <h2>What they are saying about us</h2>
-                </div> */}
-
-<section class="client pt-3 pb-5 ">
-  
-  </section>
-
-        {/* <!-- End Testimonials Section --> */}
 
         {/* <!-- Our Company --> */}
         
