@@ -3,6 +3,7 @@ import Services from './index/Services.js';
 import About from './index/About.js';
 import Career from './index/Career';
 import Portfolio from './index/Portfolio.js';
+import Testimonial from './index/testimonial.js';
 import Clients from './index/Clients.js';
 import Navbar from './navbar/Nav.js';
 import Footer from './footer/Footer.js';
