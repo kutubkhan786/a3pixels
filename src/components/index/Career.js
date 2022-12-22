@@ -5,10 +5,12 @@ function career(props) {
   <div class="container11 .col-xs-6 .col-sm-3">
                 <div class="card">
                     <div class="imgbx">
+                        <div class="row2">
                         <img src={props.logo} alt=""/>
+                        <h2>{props.CareerTitle}</h2>
+                        </div>
                     </div>
                     <div class="content">
-                        <h2>{props.CareerTitle}</h2>
                         <p>{props.CareerDec}</p>
                     </div>
                 </div>
