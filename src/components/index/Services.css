@@ -16,6 +16,16 @@
 .container_card:hover {
     transform: scale(1.1);
     transition: 0.2s ease-in;
+    background-color: rgb(0, 0, 0, 0.9);
+}
+
+.container_card:hover a {
+    color: #fecd00;
+}
+
+.container_card:hover .imgbx img {
+    /* filter: invert(0); */
+    filter: saturate(4);
 }
 
 .container_card p {
@@ -49,6 +59,7 @@
     max-width: 100%;
     max-height: 100%;
     border-radius: 10px;
+    filter: invert(1);
 }
 
 .imgbx img {

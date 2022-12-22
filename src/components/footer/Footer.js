@@ -8,95 +8,56 @@ import { MDBFooter } from 'mdb-react-ui-kit';
 
 
 export default function Footer() {
-    return ( 
-        <MDBFooter bgColor='light' className='text-center text-lg-start text-muted'>
+    return (
+        <MDBFooter bgColor='light' className='text-center text-lg-start text-muted m-0'  >
 
 
 
             <section className='footer'>
-                <MDBContainer className='text-center text-md-start mt-5'>
-                    <MDBRow className='mt-3'>
-                        <MDBCol md='3' lg='4' xl='3' className='mx-auto '>
-                            <h6 className='text-uppercase fw-bold '>
+                <MDBContainer className='text-center text-md-start mt-5 m-0'>
 
-                                <h3><img src="/img/logo.png" /></h3>
-                            </h6>
-                            <p claaa="kk">
-                                The company provides web and e-Learning solutions , and company based in Mumbai, India, we constantly strive towards creating exciting and innovative e-Learning products. What differentiates us from competition is our ability to handle.
-                            </p>
-                        </MDBCol>
+                    <MDBCol md='3' lg='4' xl='3' className='mx-auto float-left '>
+                        <h6 className='text-uppercase fw-bold '>
 
-                        <MDBCol md='2' lg='2' xl='2' className='mx-auto mb-4'>
-                            <h6 className='text-uppercase fw-bold mb-4'>Services</h6>
-                            <p>
-                                <a href='#!' className='text-reset'>
-                                    E-Learning & Development
-                                </a>
-                            </p>
-                            <p>
-                                <a href='#!' className='text-reset'>
-                                    TRANSLATION & LOCALIZATION
-                                </a>
-                            </p>
-                            <p>
-                                <a href='#!' className='text-reset'>
-                                    WEBSITE & MULTIMEDIA DEVELOPEMENT
-                                </a>
-                            </p>
-                            <p>
-                                <a href='#!' className='text-reset'>
-                                    PRINT & IDENTITY
-                                </a>
-                            </p>
-                        </MDBCol>
+                            <h3><img src="img/logos/footer_logo.png" /></h3><br></br>
+                        </h6>
 
-                        <MDBCol md='3' lg='2' xl='2' className='mx-auto mb-4'>
-                            <h6 className='text-uppercase fw-bold mb-4'>Useful links</h6>
-                            <p>
-                                <a href='#!' className='text-reset'>
-                                    Our services
-                                </a>
-                            </p>
-                            <p>
-                                <a href='#!' className='text-reset'>
-                                    Portfolio
-                                </a>
-                            </p>
-                            <p>
-                                <a href='#!' className='text-reset'>
-                                    Call to Action
-                                </a>
-                            </p>
-                            <p>
-                                <a href='#!' className='text-reset'>
-                                    Our latest work
-                                </a>
-                            </p>
-                        </MDBCol>
 
-                        <MDBCol md='4' lg='3' xl='3' className='mx-auto mb-md-0 mb-4'>
-                            <h6 className='text-uppercase fw-bold mb-4'>Contact</h6>
-                            <p>
-                                <MDBIcon color='secondary' icon='home' className='me-2' />
-                                location
-                            </p>
-                            <p>
-                                <MDBIcon color='secondary' icon='envelope' className='me-2' />
-                                sales@a3pixels.com
-                            </p>
-                            
-                                                  
-                        
-                        </MDBCol>
-                    </MDBRow>
+
+
+
+
+
+                        <h6 className='text-uppercase fw-bold mb-2'>Contact</h6>
+
                         <p>
-                                <MDBIcon color='secondary' icon='envelope' className='me-2d-flex align-items-center' />
-                                © 2021 Copyright: A3pixels.com
-                            </p>
-                </MDBContainer>
-            </section>
+                            <MDBIcon color='secondary' icon='envelope' />
+                            sales@a3pixels.com
+                        </p>
 
-            
+
+
+
+                    </MDBCol>
+                    <MDBContainer className='text-center map'>
+
+                        <p >
+                            map can be placed here
+                        </p>
+                    </MDBContainer>
+                </MDBContainer >
+
+
+
+            </section>
+            <MDBContainer className='text-center copy-right '>
+
+                <p className=' '>
+                    © 2021 Copyright: A3pixels.com
+                </p>
+            </MDBContainer>
+
         </MDBFooter>
+
     )
 }
