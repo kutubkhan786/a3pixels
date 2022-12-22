@@ -186,6 +186,11 @@ function App() {
             </div>
         </section>
 
+    {/* <!-- ======= Testimonials Section ======= --> */}
+
+        <Testimonial/>
+
+        {/* <!-- End Testimonials Section --> */}
 
         {/* <!-- ======= Portfolio Section ======= --> */}
         <section id="portfolio" class="portfolio">
@@ -388,7 +393,9 @@ function App() {
         <Clients />
         {/* client logo end here */}
 
-        <Footer />
+        {/* <!-- Our Company --> */}
+        
+                <Footer/>
 
     </>
 

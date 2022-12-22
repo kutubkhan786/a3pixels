@@ -3,10 +3,11 @@ import './New-Service.css';
 import Navbar from '../navbar/Nav.js';
 import Footer from '../footer/Footer.js';
 import About from './About.js';
+import Testimonial from './testimonial';
 function contact() {
     return ( <>
         <Navbar/>
-
+        {/* <Testimonial/> */}
         <section id="about" class="about">
             <div class="container">
                 <div class="section-title mb-2" data-aos="zoom-out">
