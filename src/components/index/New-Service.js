@@ -1,6 +1,6 @@
 import React from 'react';
 import './New-Service.css';
-import Navbar from '../navbar/nav.js';
+import Navbar from '../navbar/Nav.js';
 import Footer from '../footer/Footer.js';
 import About from './About.js';
 function contact() {

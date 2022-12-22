@@ -3,8 +3,8 @@ import Services from './index/Services.js';
 import About from './index/About.js';
 import Career from './index/Career';
 import Portfolio from './index/Portfolio.js';
-import Company from './index/company.js';
-import Navbar from './navbar/nav.js';
+import Clients from './index/Clients.js';
+import Navbar from './navbar/Nav.js';
 import Footer from './footer/Footer.js';
 import { useEffect } from 'react';
 
@@ -21,8 +21,8 @@ function App() {
     }
 
     return (<>
-        
-            <Navbar/>
+
+        <Navbar />
 
         {/* <!-- ======= Head Section ======= --> */}
 
@@ -30,19 +30,19 @@ function App() {
             <div class="fit-screen">
 
 
-               
-                    <div class="fit-card h-1000 d-flex align-items-center justify-content-center ">
+
+                <div class="fit-card h-1000 d-flex align-items-center justify-content-center ">
                     {/* <div class="bg-box"> */}
                     <img src="/img/banner.png" />
 
-                    <p > WE ARE 
+                    <p > WE ARE
                         <b>  A3PIXELS  </b>
                         AN E-LEARNING DESIGN AND PRODUCTION HOUSE.
                         <p class="para">We design & develop effective e-learning programs, websites and prints.
-                        With us, your project is sure to deliver results.</p></p>
-                    </div>
+                            With us, your project is sure to deliver results.</p></p>
                 </div>
-           
+            </div>
+
         </section>
 
         {/* <!-- ======= Services Section ======= --> */}
@@ -52,7 +52,7 @@ function App() {
         })}>
             <div class='container'>            <div class="row" data-aos="zoom-out">
 
-                <Services name1="E-LEARNING &" name2="DEVELOPMENT" logo="/img/logos/1.png"/>
+                <Services name1="E-LEARNING &" name2="DEVELOPMENT" logo="/img/logos/1.png" />
                 <Services name1="TRANSLATION &" name2="LOCALIZATION" logo="/img/logos/4.png" />
                 <Services name1="WEBSITE & " name2="MULTIMEDIA DEVELOPEMENT" logo="/img/logos/3.png" />
                 <Services name1="PRINT &" name2="IDENTITY" logo="/img/logos/2.png" />
@@ -163,24 +163,24 @@ function App() {
 
         <section class="latest ml-1 ">
             <div class="fix-latest">
-                    <div class="section-title ml-4 mb-3 pl-0 w-" data-aos="zoom-out">
+                <div class="section-title ml-4 mb-3 pl-0 w-" data-aos="zoom-out">
                     <p >OUR LATEST WORK</p>
                     {/* <h2>jreiute5yhguteh eurhwe </h2> */}
                 </div>
                 <div class="row m-0 p-0">
-<div class="col  ">
-                <Career logo="/img/portfolio/print_01.jpg" CareerTitle="Our Work" CareerDec="Lorem ipsum dolor sit amet consectetur adipisicing elit. At numquam velit maiores, doloribus quae architecto error. Incidunt alias blanditiis tempore?" />
+                    <div class="col  ">
+                        <Career logo="/img/portfolio/print_01.jpg" CareerTitle="Our Work" CareerDec="Lorem ipsum dolor sit amet consectetur adipisicing elit. At numquam velit maiores, doloribus quae architecto error. Incidunt alias blanditiis tempore?" />
+                    </div>
+                    <div class="col">
+                        <Career logo="/img/portfolio/work10.jpg" CareerTitle="Our Work" CareerDec="Lorem ipsum dolor sit amet consectetur adipisicing elit. At numquam velit maiores, doloribus quae architecto error. Incidunt alias blanditiis tempore?" />
+                    </div>
+                    <div class="col">
+                        <Career logo="/img/portfolio/work11.jpg" CareerTitle="Our Work" CareerDec="Lorem ipsum dolor sit amet consectetur adipisicing elit. At numquam velit maiores, doloribus quae architecto error. Incidunt alias blanditiis tempore?" />
+                    </div>
+                    <div class="col">
+                        <Career logo="/img/portfolio/work12.jpg" CareerTitle="Our Work" CareerDec="Lorem ipsum dolor sit amet consectetur adipisicing elit. At numquam velit maiores, doloribus quae architecto error. Incidunt alias blanditiis tempore?" />
+                    </div>
                 </div>
-                <div class="col">
-                <Career logo="/img/portfolio/work10.jpg" CareerTitle="Our Work" CareerDec="Lorem ipsum dolor sit amet consectetur adipisicing elit. At numquam velit maiores, doloribus quae architecto error. Incidunt alias blanditiis tempore?" />
-</div>
-                <div class="col">
-                <Career logo="/img/portfolio/work11.jpg" CareerTitle="Our Work" CareerDec="Lorem ipsum dolor sit amet consectetur adipisicing elit. At numquam velit maiores, doloribus quae architecto error. Incidunt alias blanditiis tempore?" />
-</div>
-                <div class="col">
-                <Career logo="/img/portfolio/work12.jpg" CareerTitle="Our Work" CareerDec="Lorem ipsum dolor sit amet consectetur adipisicing elit. At numquam velit maiores, doloribus quae architecto error. Incidunt alias blanditiis tempore?" />
-</div>
-            </div>
 
 
             </div>
@@ -350,7 +350,7 @@ function App() {
                                     <Portfolio logo="/img/portfolio/Elearning/Hi_ed/02.jpg" PortTitle="Hi_ed" PortDec="E-learning" />
                                     <Portfolio logo="/img/portfolio/Elearning/Hi_ed/03.jpg" PortTitle="Hi_ed" PortDec="E-learning" />
                                     <Portfolio logo="/img/portfolio/Elearning/Hi_ed/04.jpg" PortTitle="Hi_ed" PortDec="E-learning" />
-                                    
+
                                     <Portfolio logo="/img/portfolio/Elearning/LR_Static/Page 01.jpg" PortTitle="Lr_Static" PortDec="E-learning" />
                                     <Portfolio logo="/img/portfolio/Elearning/LR_Static/Page 03.jpg" PortTitle="Lr_Static" PortDec="E-learning" />
                                     <Portfolio logo="/img/portfolio/Elearning/LR_Static/Page 05.jpg" PortTitle="Lr_Static" PortDec="E-learning" />
@@ -371,7 +371,7 @@ function App() {
                                     <Portfolio logo="/img/portfolio/Elearning/LR_Static/Page 29.jpg" PortTitle="Lr_Static" PortDec="E-learning" />
                                     <Portfolio logo="/img/portfolio/Elearning/LR_Static/Page 30.jpg" PortTitle="Lr_Static" PortDec="E-learning" />
                                     <Portfolio logo="/img/portfolio/Elearning/LR_Static/Page 31.jpg" PortTitle="Lr_Static" PortDec="E-learning" />
-                                    
+
                                 </div>
                             </div>
                         </div>
@@ -384,24 +384,11 @@ function App() {
         </section>
         {/* <!-- End Portfolio Section --> */}
 
+        {/* client logo start here */}
+        <Clients />
+        {/* client logo end here */}
 
-        {/* <!-- ======= Testimonials Section ======= --> */}
-
-
-                {/* <div class="section-title" data-aos="zoom-out">
-                    <p>Testimonials</p>
-                    <h2>What they are saying about us</h2>
-                </div> */}
-
-<section class="client pt-3 pb-5 ">
-  
-  </section>
-
-        {/* <!-- End Testimonials Section --> */}
-
-        {/* <!-- Our Company --> */}
-        
-                <Footer/>
+        <Footer />
 
     </>
 
