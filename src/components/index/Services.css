@@ -16,17 +16,13 @@
 .container_card:hover {
     transform: scale(1.1);
     transition: 0.2s ease-in;
-    background-color: rgb(0, 0, 0, 0.9);
 }
 
 .container_card:hover a {
     color: #fecd00;
+    font-weight: bold;
 }
 
-.container_card:hover .imgbx img {
-    /* filter: invert(0); */
-    filter: saturate(4);
-}
 
 .container_card p {
     z-index: 9;
@@ -34,6 +30,7 @@
     flex-direction: column;
     align-items: center;
     font-size: smaller;
+    font-weight: 500;
 }
 
 .container_card p a {
@@ -59,7 +56,6 @@
     max-width: 100%;
     max-height: 100%;
     border-radius: 10px;
-    filter: invert(1);
 }
 
 .imgbx img {

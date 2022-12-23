@@ -160,7 +160,7 @@ Black: #000000 */
         /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
-
+/* 
         .merg {
             background-image: url(/public/img/logos/shape1.png);
             background-repeat: no-repeat;
@@ -269,7 +269,7 @@ Black: #000000 */
 
         .card-body {
             font-size: small;
-        }
+        } */
 
         /*--------------------------------------------------------------
 # Features
@@ -368,13 +368,14 @@ Black: #000000 */
         }
 
         .cta h3 {
-            color: #fff;
+            color: #7f6600;
             font-size: 28px;
             font-weight: 700;
         }
 
         .cta p {
-            color: #fff;
+            color: #7f6600;
+            font-size: 16px;
         }
 
         .cta .cta-btn {
@@ -429,8 +430,8 @@ Black: #000000 */
         
         
         .latest {
-            padding: 60px;
-            padding-bottom: 0;
+            padding: 40px;
+            background-color: #c4c4c4;
         }
 
         .latest img {
@@ -1173,8 +1174,8 @@ Black: #000000 */
 
         .button:hover {
             background-color: white;
-            color: blue;
-            border: 2px solid blue;
+            color: #898989;
+            border: 2px solid #898989;
         }
 
         .bg-modal {

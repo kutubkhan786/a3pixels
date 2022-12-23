@@ -7,7 +7,7 @@ function career(props) {
                     <div class="imgbx">
                         <div class="row2">
                         <img src={props.logo} alt=""/>
-                        <h2>{props.CareerTitle}</h2>
+                        <h5>{props.CareerTitle}</h5>
                         </div>
                     </div>
                     <div class="content">

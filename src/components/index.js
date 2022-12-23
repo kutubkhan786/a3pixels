@@ -53,10 +53,10 @@ function App() {
         })}>
             <div class='container'>            <div class="row" data-aos="zoom-out">
 
-                <Services name1="E-LEARNING &" name2="DEVELOPMENT" logo="/img/logos/1.png" />
-                <Services name1="TRANSLATION &" name2="LOCALIZATION" logo="/img/logos/4.png" />
-                <Services name1="WEBSITE & " name2="MULTIMEDIA DEVELOPEMENT" logo="/img/logos/3.png" />
-                <Services name1="PRINT &" name2="IDENTITY" logo="/img/logos/2.png" />
+                <Services name1="E-LEARNING &" name2="DEVELOPMENT" logo="/img/logos/1.png" logoh="/img/logos/1_H.png"/>
+                <Services name1="TRANSLATION &" name2="LOCALIZATION" logo="/img/logos/4.png" logoh="/img/logos/4_H.png"/>
+                <Services name1="WEBSITE & MULTIMEDIA" name2=" DEVELOPEMENT" logo="/img/logos/3.png" logoh="/img/logos/3_H.png" />
+                <Services name1="PRINT & IDENTITY"  logo="/img/logos/2.png" logoh="/img/logos/2_H.png" />
 
             </div>
             </div>
@@ -87,20 +87,20 @@ function App() {
                     </ul>
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-lg-6">
+                            <div class="col-lg-5">
                                 <h4 class="section-title  mb-0"><b>WHAT WE DO</b></h4>
                                 <img class='img-fluid about0' src="/img/logos/about-side.png" alt="" />
                             </div>
-                            <div class="col-lg-6 pt-4 pt-lg-0 ">
+                            <div class="col-lg-7 pt-4 pt-lg-0 ">
                                 <div class="row content yello-box">
 
                                 </div>
                                 <div class="container-fluid">
                                     <div class="row">
                                         <About Aboutstyle="card yellow" Aboutlogo="\img\about\Icon_01.png" Aboutdec="Good user interface design helps people work more assertively, complete tasks more efficiently and build brand loyalty at the same time." AboutTitle="UI DESIGN" />
-                                        <About Aboutstyle="card grey " Aboutlogo="\img\about\Icon_02.png" Aboutdec="We specialize in creating customized learning solutions with latest technical language to cultivate visually outstanding, animated text, frame and more informative design.
+                                        <About Aboutstyle="card grey " Aboutlogo="\img\about\Icon_03.png" Aboutdec="We specialize in creating customized learning solutions with latest technical language to cultivate visually outstanding, animated text, frame and more informative design.
                                                " AboutTitle="CUSTOMIZE SOLUTION" />
-                                        <About Aboutstyle="card yellow" Aboutlogo="\img\about\Icon_03.png" Aboutdec="Our experienced & talented professionals analyse the existing website and identify the most vital content for mobile browser compatibility.
+                                        <About Aboutstyle="card yellow" Aboutlogo="\img\about\Icon_02.png" Aboutdec="Our experienced & talented professionals analyse the existing website and identify the most vital content for mobile browser compatibility.
                                                     " AboutTitle="MOBILE WEBSITE DESIGN" />
                                         <About Aboutstyle="card grey" Aboutlogo="\img\about\Icon_04.png" Aboutdec=" Our innovative graphic designers create brochure designs, flyers, business cards, datasheets, magazines, post cards, booklets, newsletters." AboutTitle="BRANDING DESIGN" />
                                     </div>
@@ -162,7 +162,7 @@ function App() {
 
         {/* <!-- =====Our Latest Work====== --> */}
 
-        <section class="latest ml-1 ">
+        <section class="latest  ">
             <div class="fix-latest">
                 <div class="section-title ml-4 mb-3 pl-0 w-" data-aos="zoom-out">
                     <p >OUR LATEST WORK</p>
@@ -170,16 +170,22 @@ function App() {
                 </div>
                 <div class="row m-0 p-0">
                     <div class="col  ">
-                        <Career logo="/img/portfolio/print_01.jpg" CareerTitle="Our Work" CareerDec="Lorem ipsum dolor sit amet consectetur adipisicing elit. At numquam velit maiores, doloribus quae architecto error. Incidunt alias blanditiis tempore?" />
+                        <Career logo="/img/portfolio/print_01.jpg" CareerTitle="WEB SOLUTION" CareerDec="
+A Website is an extension of a company's overall communication strategy. We create websites using HTML5, CSS3, Jquery.
+" />
                     </div>
                     <div class="col">
-                        <Career logo="/img/portfolio/work10.jpg" CareerTitle="Our Work" CareerDec="Lorem ipsum dolor sit amet consectetur adipisicing elit. At numquam velit maiores, doloribus quae architecto error. Incidunt alias blanditiis tempore?" />
+                        <Career logo="/img/portfolio/work10.jpg" CareerTitle="WEB APPLICATION" CareerDec="
+We have expertise in Smart Phone Application Development, iPhone Game Development and Custom Mobile Application Development" />
                     </div>
                     <div class="col">
-                        <Career logo="/img/portfolio/work11.jpg" CareerTitle="Our Work" CareerDec="Lorem ipsum dolor sit amet consectetur adipisicing elit. At numquam velit maiores, doloribus quae architecto error. Incidunt alias blanditiis tempore?" />
+                        <Career logo="/img/portfolio/work11.jpg" CareerTitle="K12 ANIMATIONS" CareerDec="
+We offer full production services in 2D, 3D, cell animation and corporate Videos (Audio and video), Multimedia Presentations / Slideshows.
+" />
                     </div>
                     <div class="col">
-                        <Career logo="/img/portfolio/work12.jpg" CareerTitle="Our Work" CareerDec="Lorem ipsum dolor sit amet consectetur adipisicing elit. At numquam velit maiores, doloribus quae architecto error. Incidunt alias blanditiis tempore?" />
+                        <Career logo="/img/portfolio/work12.jpg" CareerTitle="PRINT WORK" CareerDec="
+We develop the most effective marketing solutions based on your unique business needs, aiming to maximize returns on your marketing efforts." />
                     </div>
                 </div>
 

@@ -9,7 +9,7 @@ function About(props) {
                         <img class="aboutimg" src={props.Aboutlogo} alt="Card image cap" />
                     </div>
                     <div class="card-body">
-                        <h4 class="card-title"><b>{props.AboutTitle}</b></h4>
+                        <h5 class="card-title"><b>{props.AboutTitle}</b></h5>
                         <p class="card-text">{props.Aboutdec}</p>
                     </div>
                 </div>

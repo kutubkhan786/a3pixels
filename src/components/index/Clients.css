@@ -1,6 +1,6 @@
 .img-scroll {
-    width: 250px;
-    height: 100px;
+    width: 200px;
+    height: 80px;
     animation: scroll 60s linear infinite;
 }
 
@@ -9,11 +9,13 @@
     display: flex;
     gap: 3em;
     overflow: hidden;
+    margin: 10px;
+
 }
 
 .slider {
-    background-color: whitesmoke;
-    padding: 8em 2em;
+    background-color: #c4c4c4;
+    padding: 40px 60px 40px 60px;
 }
 
 @keyframes scroll {
