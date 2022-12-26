@@ -12,9 +12,12 @@
 }
 
 .mapsize iframe{
-    height: 50vh;
-    width: 100vw;
-    
+    height: 31vh;
+    width: 60vw;
+}
+
+.white p{
+    background-color: white;
 }
 /* 
 .footer {
