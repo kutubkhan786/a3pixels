@@ -6,6 +6,7 @@ import Portfolio from './index/Portfolio.js';
 import Testimonial from './index/testimonial.js';
 import Clients from './index/Clients.js';
 import Navbar from './navbar/Nav.js';
+import Start from './index/start.js';
 import Footer from './footer/Footer.js';
 import { useEffect } from 'react';
 
@@ -22,12 +23,12 @@ function App() {
     }
 
     return (<>
-
+ <Start />
         <Navbar />
 
         {/* <!-- ======= Head Section ======= --> */}
 
-        <section class="el">
+        <section class="el pt-0 " >
             <div class="fit-screen">
 
 

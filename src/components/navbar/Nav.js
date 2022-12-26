@@ -23,7 +23,7 @@ export default function Nav() {
           backgroundColor: navColor,
           height: navSize,
           width:navWidth,
-          transition: "all 1s"
+          transition: "all 0.5s"
         }}>
         <ul>
         <div class='left'>
