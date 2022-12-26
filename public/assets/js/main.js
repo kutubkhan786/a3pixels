@@ -4,6 +4,9 @@
  * Author: BootstrapMade.com
  * License: https://bootstrapmade.com/license/
  */
+
+
+
 (function() {
     "use strict";
 
@@ -211,31 +214,31 @@
     /**
      * Testimonials slider
      */
-    new Swiper('.testimonials-slider', {
-        speed: 600,
-        loop: true,
-        autoplay: {
-            delay: 5000,
-            disableOnInteraction: false
-        },
-        slidesPerView: 'auto',
-        pagination: {
-            el: '.swiper-pagination',
-            type: 'bullets',
-            clickable: true
-        },
-        breakpoints: {
-            320: {
-                slidesPerView: 1,
-                spaceBetween: 20
-            },
+    // new Swiper('.testimonials-slider', {
+    //     speed: 600,
+    //     loop: true,
+    //     autoplay: {
+    //         delay: 5000,
+    //         disableOnInteraction: false
+    //     },
+    //     slidesPerView: 'auto',
+    //     pagination: {
+    //         el: '.swiper-pagination',
+    //         type: 'bullets',
+    //         clickable: true
+    //     },
+    //     breakpoints: {
+    //         320: {
+    //             slidesPerView: 1,
+    //             spaceBetween: 20
+    //         },
 
-            1200: {
-                slidesPerView: 3,
-                spaceBetween: 20
-            }
-        }
-    });
+    //         1200: {
+    //             slidesPerView: 3,
+    //             spaceBetween: 20
+    //         }
+    //     }
+    // });
 
     /**
      * Animation on scroll
@@ -262,27 +265,4 @@ $('.open-form').click(function() {
         $(this).removeClass('open');
         $(this).text('OPEN FORM');
     }
-});
-
-document.addEventListener("mousemove", parallax);
-
-function parallax(event) {
-    this.querySelectorAll(".mouse").forEach((shift) => {
-        const position = shift.getAttribute("value");
-        const x = (window.innerWidth - event.pageX * position) / 90;
-        const y = (window.innerHeight - event.pageY * position) / 90;
-
-        shift.style.transform = `translateX(${x}px) translateY(${y}px)`;
-    });
-}
-
-
-
-// code for cta pop up form
-document.getElementById('button').addEventListener("click", function() {
-    document.querySelector('.bg-modal').style.display = "flex";
-});
-
-document.querySelector('.close').addEventListener("click", function() {
-    document.querySelector('.bg-modal').style.display = "none";
 });
