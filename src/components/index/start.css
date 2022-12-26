@@ -4,6 +4,7 @@
     font-size: xx-large;
     background-color:rgba(0, 0, 0);
     height: 100vh;
+    z-index: -100;
     margin-top: 0;
    /* position: fixed; */
 
@@ -15,3 +16,8 @@
     object-fit: contain;
     padding: 5%;
 }
+@media (max-width: 1400px) {
+    html{
+        font-size: xx-large;
+
+    }}

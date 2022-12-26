@@ -19,13 +19,13 @@ export default function Nav() {
   return (
     <div class="container_nav d-flex align-items-center justify-content-between">
           <header id="header" class="fixed-top d-flex align-items-center">
-      <nav id="navbar" class="navbar"  style={{
+      <nav id="navbar" class="navbar m-0"  style={{
           backgroundColor: navColor,
           height: navSize,
           width:navWidth,
           transition: "all 0.5s"
         }}>
-        <ul>
+        <ul class='  d-flex align-items-center justify-content-center'>
         <div class='left'>
             <li><a class="nav-link scrollto" href="#header">Home</a></li>
             <li><a class="nav-link scrollto" href="#about">About</a></li>
@@ -42,6 +42,7 @@ export default function Nav() {
         </div>
         
         </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i> 
       </nav>
       </header>
       </div>
