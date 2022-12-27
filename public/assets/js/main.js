@@ -266,3 +266,24 @@ $('.open-form').click(function() {
         $(this).text('OPEN FORM');
     }
 });
+
+function onReady(callback) {
+    var intervalID = window.setInterval(checkReady, 1000);
+
+    function checkReady() {
+        if (document.getElementsByTagName('body')[0] !== undefined) {
+            window.clearInterval(intervalID);
+            callback.call(this);
+        }
+    }
+}
+
+function show(id, value) {
+    document.getElementById(id).style.display = value ? 'block' : 'none';
+}
+onReady(function () {
+    setTimeout(() => {
+        show('content1', true);
+        show('loader', false);
+    }, 5000);
+});
