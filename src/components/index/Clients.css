@@ -16,13 +16,3 @@
     background-color: #c4c4c4;
     padding: 40px 60px 40px 60px;
 }
-
-@keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translatex(-1000%)
-    }
-}

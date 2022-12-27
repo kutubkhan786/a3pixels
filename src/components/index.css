@@ -39,7 +39,7 @@ Black: #000000 */
     z-index: 100;
     overflow: visible;
     background: black url(/workspaces/a3pixels/public/img/logos/pre-loader.gif) no-repeat center center;
-    transition: all ease-in-out 1s;
+    transition: all ease-in-out 2s;
 }
 
 #content1{
