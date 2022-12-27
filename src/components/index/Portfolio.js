@@ -1,6 +1,5 @@
 import React from 'react'
 import './Portfolio.css';
-import Slider from './slider.js';
 
 function portfolio(props) {
   var classnames=require('classnames');

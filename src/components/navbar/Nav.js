@@ -32,7 +32,7 @@ export default function Nav() {
             <li><a class="nav-link scrollto" href="#services">Services</a></li>
         </div>
         <div class="logo">
-                            <a href="index.html"><img src="/img/logo.png" alt=""  /></a>
+                            <a href="index.html"><img src="/img/logo.png"  alt="" /></a>
                         </div>
      
         <div class='right'>
@@ -65,7 +65,7 @@ export default function Nav() {
 //                             <li><a class="nav-link scrollto" href="#services">Services</a></li>
 //                         </div>
 //                         <div class="logo">
-//                             <a href="index.html"><img src="/img/logo.png" alt="" class="img-fluid" /></a>
+//                             <a href="index.html"><img src="/img/logo.png"  class="img-fluid" /></a>
 //                         </div>
 //                         <div class='right'>
 //                             <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>

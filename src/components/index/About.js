@@ -6,7 +6,7 @@ function About(props) {
             <div class={props.Aboutstyle}>
                 <div class="card-horizontal">
                     <div class="img-square-wrapper">
-                        <img class="aboutimg" src={props.Aboutlogo} alt="Card image cap" />
+                        <img class="aboutimg" src={props.Aboutlogo} alt="Card cap" />
                     </div>
                     <div class="card-body">
                         <h5 class="card-title"><b>{props.AboutTitle}</b></h5>

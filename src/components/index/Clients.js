@@ -17,87 +17,87 @@ function Clients() {
               <div class='row ' >
                 <div class="slide-track pb-4 d-flex align-items-center justify-content-center">
                   <div class="slide ">
-                    <img class="img-scroll" src="/img/clients/Client__1.jpg" />
+                    <img class="img-scroll" src="/img/clients/Client__1.jpg" alt=""/>
                   </div>
                   <div class="slide">
-                    <img class="img-scroll" src="/img/clients/Client__2.jpg" />
+                    <img class="img-scroll" src="/img/clients/Client__2.jpg" alt=""/>
                   </div>
                   <div class="slide">
-                    <img class="img-scroll" src="/img/clients/Client__3.jpg" />
+                    <img class="img-scroll" src="/img/clients/Client__3.jpg" alt=""/>
                   </div>
                   <div class="slide">
-                    <img class="img-scroll" src="/img/clients/Client__4.jpg" />
+                    <img class="img-scroll" src="/img/clients/Client__4.jpg" alt=""/>
                   </div></div>
                 <div class="slide-track d-flex align-items-center justify-content-center">
                   <div class="slide">
-                    <img class="img-scroll" src="/img/clients/Client__12.jpg" />
+                    <img class="img-scroll" src="/img/clients/Client__12.jpg" alt=""/>
                   </div>
                   <div class="slide">
-                    <img class="img-scroll" src="/img/clients/Client__13.jpg" />
+                    <img class="img-scroll" src="/img/clients/Client__13.jpg" alt=""/>
                   </div>
                   <div class="slide">
-                    <img class="img-scroll" src="/img/clients/Client__14.jpg" />
+                    <img class="img-scroll" src="/img/clients/Client__14.jpg" alt=""/>
                   </div>
                   <div class="slide">
-                    <img class="img-scroll" src="/img/clients/Client__15.jpg" />
+                    <img class="img-scroll" src="/img/clients/Client__15.jpg" alt=""/>
                   </div></div>
               </div></div>
             <div class="carousel-item">
               <div class='row' >
                 <div class="slide-track pb-4 d-flex align-items-center justify-content-center">
                   <div class="slide">
-                    <img class="img-scroll" src="/img/clients/Client__1.jpg" />
+                    <img class="img-scroll" src="/img/clients/Client__1.jpg" alt=""/>
                   </div>
                   <div class="slide">
-                    <img class="img-scroll" src="/img/clients/Client__2.jpg" />
+                    <img class="img-scroll" src="/img/clients/Client__2.jpg" alt=""/>
                   </div>
                   <div class="slide">
-                    <img class="img-scroll" src="/img/clients/Client__3.jpg" />
+                    <img class="img-scroll" src="/img/clients/Client__3.jpg" alt=""/>
                   </div>
                   <div class="slide">
-                    <img class="img-scroll" src="/img/clients/Client__4.jpg" />
+                    <img class="img-scroll" src="/img/clients/Client__4.jpg" alt=""/>
                   </div></div>
                 <div class="slide-track d-flex align-items-center justify-content-center">
                   <div class="slide">
-                    <img class="img-scroll" src="/img/clients/Client__12.jpg" />
+                    <img class="img-scroll" src="/img/clients/Client__12.jpg" alt=""/>
                   </div>
                   <div class="slide">
-                    <img class="img-scroll" src="/img/clients/Client__13.jpg" />
+                    <img class="img-scroll" src="/img/clients/Client__13.jpg" alt=""/>
                   </div>
                   <div class="slide">
-                    <img class="img-scroll" src="/img/clients/Client__14.jpg" />
+                    <img class="img-scroll" src="/img/clients/Client__14.jpg" alt=""/>
                   </div>
                   <div class="slide">
-                    <img class="img-scroll" src="/img/clients/Client__15.jpg" />
+                    <img class="img-scroll" src="/img/clients/Client__15.jpg" alt=""/>
                   </div></div>
               </div></div>
             <div class="carousel-item">
               <div class='row' >
                 <div class="slide-track pb-4 d-flex align-items-center justify-content-center">
                   <div class="slide">
-                    <img class="img-scroll" src="/img/clients/Client__1.jpg" />
+                    <img class="img-scroll" src="/img/clients/Client__1.jpg" alt=""/>
                   </div>
                   <div class="slide">
-                    <img class="img-scroll" src="/img/clients/Client__2.jpg" />
+                    <img class="img-scroll" src="/img/clients/Client__2.jpg" alt=""/>
                   </div>
                   <div class="slide">
-                    <img class="img-scroll" src="/img/clients/Client__3.jpg" />
+                    <img class="img-scroll" src="/img/clients/Client__3.jpg" alt=""/>
                   </div>
                   <div class="slide">
-                    <img class="img-scroll" src="/img/clients/Client__4.jpg" />
+                    <img class="img-scroll" src="/img/clients/Client__4.jpg" alt=""/>
                   </div></div>
                 <div class="slide-track d-flex align-items-center justify-content-center">
                   <div class="slide">
-                    <img class="img-scroll" src="/img/clients/Client__12.jpg" />
+                    <img class="img-scroll" src="/img/clients/Client__12.jpg" alt=""/>
                   </div>
                   <div class="slide">
-                    <img class="img-scroll" src="/img/clients/Client__13.jpg" />
+                    <img class="img-scroll" src="/img/clients/Client__13.jpg" alt=""/>
                   </div>
                   <div class="slide">
-                    <img class="img-scroll" src="/img/clients/Client__14.jpg" />
+                    <img class="img-scroll" src="/img/clients/Client__14.jpg" alt=""/>
                   </div>
                   <div class="slide">
-                    <img class="img-scroll" src="/img/clients/Client__15.jpg" />
+                    <img class="img-scroll" src="/img/clients/Client__15.jpg" alt=""/>
                   </div></div>
               </div>
             </div>

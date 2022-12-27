@@ -7,9 +7,6 @@ import Testimonial from './index/testimonial.js';
 import Clients from './index/Clients.js';
 import Navbar from './navbar/Nav.js';
 import Footer from './footer/Footer.js';
-import { useEffect } from 'react';
-
-
 
 function App() {
 
@@ -27,7 +24,7 @@ function App() {
 
                     <div class="fit-card h-1000 d-flex align-items-center justify-content-center ">
                         {/* <div class="bg-box"> */}
-                        <img src="/img/banner.png" />
+                        <img src="/img/banner.png" alt=""/>
 
                         <p > WE ARE
                             <b>  A3PIXELS  </b>
@@ -81,7 +78,7 @@ function App() {
                             <div class="row">
                                 <div class="col-lg-5">
                                     <h4 class="section-title  mb-0"><b>WHAT WE DO</b></h4>
-                                    <img class='img-fluid about0' src="/img/logos/about-side.png" alt="" />
+                                    <img class='img-fluid about0' src="/img/logos/about-side.png" alt=""/>
                                 </div>
                                 <div class="col-lg-7 pt-4 pt-lg-0 ">
                                     <div class="row content yello-box">
@@ -115,7 +112,7 @@ function App() {
                         </div>
 
                         <div class="col-lg-3 cta-btn-container text-center">
-                            <a class="cta-btn align-middle button" id="button" data-toggle="modal" data-target="#myModal">Call
+                            <a herf="/" class="cta-btn align-middle button" id="button" data-toggle="modal" data-target="#myModal">Call
                                 To Action</a>
                         </div>
                     </div>
@@ -378,7 +375,7 @@ We develop the most effective marketing solutions based on your unique business 
             {/* <!-- Our Company --> */}
 
             <Footer />
-            <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+            <a href={"/"} class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
         </div>
     </>
 

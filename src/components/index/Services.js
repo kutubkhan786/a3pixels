@@ -1,11 +1,10 @@
-import { getElementError } from '@testing-library/react';
 import React from 'react';
 import './Services.css';
 
 function services(props) {
     
     return (<>
-        <div class="col-xs-6 col-sm-3" onmousewheel='scroll0()'>
+        <div class="col-xs-6 col-sm-3">
             <div class='container7'>
                 <div class="container_card">
                     <div class="imgbx">
