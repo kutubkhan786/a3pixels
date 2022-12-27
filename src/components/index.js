@@ -6,6 +6,8 @@ import Portfolio from './index/Portfolio.js';
 import Testimonial from './index/testimonial.js';
 import Clients from './index/Clients.js';
 import Navbar from './navbar/Nav.js';
+import Start from './index/start.js';
+import Myimg from './index/newimg.js';
 import Footer from './footer/Footer.js';
 import { useEffect } from 'react';
 
@@ -22,29 +24,12 @@ function App() {
     }
 
     return (<>
-
+ <Start />
         <Navbar />
 
         {/* <!-- ======= Head Section ======= --> */}
 
-        <section class="el">
-            <div class="fit-screen">
-
-
-
-                <div class="fit-card h-1000 d-flex align-items-center justify-content-center ">
-                    {/* <div class="bg-box"> */}
-                    <img src="/img/banner.png" />
-
-                    <p > WE ARE
-                        <b>  A3PIXELS  </b>
-                        AN E-LEARNING DESIGN AND PRODUCTION HOUSE.
-                        <p class="para">We design & develop effective e-learning programs, websites and prints.
-                            With us, your project is sure to deliver results.</p></p>
-                </div>
-            </div>
-
-        </section>
+        <Myimg />
 
         {/* <!-- ======= Services Section ======= --> */}
         {/* <!-- <div class='merg' id="services"> --> */}
