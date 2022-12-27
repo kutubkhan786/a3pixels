@@ -7,7 +7,7 @@
         /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-
+        
         body {
             font-family: 'Montserrat', sans-serif;
             color: #444444;
@@ -16,7 +16,7 @@
 #898989: #898989
 Black: #000000 */
         }
-
+        
         a {
             color: white;
             text-decoration: none;
@@ -30,26 +30,25 @@ Black: #000000 */
         h6 {
             font-family: 'Montserrat', sans-serif;
         }
-
-/* loader */
-#loader {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    z-index: 100;
-    overflow: visible;
-    background: black url(/workspaces/a3pixels/public/img/logos/pre-loader.gif) no-repeat center center;
-    transition: all ease-in-out 1s;
-}
-
-#content1{
-    display: none;
-}
-
+        /* loader */
+        
+        #loader {
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            z-index: 100;
+            overflow: visible;
+            background: black url(/workspaces/a3pixels/public/img/logos/pre-loader.gif) no-repeat center center;
+            transition: all ease-in-out 1s;
+        }
+        
+        #content1 {
+            display: none;
+        }
         /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
-
+        
         .back-to-top {
             position: fixed;
             visibility: hidden;
@@ -63,39 +62,38 @@ Black: #000000 */
             border-radius: 50px;
             transition: all 0.4s;
         }
-
+        
         .back-to-top i {
             font-size: 28px;
             color: rgba(255, 253, 236, 0.9);
             line-height: 0;
         }
-
+        
         .back-to-top:hover {
             background: #fc7c1f;
             color: rgba(255, 253, 236, 0.9);
         }
-
+        
         .back-to-top.active {
             visibility: visible;
             opacity: 1;
         }
-
         /*--------------------------------------------------------------
 # Disable AOS delay on mobile
 --------------------------------------------------------------*/
-
+        
         @media screen and (max-width: 768px) {
             [data-aos-delay] {
                 transition-delay: 0 !important;
             }
         }
-
+        
         .fit-screen {
             height: 80vh;
             width: 100vw;
             background-color: #fecd00;
         }
-
+        
         .fit-screen p {
             position: absolute;
             width: 110vw;
@@ -109,17 +107,16 @@ Black: #000000 */
             padding: 3vh 0vh 30vh;
             font-weight: 505;
         }
-
+        
         .fit-screen .para {
             font-size: medium;
             text-align: center;
         }
-
+        
         */ .bg-box {
             background-color: #111;
             margin-top: 20vh;
         }
-
         /*     
 .text-banner {
     background-color: #898989;
@@ -128,15 +125,15 @@ Black: #000000 */
         /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
-
+        
         section {
             padding: 50px 0;
         }
-
+        
         .section-title {
             padding-bottom: 10px;
         }
-
+        
         .section-title h2 {
             font-size: 14px;
             font-weight: 500;
@@ -148,7 +145,7 @@ Black: #000000 */
             color: #aaaaaa;
             font-family: "Poppins", sans-serif;
         }
-
+        
         .section-title p::after {
             content: "";
             width: 120px;
@@ -157,7 +154,7 @@ Black: #000000 */
             background: #fd9042;
             margin: 4px 10px;
         }
-
+        
         .section-title p {
             margin: 0;
             font-size: 36px;
@@ -166,16 +163,15 @@ Black: #000000 */
             font-family: "Poppins", sans-serif;
             color: #2a2c39;
         }
-
+        
         .img1 {
             max-height: 10vh;
             max-width: 10vw;
         }
-
         /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
-/* 
+        /* 
         .merg {
             background-image: url(/public/img/logos/shape1.png);
             background-repeat: no-repeat;
@@ -285,15 +281,14 @@ Black: #000000 */
         .card-body {
             font-size: small;
         } */
-
         /*--------------------------------------------------------------
 # Features
 --------------------------------------------------------------*/
-
+        
         .features .nav-tabs {
             border: 0;
         }
-
+        
         .features .nav-link {
             border: 1px solid #d4d6df;
             padding: 15px;
@@ -304,28 +299,28 @@ Black: #000000 */
             align-items: center;
             justify-content: center;
         }
-
+        
         .features .nav-link i {
             padding-right: 15px;
             font-size: 48px;
         }
-
+        
         .features .nav-link h4 {
             font-size: 18px;
             font-weight: 600;
             margin: 0;
         }
-
+        
         .features .nav-link:hover {
             color: #ef6603;
         }
-
+        
         .features .nav-link.active {
             background: #ef6603;
             color: #898989;
             border-color: #ef6603;
         }
-
+        
         @media (max-width: 768px) {
             .features .nav-link i {
                 padding: auto;
@@ -333,66 +328,64 @@ Black: #000000 */
                 font-size: 36px;
             }
         }
-
+        
         @media (max-width: 575px) {
             .features .nav-link {
                 padding: 15px;
             }
-
             .features .nav-link i {
                 font-size: 24px;
             }
         }
-
+        
         .features .tab-content {
             margin-top: 30px;
         }
-
+        
         .features .tab-pane h3 {
             font-weight: 600;
             font-size: 26px;
         }
-
+        
         .features .tab-pane ul {
             list-style: none;
             padding: auto;
         }
-
+        
         .features .tab-pane ul li {
             padding-bottom: 10px;
         }
-
+        
         .features .tab-pane ul i {
             font-size: 20px;
             padding-right: 4px;
             color: #ef6603;
         }
-
+        
         .features .tab-pane p:last-child {
             margin-bottom: 0;
         }
-
         /*--------------------------------------------------------------
 # Cta
 --------------------------------------------------------------*/
-
+        
         .cta {
             background: #fecd00;
             padding: 40px;
             bottom: 0;
         }
-
+        
         .cta h3 {
             color: #7f6600;
             font-size: 28px;
             font-weight: 700;
         }
-
+        
         .cta p {
             color: #7f6600;
             font-size: 16px;
         }
-
+        
         .cta .cta-btn {
             font-family: "Raleway", sans-serif;
             text-transform: uppercase;
@@ -407,18 +400,18 @@ Black: #000000 */
             color: #fecd00;
             background: #fecd00;
         }
-
+        
         .cta .cta-btn:hover {
             background: rgba(255, 253, 236, 0.9);
             color: #fecd00;
         }
-
+        
         @media (max-width: 1024px) {
             .cta {
                 background-attachment: scroll;
             }
         }
-
+        
         @media (min-width: 769px) {
             .cta .cta-btn-container {
                 display: flex;
@@ -426,57 +419,52 @@ Black: #000000 */
                 justify-content: flex-end;
             }
         }
-
         /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
-
+        
         .til {
             margin-top: -15%;
             visibility: visible;
         }
-
         /* latest work */
-
+        
         .row1 {
             display: flex;
             flex-direction: row;
         }
         
-        
         .latest {
             padding: 40px;
             background-color: #c4c4c4;
         }
-
+        
         .latest img {
             width: 100%;
-            border-radius: 5px 5px 0 0 ;
+            border-radius: 5px 5px 0 0;
             height: 100%;
             object-fit: contain;
             /* padding: 1vh; */
             /* background-color: navy; */
         }
         
-        
         .heading-text {
             margin-bottom: 2rem;
             font-size: 2rem;
         }
-
+        
         .heading-text span {
             font-weight: 100;
         }
-
         /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
-
+        
         .contact .info {
             width: 100%;
             background: rgba(255, 253, 236, 0.9);
         }
-
+        
         .contact .info i {
             font-size: 20px;
             color: #ef6603;
@@ -490,7 +478,7 @@ Black: #000000 */
             border-radius: 50px;
             transition: all 0.3s ease-in-out;
         }
-
+        
         .contact .info h4 {
             padding: 0 0 0 60px;
             font-size: 22px;
@@ -498,35 +486,35 @@ Black: #000000 */
             margin-bottom: 5px;
             color: #2a2c39;
         }
-
+        
         .contact .info p {
             padding: 0 0 0 60px;
             margin-bottom: 0;
             font-size: 14px;
             color: #555974;
         }
-
+        
         .contact .info .email,
         .contact .info .phone {
             margin-top: 40px;
         }
-
+        
         .contact .info .email:hover i,
         .contact .info .address:hover i,
         .contact .info .phone:hover i {
             background: #ef6603;
             color: rgba(255, 253, 236, 0.9);
         }
-
+        
         .contact .php-email-form {
             width: 100%;
             background: rgba(255, 253, 236, 0.9);
         }
-
+        
         .contact .php-email-form .form-group {
             padding-bottom: 8px;
         }
-
+        
         .contact .php-email-form .error-message {
             display: none;
             color: rgba(255, 253, 236, 0.9);
@@ -535,11 +523,11 @@ Black: #000000 */
             padding: 15px;
             font-weight: 600;
         }
-
+        
         .contact .php-email-form .error-message br+br {
             margin-top: 25px;
         }
-
+        
         .contact .php-email-form .sent-message {
             display: none;
             color: rgba(255, 253, 236, 0.9);
@@ -548,14 +536,14 @@ Black: #000000 */
             padding: 15px;
             font-weight: 600;
         }
-
+        
         .contact .php-email-form .loading {
             display: none;
             background: rgba(255, 253, 236, 0.9);
             text-align: center;
             padding: 15px;
         }
-
+        
         .contact .php-email-form .loading:before {
             content: "";
             display: inline-block;
@@ -568,22 +556,22 @@ Black: #000000 */
             -webkit-animation: animate-loading 1s linear infinite;
             animation: animate-loading 1s linear infinite;
         }
-
+        
         .contact .php-email-form input,
         .contact .php-email-form textarea {
             border-radius: 0;
             box-shadow: none;
             font-size: 14px;
         }
-
+        
         .contact .php-email-form input {
             height: 44px;
         }
-
+        
         .contact .php-email-form textarea {
             padding: 10px 12px;
         }
-
+        
         .contact .php-email-form button[type=submit] {
             background: #ef6603;
             border: 0;
@@ -592,40 +580,37 @@ Black: #000000 */
             transition: 0.4s;
             border-radius: 50px;
         }
-
+        
         .contact .php-email-form button[type=submit]:hover {
             background: #fc8129;
         }
-
+        
         @-webkit-keyframes animate-loading {
             0% {
                 transform: rotate(0deg);
             }
-
             100% {
                 transform: rotate(360deg);
             }
         }
-
+        
         @keyframes animate-loading {
             0% {
                 transform: rotate(0deg);
             }
-
             100% {
                 transform: rotate(360deg);
             }
         }
-
         /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
-
+        
         .contact .info {
             width: 100%;
             background: rgba(255, 253, 236, 0.9);
         }
-
+        
         .contact .info i {
             font-size: 20px;
             color: #ef6603;
@@ -639,7 +624,7 @@ Black: #000000 */
             border-radius: 50px;
             transition: all 0.3s ease-in-out;
         }
-
+        
         .contact .info h4 {
             padding: 0 0 0 60px;
             font-size: 22px;
@@ -647,35 +632,35 @@ Black: #000000 */
             margin-bottom: 5px;
             color: #2a2c39;
         }
-
+        
         .contact .info p {
             padding: 0 0 0 60px;
             margin-bottom: 0;
             font-size: 14px;
             color: #555974;
         }
-
+        
         .contact .info .email,
         .contact .info .phone {
             margin-top: 40px;
         }
-
+        
         .contact .info .email:hover i,
         .contact .info .address:hover i,
         .contact .info .phone:hover i {
             background: #ef6603;
             color: rgba(255, 253, 236, 0.9);
         }
-
+        
         .contact .php-email-form {
             width: 100%;
             background: rgba(255, 253, 236, 0.9);
         }
-
+        
         .contact .php-email-form .form-group {
             padding-bottom: 8px;
         }
-
+        
         .contact .php-email-form .error-message {
             display: none;
             color: rgba(255, 253, 236, 0.9);
@@ -684,11 +669,11 @@ Black: #000000 */
             padding: 15px;
             font-weight: 600;
         }
-
+        
         .contact .php-email-form .error-message br+br {
             margin-top: 25px;
         }
-
+        
         .contact .php-email-form .sent-message {
             display: none;
             color: rgba(255, 253, 236, 0.9);
@@ -697,14 +682,14 @@ Black: #000000 */
             padding: 15px;
             font-weight: 600;
         }
-
+        
         .contact .php-email-form .loading {
             display: none;
             background: rgba(255, 253, 236, 0.9);
             text-align: center;
             padding: 15px;
         }
-
+        
         .contact .php-email-form .loading:before {
             content: "";
             display: inline-block;
@@ -717,22 +702,22 @@ Black: #000000 */
             -webkit-animation: animate-loading 1s linear infinite;
             animation: animate-loading 1s linear infinite;
         }
-
+        
         .contact .php-email-form input,
         .contact .php-email-form textarea {
             border-radius: 0;
             box-shadow: none;
             font-size: 14px;
         }
-
+        
         .contact .php-email-form input {
             height: 44px;
         }
-
+        
         .contact .php-email-form textarea {
             padding: 10px 12px;
         }
-
+        
         .contact .php-email-form button[type=submit] {
             background: #ef6603;
             border: 0;
@@ -741,41 +726,38 @@ Black: #000000 */
             transition: 0.4s;
             border-radius: 50px;
         }
-
+        
         .contact .php-email-form button[type=submit]:hover {
             background: #fc8129;
         }
-
+        
         @-webkit-keyframes animate-loading {
             0% {
                 transform: rotate(0deg);
             }
-
             100% {
                 transform: rotate(360deg);
             }
         }
-
+        
         @keyframes animate-loading {
             0% {
                 transform: rotate(0deg);
             }
-
             100% {
                 transform: rotate(360deg);
             }
         }
-
         /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
-
+        
         .team {
             background: rgba(255, 253, 236, 0.9);
             padding: 50px 0;
             padding-left: 60px;
         }
-
+        
         .team .member {
             margin-bottom: 20px;
             overflow: hidden;
@@ -783,12 +765,12 @@ Black: #000000 */
             background: rgba(255, 253, 236, 0.9);
             box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
         }
-
+        
         .team .member .member-img {
             position: relative;
             overflow: hidden;
         }
-
+        
         .team .member .social {
             position: absolute;
             left: 0;
@@ -800,11 +782,11 @@ Black: #000000 */
             align-items: center;
             justify-content: center;
         }
-
+        
         .social {
             width: 5px;
         }
-
+        
         .team .member .social a {
             transition: color 0.3s;
             border-radius: 50px;
@@ -817,106 +799,101 @@ Black: #000000 */
             align-items: center;
             justify-content: center;
         }
-
+        
         .team .member .social a:hover {
             background: #fc8129;
         }
-
+        
         .team .member .social i {
             font-size: 18px;
             line-height: 0;
         }
-
+        
         .team .member .member-info {
             padding: 25px 15px;
         }
-
+        
         .team .member .member-info h4 {
             font-weight: 700;
             margin-bottom: 5px;
             font-size: 18px;
             color: #2a2c39;
         }
-
+        
         .team .member .member-info span {
             display: block;
             font-size: 13px;
             font-weight: 400;
             color: #aaaaaa;
         }
-
+        
         .team .member .member-info p {
             font-style: italic;
             font-size: 14px;
             line-height: 26px;
             color: #777777;
         }
-
+        
         .team .member:hover .social {
             opacity: 1;
             bottom: 15px;
         }
-
         /* team member css for slider */
-
+        
         #image-ticker {
             overflow-x: hidden;
             white-space: nowrap;
         }
-
+        
         #image-ticker img {
             width: 200px;
         }
-
+        
         #ticker-box-1 .container1 {
             width: fit-content;
             display: inline-block;
             animation: marquee 10s linear infinite;
             animation-delay: -10s;
         }
-
+        
         #ticker-box-2 .container1 {
             animation-delay: -60s;
             width: fit-content;
             display: inline-block;
             animation: marquee2 10s linear infinite;
         }
-
+        
         @keyframes marquee {
             from {
                 transform: translateX(-100%);
             }
-
             to {
                 transform: translateX(100%);
             }
         }
-
+        
         @keyframes marquee2 {
             from {
                 transform: translateX(0%);
             }
-
             to {
                 transform: translateX(-200%);
             }
         }
-
         /* css for cta popup form */
-
+        
         .center {
             margin: auto;
             width: 60%;
             padding: 20px;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         }
-
+        
         .hideform {
             display: none;
         }
-
         /* parallex */
-
+        
         .mouse_move {
             width: 100%;
             height: 100%;
@@ -924,9 +901,8 @@ Black: #000000 */
             padding: 14vh 14vw 0 14vw;
             background-color: #fecd00;
         }
-
         /* cta code */
-
+        
         .button {
             border: 0;
             cursor: pointer;
@@ -935,19 +911,18 @@ Black: #000000 */
             font-weight: 700;
             padding: var(--size-2) var(--size-4);
         }
-
+        
         .button:hover,
         .button:focus {
             background: var(--cyan-9);
         }
-
+        
         form {
             display: grid;
             gap: 1em;
         }
-
         /* cta form  */
-
+        
         .button {
             background-color: blue;
             border: 2px solid white;
@@ -958,13 +933,13 @@ Black: #000000 */
             margin-top: 10px;
             display: inline-block;
         }
-
+        
         .button:hover {
             background-color: white;
             color: #898989;
             border: 2px solid #898989;
         }
-
+        
         .bg-modal {
             background-color: rgba(0, 0, 0, 0.8);
             width: 100%;
@@ -975,7 +950,7 @@ Black: #000000 */
             justify-content: center;
             align-items: center;
         }
-
+        
         .modal-contents {
             height: 300px;
             width: 500px;
@@ -985,7 +960,7 @@ Black: #000000 */
             position: relative;
             border-radius: 4px;
         }
-
+        
         input {
             margin: 15px auto;
             display: block;
@@ -993,7 +968,7 @@ Black: #000000 */
             padding: 8px;
             border: 1px solid gray;
         }
-
+        
         .close {
             position: absolute;
             top: 0;
@@ -1003,17 +978,16 @@ Black: #000000 */
             transform: rotate(45deg);
             cursor: pointer;
         }
-
+        
         .close:hover {
             color: #666;
         }
-
+        
         #main {
             margin-top: 10vh;
         }
-
         /* home images css animation */
-
+        
         .tilter {
             position: relative;
             display: block;
@@ -1024,17 +998,17 @@ Black: #000000 */
             color: #fff;
             perspective: 1000px;
         }
-
+        
         .tilter * {
             pointer-events: none;
         }
-
+        
         .tilter:hover,
         .tilter:focus {
             color: #fff;
             outline: none;
         }
-
+        
         .tilter__figure,
         .tilter__image {
             display: block;
@@ -1042,15 +1016,15 @@ Black: #000000 */
             height: 100%;
             margin: 0;
         }
-
+        
         .tilter__figure>* {
             transform: translateZ(0px);
         }
-
+        
         .tilter__figure {
             position: relative;
         }
-
+        
         .tilter__figure::before {
             content: '';
             position: absolute;
@@ -1060,7 +1034,7 @@ Black: #000000 */
             height: 90%;
             box-shadow: 0 30px 20px rgba(35, 32, 39, 0.5);
         }
-
+        
         .tilter__deco {
             position: absolute;
             top: 0;
@@ -1069,11 +1043,11 @@ Black: #000000 */
             width: 100%;
             height: 100%;
         }
-
+        
         .tilter__deco--overlay {
             background-image: linear-gradient(45deg, rgba(226, 60, 99, 0.4), rgba(145, 58, 252, 0.4), rgba(16, 11, 192, 0.4));
         }
-
+        
         .tilter__deco--shine div {
             position: absolute;
             top: -50%;
@@ -1082,20 +1056,20 @@ Black: #000000 */
             height: 200%;
             background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0.25) 50%, transparent 100%);
         }
-
+        
         .tilter__deco--lines {
             fill: none;
             stroke: #fff;
             stroke-width: 1.5px;
         }
-
+        
         .tilter__caption {
             position: absolute;
             bottom: 0;
             width: 100%;
             padding: 4em;
         }
-
+        
         .tilter__title {
             font-family: 'Abril Fatface', serif;
             font-size: 2.5em;
@@ -1103,7 +1077,7 @@ Black: #000000 */
             line-height: 1;
             margin: 0;
         }
-
+        
         .tilter__description {
             font-size: 0.85em;
             margin: 1em 0 0 0;

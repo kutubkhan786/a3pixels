@@ -2,16 +2,18 @@
 # Footer
 -------------------------------------------------------------- */
 
-.footer{
+.footer {
     background-color: black;
+    width: 100%;
 }
 
-.maplogo img{
-    height: 6vh;
+.maplogo img {
+    height: 3.6rem;
     width: auto;
 }
 
-.mapsize iframe{
-    height: 31vh;
-    width: 60vw;
+.map iframe {
+    height: 19.2rem;
+    width: 56rem;
+    padding: 0;
 }
