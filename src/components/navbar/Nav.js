@@ -17,28 +17,28 @@ export default function Nav() {
   }, []);
 
   return (
-    <div class="container_nav ">
-          <header id="header" class="fixed-top ">
-      <nav id="navbarh-100 d-flex align-items-center justify-content-center" class="navbar h-100 d-flex align-items-center justify-content-center"  style={{
+    <div className="container_nav ">
+          <header id="header" className="fixed-top ">
+      <nav id="navbarh-100 d-flex align-items-center justify-content-center" className="navbar h-100 d-flex align-items-center justify-content-center"  style={{
           backgroundColor: navColor,
           height: navSize,
           width:navWidth,
           transition: "all 1s"
         }}>
         <ul  h-100 d-flex align-items-center justify-content-center>
-        <div class='left'>
-            <li><a class="nav-link scrollto" href="#header">Home</a></li>
-            <li><a class="nav-link scrollto" href="#about">About</a></li>
-            <li><a class="nav-link scrollto" href="#services">Services</a></li>
+        <div className='left'>
+            <li><a className="nav-link scrollto" href="#header">Home</a></li>
+            <li><a className="nav-link scrollto" href="#about">About</a></li>
+            <li><a className="nav-link scrollto" href="#services">Services</a></li>
         </div>
-        <div class="logo">
+        <div className="logo">
                             <a href="index.html"><img src="/img/logo.png"  alt="" /></a>
                         </div>
      
-        <div class='right'>
-            <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
-            <li><a class="nav-link scrollto" href="#latest">Latest</a></li>
-            <li><a class="nav-link scrollto" href="#cta">Contact</a></li>
+        <div className='right'>
+            <li><a className="nav-link scrollto" href="#portfolio">Portfolio</a></li>
+            <li><a className="nav-link scrollto" href="#latest">Latest</a></li>
+            <li><a className="nav-link scrollto" href="#cta">Contact</a></li>
         </div>
         
         </ul>
@@ -55,25 +55,25 @@ export default function Nav() {
 
 // function nav() {
 //     return (<>
-//         <div class="container_nav d-flex align-items-center justify-content-between">
-//             <header id="header" class="fixed-top d-flex align-items-center">
-//                 <nav id="navbar" class="navbar">
+//         <div className="container_nav d-flex align-items-center justify-content-between">
+//             <header id="header" className="fixed-top d-flex align-items-center">
+//                 <nav id="navbar" className="navbar">
 //                     <ul>
-//                         <div class='left'>
-//                             <li><a class="nav-link scrollto" href="#header">Home</a></li>
-//                             <li><a class="nav-link scrollto" href="#about">About</a></li>
-//                             <li><a class="nav-link scrollto" href="#services">Services</a></li>
+//                         <div className='left'>
+//                             <li><a className="nav-link scrollto" href="#header">Home</a></li>
+//                             <li><a className="nav-link scrollto" href="#about">About</a></li>
+//                             <li><a className="nav-link scrollto" href="#services">Services</a></li>
 //                         </div>
-//                         <div class="logo">
-//                             <a href="index.html"><img src="/img/logo.png"  class="img-fluid" /></a>
+//                         <div className="logo">
+//                             <a href="index.html"><img src="/img/logo.png"  className="img-fluid" /></a>
 //                         </div>
-//                         <div class='right'>
-//                             <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
-//                             <li><a class="nav-link scrollto" href="#latest">Latest</a></li>
-//                             <li><a class="nav-link scrollto" href="#cta">Contact</a></li>
+//                         <div className='right'>
+//                             <li><a className="nav-link scrollto" href="#portfolio">Portfolio</a></li>
+//                             <li><a className="nav-link scrollto" href="#latest">Latest</a></li>
+//                             <li><a className="nav-link scrollto" href="#cta">Contact</a></li>
 //                         </div>
 //                     </ul>
-//                     {/* <i class="bi bi-list mobile-nav-toggle"></i> */}
+//                     {/* <i className="bi bi-list mobile-nav-toggle"></i> */}
 //                 </nav>
 
 //             </header>

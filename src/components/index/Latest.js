@@ -2,15 +2,15 @@ import React from 'react'
 import './latest.css'
 function Latest(props) {
   return (<>
-  <div class="container11 .col-xs-6 .col-sm-3">
-                <div class="card">
-                    <div class="imgbx">
-                        <div class="row2">
+  <div className="container11 .col-xs-6 .col-sm-3">
+                <div className="card">
+                    <div className="imgbx">
+                        <div className="row2">
                         <img src={props.logo} alt=""/>
                         <h5>{props.CareerTitle}</h5>
                         </div>
                     </div>
-                    <div class="content">
+                    <div className="content">
                         <p>{props.CareerDec}</p>
                     </div>
                 </div>

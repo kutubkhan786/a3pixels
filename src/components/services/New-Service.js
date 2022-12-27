@@ -10,13 +10,13 @@ function contact() {
 
         {/* =============E-learning section========= */}
         <section id='elearning' >
-            <div class='row'>
+            <div className='row'>
                 <p>
-                <b class='p-0'>E-LEARNING DEVELOPEMENT</b><br/>
+                <b className='p-0'>E-LEARNING DEVELOPEMENT</b><br/>
                 We have expertise in both: across -the -board -support to serious e-Learning solutions; and custom e-learning content creation in areas like Behavioral/Soft Skills, Software Simulation, Standard Operating Procedures, Domain Skills - Sales, Finance, HR, and Operations etc. Product Training, Interactive Game Based Approach, Vocational Courses.
                 <br />
                 Our wbt/cbt's are powerful, intuitive, self-paced, self-learning tools which impart in-depth know-how to employees in a simple and lucid style. We integrate audio-visuals to make the content more interesting and the learning experience more exciting.</p><br /><br />
-                <div class='col-lg-6'>
+                <div className='col-lg-6'>
                     <b>CUSTOM E-LEARNING CONTENT CREATION</b>
                     <ul>
                         <li>Behavioral/Soft Skills</li>
@@ -28,7 +28,7 @@ function contact() {
                         <li>Vocational Courses</li>
                     </ul>
                 </div>
-                <div class='col-lg-6'>
+                <div className='col-lg-6'>
                     <b>REPURPOSING OF CONTENT</b>
                     <ul>
                         <li>Technical/Version Upgrade</li>
@@ -58,12 +58,12 @@ function contact() {
 
 At the start of the project, a team of experts is identified that will conceptualise, execute and finalise the project from start to delivery. This team of experts is constantly connected and works to seamlessly meet the client's requirements at all times.<br/><br/>
 <div className='row'>
-<div class="col-lg-6">
+<div className="col-lg-6">
 <b>At A3Pixels, the e-learning project-development process consists of two major phases:</b><br/>
 
 Phase 1: Content Preparation<br/>
 Phase 2: Content Implementation<br/>
-</div><div class='col-lg-6'>
+</div><div className='col-lg-6'>
 <b>Each phase involves several stages:</b><br/>
 Analysis, planning, design, development, delivery and evaluation.<br/>
 The development process is iterative, allowing for corrective feedback and incorporating the same in various stages.

@@ -1,3 +1,4 @@
+import React from 'react';
 import './index.css';
 import Services from './index/Services.js';
 import About from './index/About.js';
@@ -17,19 +18,19 @@ function App() {
 
             {/* <!-- ======= Head Section ======= --> */}
 
-            <section class="el">
-                <div class="fit-screen">
+            <section className="el">
+                <div className="fit-screen">
 
 
 
-                    <div class="fit-card h-1000 d-flex align-items-center justify-content-center ">
-                        {/* <div class="bg-box"> */}
+                    <div className="fit-card h-1000 d-flex align-items-center justify-content-center ">
+                        {/* <div className="bg-box"> */}
                         <img src="/img/banner.png" alt=""/>
 
                         <p > WE ARE
                             <b>  A3PIXELS  </b>
                             AN E-LEARNING DESIGN AND PRODUCTION HOUSE.
-                            <p class="para">We design & develop effective e-learning programs, websites and prints.
+                            <p className="para">We design & develop effective e-learning programs, websites and prints.
                                 With us, your project is sure to deliver results.</p></p>
                     </div>
                 </div>
@@ -37,10 +38,10 @@ function App() {
             </section>
 
             {/* <!-- ======= Services Section ======= --> */}
-            {/* <!-- <div class='merg' id="services"> --> */}
-            <section class="til" data-aos="fade-up" data-aos-duration="1000">
-                <div class='container'>
-                    <div class="row" data-aos="zoom-out">
+            {/* <!-- <div className='merg' id="services"> --> */}
+            <section className="til" data-aos="fade-up" data-aos-duration="1000">
+                <div className='container'>
+                    <div className="row" data-aos="zoom-out">
 
                         <Services name1="E-LEARNING &" name2="DEVELOPMENT" logo="/img/logos/1.png" logoh="/img/logos/1_H.png" />
                         <Services name1="TRANSLATION &" name2="LOCALIZATION" logo="/img/logos/4.png" logoh="/img/logos/4_H.png" />
@@ -55,37 +56,37 @@ function App() {
 
 
             {/* <!-- ======= About Section ======= --> */}
-            <section id="about" class="about">
-                <div class="container">
-                    <div class="section-title mb-2" data-aos="zoom-out">
+            <section id="about" className="about">
+                <div className="container">
+                    <div className="section-title mb-2" data-aos="zoom-out">
                         <p>About Us</p>
                         {/* <h2>Below you can find more information about our company</h2> */}
                     </div>
 
 
-                    <div class="row content" data-aos="fade-up">
+                    <div className="row content" data-aos="fade-up">
                         <p>The company provides effective web and e-Learning solutions that are easy to implement and use. Our efforts are directed at consistently building stimulating and state-of-the-art e-Learning products for our clients that makes online learning
                             a fun and enriching experience for the users. Over the years, we have perfected the ability to handle unstructured situations with ease, to give life to ideas and concepts that have never been implemented before, and to manage a multitude
                             of projects without slipping on deadlines. In each project that we undertake, we make every effort to maintain the highest standards of quality and efficiency. A3PIXELS has been profitable in every quarter and has shown a 100% growth
                             in revenues in every successive year since inception.</p>
                         <ul>
                             <li>
-                                <h4 class="section-title mb-0"><b>OUR MISSION:</b></h4>
+                                <h4 className="section-title mb-0"><b>OUR MISSION:</b></h4>
                             </li>
-                            <li class="mt-0"> To provide our customers timely and cost-effective e-learning solutions and services aligned to their business goals. </li>
+                            <li className="mt-0"> To provide our customers timely and cost-effective e-learning solutions and services aligned to their business goals. </li>
                         </ul>
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-lg-5">
-                                    <h4 class="section-title  mb-0"><b>WHAT WE DO</b></h4>
-                                    <img class='img-fluid about0' src="/img/logos/about-side.png" alt=""/>
+                        <div className="container-fluid">
+                            <div className="row">
+                                <div className="col-lg-5">
+                                    <h4 className="section-title  mb-0"><b>WHAT WE DO</b></h4>
+                                    <img className='img-fluid about0' src="/img/logos/about-side.png" alt=""/>
                                 </div>
-                                <div class="col-lg-7 pt-4 pt-lg-0 ">
-                                    <div class="row content yello-box">
+                                <div className="col-lg-7 pt-4 pt-lg-0 ">
+                                    <div className="row content yello-box">
 
                                     </div>
-                                    <div class="container-fluid">
-                                        <div class="row">
+                                    <div className="container-fluid">
+                                        <div className="row">
                                             <About Aboutstyle="card yellow" Aboutlogo="\img\about\Icon_01.png" Aboutdec="Good user interface design helps people work more assertively, complete tasks more efficiently and build brand loyalty at the same time." AboutTitle="UI DESIGN" />
                                             <About Aboutstyle="card grey " Aboutlogo="\img\about\Icon_03.png" Aboutdec="We specialize in creating customized learning solutions with latest technical language to cultivate visually outstanding, animated text, frame and more informative design.
                                                " AboutTitle="CUSTOMIZE SOLUTION" />
@@ -102,17 +103,17 @@ function App() {
             {/* <!-- End About Section --> */}
             {/* <!-- this is the call for enquiry --> */}
             {/* <!-- ======= Cta Section ======= --> */}
-            <section id="cta" class="cta">
-                <div class="container">
+            <section id="cta" className="cta">
+                <div className="container">
 
-                    <div class="row" data-aos="zoom-out">
-                        <div class="col-lg-9 text-center text-lg-start">
+                    <div className="row" data-aos="zoom-out">
+                        <div className="col-lg-9 text-center text-lg-start">
                             <h3>Call To Action</h3>
                             <p> click the button and fill the form if having any query or want to contact us we will reach to you as soon as we recive your form</p>
                         </div>
 
-                        <div class="col-lg-3 cta-btn-container text-center">
-                            <a herf="/" class="cta-btn align-middle button" id="button" data-toggle="modal" data-target="#myModal">Call
+                        <div className="col-lg-3 cta-btn-container text-center">
+                            <a herf="/" className="cta-btn align-middle button" id="button" data-toggle="modal" data-target="#myModal">Call
                                 To Action</a>
                         </div>
                     </div>
@@ -122,27 +123,27 @@ function App() {
 
 
             {/* <!-- cta code donot remove it bsdk --> */}
-            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+            <div className="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div className="modal-dialog" role="document">
+                    <div className="modal-content">
+                        <div className="modal-header">
+                            <button type="button" className="close" data-dismiss="modal" aria-label="Close"><span
                                 aria-hidden="true">&times;</span></button>
-                            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                            <h4 className="modal-title" id="myModalLabel">Modal title</h4>
                         </div>
-                        <div class="modal-body">
+                        <div className="modal-body">
                             <div id="response"></div>
 
-                            <div class="form-group">
-                                <input type="text" class="form-control" />
+                            <div className="form-group">
+                                <input type="text" className="form-control" />
                             </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" />
+                            <div className="form-group">
+                                <input type="text" className="form-control" />
                             </div>
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
+                        <div className="modal-footer">
+                            <button type="button" className="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="button" className="btn btn-primary">Save changes</button>
                         </div>
                     </div>
                 </div>
@@ -151,14 +152,14 @@ function App() {
 
             {/* <!-- =====Our Latest Work====== --> */}
 
-            <section class="latest  ">
-                <div class="fix-latest">
-                    <div class="section-title ml-4 mb-3 pl-0 w-" data-aos="zoom-out">
+            <section className="latest  ">
+                <div className="fix-latest">
+                    <div className="section-title ml-4 mb-3 pl-0 w-" data-aos="zoom-out">
                         <p >OUR LATEST WORK</p>
                         {/* <h2>jreiute5yhguteh eurhwe </h2> */}
                     </div>
-                    <div class="row m-0 p-0 ">
-                        <div class="col-2 d-flex float-right ">
+                    <div className="row m-0 p-0 ">
+                        <div className="col-2 d-flex float-right ">
                             <Latest logo="/img/portfolio/print_01.jpg" CareerTitle="WEB SOLUTION" CareerDec="
 A Website is an extension of a company's overall communication strategy. We create websites using HTML5, CSS3, Jquery.
 " />
@@ -186,16 +187,16 @@ We develop the most effective marketing solutions based on your unique business 
             {/* <!-- End Testimonials Section --> */}
 
             {/* <!-- ======= Portfolio Section ======= --> */}
-            <section id="portfolio" class="portfolio">
-                <div class="container">
+            <section id="portfolio" className="portfolio">
+                <div className="container">
 
-                    <div class="section-title mb-3" data-aos="zoom-out">
+                    <div className="section-title mb-3" data-aos="zoom-out">
                         <p>Portfolio</p>
                         <h2>What we've done</h2>
                     </div>
 
-                    <ul id="portfolio-flters" class="d-flex justify-content-center p-0" data-aos="fade-up">
-                        <li data-filter="*" class="filter-active pl-4 pr-4">All</li>
+                    <ul id="portfolio-flters" className="d-flex justify-content-center p-0" data-aos="fade-up">
+                        <li data-filter="*" className="filter-active pl-4 pr-4">All</li>
                         <li data-filter=".e-learning" >E-LEARNING</li>
                         <li data-filter=".localization">LOCALIZATION</li>
                         <li data-filter=".web">WEB DESIGN</li>
@@ -203,8 +204,8 @@ We develop the most effective marketing solutions based on your unique business 
                         <li data-filter=".multitude">MULTIMEDIA PRESENTATION</li>
                         <li data-filter=".logo">LOGO & PRINT DESIGN</li>
                     </ul>
-                    <div class="divScroll">
-                        <div class="row portfolio-container" data-aos="fade-up">
+                    <div className="divScroll">
+                        <div className="row portfolio-container" data-aos="fade-up">
                             <Portfolio logo="/img/portfolio/Elearning/0_BPCL/01_UI_design_menu.jpg" PortTitle="Banking & Finance" PortDec="E-learning" filter="e-learning" />
                             <Portfolio logo="/img/portfolio/Elearning/0_BPCL/02_UI_design_Intro.jpg" PortTitle="Banking & Finance" PortDec="E-learning" filter="e-learning" />
                             <Portfolio logo="/img/portfolio/Elearning/0_BPCL/05_UI_design_interactive(popup)_04.jpg" PortTitle="Banking & Finance" PortDec="E-learning" filter="e-learning" />
@@ -375,7 +376,7 @@ We develop the most effective marketing solutions based on your unique business 
             {/* <!-- Our Company --> */}
 
             <Footer />
-            <a href={"/"} class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+            <a href={"/"} className="back-to-top d-flex align-items-center justify-content-center"><i className="bi bi-arrow-up-short"></i></a>
         </div>
     </>
 

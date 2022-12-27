@@ -4,14 +4,14 @@ import './Services.css';
 function services(props) {
     
     return (<>
-        <div class="col-xs-6 col-sm-3">
-            <div class='container7'>
-                <div class="container_card">
-                    <div class="imgbx">
+        <div className="col-xs-6 col-sm-3">
+            <div className='container7'>
+                <div className="container_card">
+                    <div className="imgbx">
                         <img src={props.logo} alt="" />
                     </div>
                     <p>
-                        <a href="#" class="b">{props.name1} <br/>{props.name2} <br/></a>
+                        <a href="#" className="b">{props.name1} <br/>{props.name2} <br/></a>
 
                     </p>
                     
