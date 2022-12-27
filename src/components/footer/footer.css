@@ -3,12 +3,17 @@
 -------------------------------------------------------------- */
 
 .footer{
+    width:100%;
     background-color: black;
 }
 
 .maplogo img{
     height: 6vh;
     width: auto;
+}
+.footer .ul{
+    display:flex;
+    flex-direction: row;
 }
 
 .mapsize iframe{
