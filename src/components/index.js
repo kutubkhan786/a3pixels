@@ -160,8 +160,8 @@ function App() {
                         <p >OUR LATEST WORK</p>
                         {/* <h2>jreiute5yhguteh eurhwe </h2> */}
                     </div>
-                    <div class="row m-0 p-0">
-                        <div class="col-2 d-flex float-right align-items-center justify-content-center">
+                    <div class="row m-0 p-0 ">
+                        <div class="col-2 d-flex float-right ">
                             <Latest logo="/img/portfolio/print_01.jpg" CareerTitle="WEB SOLUTION" CareerDec="
 A Website is an extension of a company's overall communication strategy. We create websites using HTML5, CSS3, Jquery.
 " />
