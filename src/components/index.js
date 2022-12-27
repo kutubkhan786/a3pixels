@@ -1,7 +1,7 @@
 import './index.css';
 import Services from './index/Services.js';
 import About from './index/About.js';
-import Career from './index/Career';
+import Latest from './index/Latest';
 import Portfolio from './index/Portfolio.js';
 import Testimonial from './index/testimonial.js';
 import Clients from './index/Clients.js';
@@ -12,15 +12,6 @@ import { useEffect } from 'react';
 
 
 function App() {
-
-    const scroll0 = () => {
-        setTimeout(() => {
-            // location.replace("/")
-            console.log('hello');
-        }, 200);
-
-    }
-
 
     return (<>
         <div id="loader" ></div>
@@ -50,17 +41,16 @@ function App() {
 
             {/* <!-- ======= Services Section ======= --> */}
             {/* <!-- <div class='merg' id="services"> --> */}
-            <section class="til" data-aos="fade-up" data-aos-duration="1000" onClick={useEffect(() => {
-                scroll0();
-            })}>
-                <div class='container'>            <div class="row" data-aos="zoom-out">
+            <section class="til" data-aos="fade-up" data-aos-duration="1000">
+                <div class='container'>
+                    <div class="row" data-aos="zoom-out">
 
-                    <Services name1="E-LEARNING &" name2="DEVELOPMENT" logo="/img/logos/1.png" logoh="/img/logos/1_H.png" />
-                    <Services name1="TRANSLATION &" name2="LOCALIZATION" logo="/img/logos/4.png" logoh="/img/logos/4_H.png" />
-                    <Services name1="WEBSITE & MULTIMEDIA" name2=" DEVELOPEMENT" logo="/img/logos/3.png" logoh="/img/logos/3_H.png" />
-                    <Services name1="PRINT & IDENTITY" logo="/img/logos/2.png" logoh="/img/logos/2_H.png" />
+                        <Services name1="E-LEARNING &" name2="DEVELOPMENT" logo="/img/logos/1.png" logoh="/img/logos/1_H.png" />
+                        <Services name1="TRANSLATION &" name2="LOCALIZATION" logo="/img/logos/4.png" logoh="/img/logos/4_H.png" />
+                        <Services name1="WEBSITE & MULTIMEDIA" name2=" DEVELOPEMENT" logo="/img/logos/3.png" logoh="/img/logos/3_H.png" />
+                        <Services name1="PRINT & IDENTITY" logo="/img/logos/2.png" logoh="/img/logos/2_H.png" />
 
-                </div>
+                    </div>
                 </div>
                 {/* <!-- End Services Section --> */}
 
@@ -171,22 +161,19 @@ function App() {
                         {/* <h2>jreiute5yhguteh eurhwe </h2> */}
                     </div>
                     <div class="row m-0 p-0">
-                        <div class="col  ">
-                            <Career logo="/img/portfolio/print_01.jpg" CareerTitle="WEB SOLUTION" CareerDec="
+                        <div class="col-2 d-flex float-right align-items-center justify-content-center">
+                            <Latest logo="/img/portfolio/print_01.jpg" CareerTitle="WEB SOLUTION" CareerDec="
 A Website is an extension of a company's overall communication strategy. We create websites using HTML5, CSS3, Jquery.
 " />
-                        </div>
-                        <div class="col">
-                            <Career logo="/img/portfolio/work10.jpg" CareerTitle="WEB APPLICATION" CareerDec="
+                        
+                            <Latest logo="/img/portfolio/work10.jpg" CareerTitle="WEB APPLICATION" CareerDec="
 We have expertise in Smart Phone Application Development, iPhone Game Development and Custom Mobile Application Development" />
-                        </div>
-                        <div class="col">
-                            <Career logo="/img/portfolio/work11.jpg" CareerTitle="K12 ANIMATIONS" CareerDec="
+                       
+                            <Latest logo="/img/portfolio/work11.jpg" CareerTitle="K12 ANIMATIONS" CareerDec="
 We offer full production services in 2D, 3D, cell animation and corporate Videos (Audio and video), Multimedia Presentations / Slideshows.
 " />
-                        </div>
-                        <div class="col">
-                            <Career logo="/img/portfolio/work12.jpg" CareerTitle="PRINT WORK" CareerDec="
+                        
+                            <Latest logo="/img/portfolio/work12.jpg" CareerTitle="PRINT WORK" CareerDec="
 We develop the most effective marketing solutions based on your unique business needs, aiming to maximize returns on your marketing efforts." />
                         </div>
                     </div>
@@ -195,7 +182,7 @@ We develop the most effective marketing solutions based on your unique business 
                 </div>
             </section>
 
-            {/* <!-- ======= Testimonials Section ======= --> */}
+            {/* <!-- ======= Testimonials Section ======= -->- */}
 
             <Testimonial />
 

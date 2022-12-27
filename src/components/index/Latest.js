@@ -1,6 +1,6 @@
 import React from 'react'
-import './Career.css'
-function career(props) {
+import './latest.css'
+function Latest(props) {
   return (<>
   <div class="container11 .col-xs-6 .col-sm-3">
                 <div class="card">
@@ -18,4 +18,4 @@ function career(props) {
   )
 }
 
-export default career
+export default Latest

@@ -1,18 +1,17 @@
 .img-scroll {
-    width: 200px;
-    height: 80px;
+    width: 12.5rem;
+    height: 5rem;
 }
 
 .slide-track {
     width: 100%;
     display: flex;
-    gap: 3em;
+    gap: 3rem;
     overflow: hidden;
     margin: 10px;
-
 }
 
 .slider {
     background-color: #c4c4c4;
-    padding: 40px 60px 40px 60px;
+    padding: 2.5rem 3.75rem 2.5rem 3.75rem;
 }

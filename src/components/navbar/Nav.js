@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./style.css";
+import "./nav.css";
 export default function Nav() {
   const [navSize, setnavSize] = useState("70px");
   const [navWidth, setnavWidth] = useState("100%");
@@ -17,15 +17,15 @@ export default function Nav() {
   }, []);
 
   return (
-    <div class="container_nav d-flex align-items-center justify-content-between">
-          <header id="header" class="fixed-top d-flex align-items-center">
-      <nav id="navbar" class="navbar"  style={{
+    <div class="container_nav ">
+          <header id="header" class="fixed-top ">
+      <nav id="navbarh-100 d-flex align-items-center justify-content-center" class="navbar h-100 d-flex align-items-center justify-content-center"  style={{
           backgroundColor: navColor,
           height: navSize,
           width:navWidth,
           transition: "all 1s"
         }}>
-        <ul>
+        <ul  h-100 d-flex align-items-center justify-content-center>
         <div class='left'>
             <li><a class="nav-link scrollto" href="#header">Home</a></li>
             <li><a class="nav-link scrollto" href="#about">About</a></li>

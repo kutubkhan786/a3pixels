@@ -14,9 +14,9 @@ function Clients() {
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <div class='row' >
-                <div class="slide-track pb-2">
-                  <div class="slide">
+              <div class='row ' >
+                <div class="slide-track pb-4 d-flex align-items-center justify-content-center">
+                  <div class="slide ">
                     <img class="img-scroll" src="/img/clients/Client__1.jpg" />
                   </div>
                   <div class="slide">
@@ -28,7 +28,7 @@ function Clients() {
                   <div class="slide">
                     <img class="img-scroll" src="/img/clients/Client__4.jpg" />
                   </div></div>
-                <div class="slide-track">
+                <div class="slide-track d-flex align-items-center justify-content-center">
                   <div class="slide">
                     <img class="img-scroll" src="/img/clients/Client__12.jpg" />
                   </div>
@@ -44,7 +44,7 @@ function Clients() {
               </div></div>
             <div class="carousel-item">
               <div class='row' >
-                <div class="slide-track pb-4">
+                <div class="slide-track pb-4 d-flex align-items-center justify-content-center">
                   <div class="slide">
                     <img class="img-scroll" src="/img/clients/Client__1.jpg" />
                   </div>
@@ -57,7 +57,7 @@ function Clients() {
                   <div class="slide">
                     <img class="img-scroll" src="/img/clients/Client__4.jpg" />
                   </div></div>
-                <div class="slide-track">
+                <div class="slide-track d-flex align-items-center justify-content-center">
                   <div class="slide">
                     <img class="img-scroll" src="/img/clients/Client__12.jpg" />
                   </div>
@@ -73,7 +73,7 @@ function Clients() {
               </div></div>
             <div class="carousel-item">
               <div class='row' >
-                <div class="slide-track pb-4">
+                <div class="slide-track pb-4 d-flex align-items-center justify-content-center">
                   <div class="slide">
                     <img class="img-scroll" src="/img/clients/Client__1.jpg" />
                   </div>
@@ -86,7 +86,7 @@ function Clients() {
                   <div class="slide">
                     <img class="img-scroll" src="/img/clients/Client__4.jpg" />
                   </div></div>
-                <div class="slide-track">
+                <div class="slide-track d-flex align-items-center justify-content-center">
                   <div class="slide">
                     <img class="img-scroll" src="/img/clients/Client__12.jpg" />
                   </div>
