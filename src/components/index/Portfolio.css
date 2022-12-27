@@ -192,8 +192,8 @@
     overflow-x: hidden;
     overflow-y: auto;
     text-align: justify;
+    
 }
-
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
     display: none;
-} */
+}
