@@ -54,18 +54,18 @@ Black: #000000 */
             position: fixed;
             visibility: hidden;
             opacity: 0;
-            right: 15px;
-            bottom: 15px;
+            right: 0.938rem;
+            bottom: 0.938rem;
             z-index: 996;
             background: #ef6603;
-            width: 40px;
-            height: 40px;
-            border-radius: 50px;
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 3.125rem;
             transition: all 0.4s;
         }
 
         .back-to-top i {
-            font-size: 28px;
+            font-size: 1.75rem;
             color: rgba(255, 253, 236, 0.9);
             line-height: 0;
         }
@@ -103,8 +103,6 @@ Black: #000000 */
             text-align: center;
             font-size: large;
             color: white;
-            /* background-color: #fecd00; */
-            /* opacity: 0.5; */
             margin-bottom: -85vh;
             padding: 3vh 0vh 30vh;
             font-weight: 505;
@@ -130,18 +128,18 @@ Black: #000000 */
 --------------------------------------------------------------*/
 
         section {
-            padding: 50px 0;
+            padding: 3.125rem 0;
         }
 
         .section-title {
-            padding-bottom: 10px;
+            padding-bottom: 0.625rem;
         }
 
         .section-title h2 {
-            font-size: 14px;
+            font-size: 0.875rem;
             font-weight: 500;
             padding: auto;
-            line-height: 1px;
+            line-height: 0.063rem;
             margin: 0 0 5px 0;
             letter-spacing: 2px;
             text-transform: uppercase;
@@ -152,15 +150,15 @@ Black: #000000 */
         .section-title p::after {
             content: "";
             width: 120px;
-            height: 1px;
+            height: 0.063rem;
             display: inline-block;
             background: #fd9042;
-            margin: 4px 10px;
+            margin: 4px 0.625rem;
         }
 
         .section-title p {
             margin: 0;
-            font-size: 36px;
+            font-size: 2.25rem;
             font-weight: 700;
             text-transform: uppercase;
             font-family: "Poppins", sans-serif;
@@ -172,205 +170,7 @@ Black: #000000 */
             max-width: 10vw;
         }
 
-        /*--------------------------------------------------------------
-# About
---------------------------------------------------------------*/
-/* 
-        .merg {
-            background-image: url(/public/img/logos/shape1.png);
-            background-repeat: no-repeat;
-            background-size: contain;
-            background-position: right;
-            background-position-y: 10vh;
-            background-position-x: 15vh;
-        }
 
-        .mybutton {
-            margin-top: 10vh;
-            display: flex;
-            position: absolute;
-        }
-
-        .about {
-            padding-top: 10px;
-        }
-
-        .aboutme {
-            height: 10vh;
-            width: auto;
-        }
-
-        .about .content h3 {
-            font-weight: 600;
-            font-size: 26px;
-        }
-
-        .about .content ul {
-            list-style: none;
-            padding: auto;
-        }
-
-        .about .content ul li {
-            position: relative;
-        }
-
-        .about .content ul li+li {
-            margin-top: 10px;
-        }
-
-        .about .content ul i {
-            position: absolute;
-            left: 0;
-            top: 2px;
-            font-size: 20px;
-            color: #ef6603;
-            line-height: 1;
-        }
-
-        .about .content p:last-child {
-            margin-bottom: 0;
-        }
-
-        .about .content .btn-learn-more {
-            font-family: "Raleway", sans-serif;
-            font-weight: 600;
-            font-size: 14px;
-            letter-spacing: 1px;
-            display: inline-block;
-            padding: 12px 32px;
-            border-radius: 5px;
-            transition: 0.3s;
-            line-height: 1;
-            color: #ef6603;
-            -webkit-animation-delay: 0.8s;
-            animation-delay: 0.8s;
-            margin-top: 6px;
-            border: 2px solid #ef6603;
-        }
-
-        .about .content .btn-learn-more:hover {
-            background: #ef6603;
-            color: #898989;
-            text-decoration: none;
-        }
-
-        .aboutimg {
-            max-height: 10vh;
-            width: auto;
-            padding: 16px;
-        }
-
-        .card-horizontal {
-            display: flex;
-            flex: 1 1 auto;
-            align-items: center;
-        }
-
-        .yellow {
-            background-color: #fecd00;
-            color: rgb(0, 0, 0);
-        }
-
-        .grey {
-            background-color: gray;
-            color: #000000;
-            filter: invert(1);
-        }
-
-        .about0 {
-            position: absolute;
-            bottom: 0px;
-        }
-
-        .card-body {
-            font-size: small;
-        } */
-
-        /*--------------------------------------------------------------
-# Features
---------------------------------------------------------------*/
-
-        .features .nav-tabs {
-            border: 0;
-        }
-
-        .features .nav-link {
-            border: 1px solid #d4d6df;
-            padding: 15px;
-            transition: 0.3s;
-            color: #2a2c39;
-            border-radius: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .features .nav-link i {
-            padding-right: 15px;
-            font-size: 48px;
-        }
-
-        .features .nav-link h4 {
-            font-size: 18px;
-            font-weight: 600;
-            margin: 0;
-        }
-
-        .features .nav-link:hover {
-            color: #ef6603;
-        }
-
-        .features .nav-link.active {
-            background: #ef6603;
-            color: #898989;
-            border-color: #ef6603;
-        }
-
-        @media (max-width: 768px) {
-            .features .nav-link i {
-                padding: auto;
-                line-height: 1;
-                font-size: 36px;
-            }
-        }
-
-        @media (max-width: 575px) {
-            .features .nav-link {
-                padding: 15px;
-            }
-
-            .features .nav-link i {
-                font-size: 24px;
-            }
-        }
-
-        .features .tab-content {
-            margin-top: 30px;
-        }
-
-        .features .tab-pane h3 {
-            font-weight: 600;
-            font-size: 26px;
-        }
-
-        .features .tab-pane ul {
-            list-style: none;
-            padding: auto;
-        }
-
-        .features .tab-pane ul li {
-            padding-bottom: 10px;
-        }
-
-        .features .tab-pane ul i {
-            font-size: 20px;
-            padding-right: 4px;
-            color: #ef6603;
-        }
-
-        .features .tab-pane p:last-child {
-            margin-bottom: 0;
-        }
 
         /*--------------------------------------------------------------
 # Cta
@@ -378,32 +178,32 @@ Black: #000000 */
 
         .cta {
             background: #fecd00;
-            padding: 40px;
+            padding: 2.5rem;
             bottom: 0;
         }
 
         .cta h3 {
             color: #7f6600;
-            font-size: 28px;
+            font-size: 1.75rem;
             font-weight: 700;
         }
 
         .cta p {
             color: #7f6600;
-            font-size: 16px;
+            font-size: 1rem;
         }
 
         .cta .cta-btn {
             font-family: "Raleway", sans-serif;
             text-transform: uppercase;
             font-weight: 700;
-            font-size: 14px;
-            letter-spacing: 1px;
+            font-size: 0.875rem;
+            letter-spacing: 0.063rem;
             display: inline-block;
-            padding: 12px 30px;
-            border-radius: 50px;
+            padding: 0.75rem 1.875rem;
+            border-radius: 3.125rem;
             transition: 0.5s;
-            margin: 10px;
+            margin: 0.625rem;
             color: #fecd00;
             background: #fecd00;
         }
@@ -431,42 +231,7 @@ Black: #000000 */
 # Services
 --------------------------------------------------------------*/
 
-        .til {
-            margin-top: -15%;
-            visibility: visible;
-        }
-
-        /* latest work */
-
-        .row1 {
-            display: flex;
-            flex-direction: row;
-        }
         
-        
-        .latest {
-            padding: 40px;
-            background-color: #c4c4c4;
-        }
-
-        .latest img {
-            width: 100%;
-            border-radius: 5px 5px 0 0 ;
-            height: 100%;
-            object-fit: contain;
-            /* padding: 1vh; */
-            /* background-color: navy; */
-        }
-        
-        
-        .heading-text {
-            margin-bottom: 2rem;
-            font-size: 2rem;
-        }
-
-        .heading-text span {
-            font-weight: 100;
-        }
 
         /*--------------------------------------------------------------
 # Contact
@@ -481,13 +246,13 @@ Black: #000000 */
             font-size: 20px;
             color: #ef6603;
             float: left;
-            width: 44px;
-            height: 44px;
+            width: 2.75rem;
+            height: 2.75rem;
             background: #ffecde;
             display: flex;
             justify-content: center;
             align-items: center;
-            border-radius: 50px;
+            border-radius: 3.125rem;
             transition: all 0.3s ease-in-out;
         }
 
@@ -502,13 +267,13 @@ Black: #000000 */
         .contact .info p {
             padding: 0 0 0 60px;
             margin-bottom: 0;
-            font-size: 14px;
+            font-size: 0.875rem;
             color: #555974;
         }
 
         .contact .info .email,
         .contact .info .phone {
-            margin-top: 40px;
+            margin-top: 2.5rem;
         }
 
         .contact .info .email:hover i,
@@ -532,12 +297,12 @@ Black: #000000 */
             color: rgba(255, 253, 236, 0.9);
             background: #ed3c0d;
             text-align: left;
-            padding: 15px;
+            padding: 0.938rem;
             font-weight: 600;
         }
 
         .contact .php-email-form .error-message br+br {
-            margin-top: 25px;
+            margin-top: 1.563rem;
         }
 
         .contact .php-email-form .sent-message {
@@ -545,7 +310,7 @@ Black: #000000 */
             color: rgba(255, 253, 236, 0.9);
             background: #18d26e;
             text-align: center;
-            padding: 15px;
+            padding: 0.938rem;
             font-weight: 600;
         }
 
@@ -553,16 +318,16 @@ Black: #000000 */
             display: none;
             background: rgba(255, 253, 236, 0.9);
             text-align: center;
-            padding: 15px;
+            padding: 0.938rem;
         }
 
         .contact .php-email-form .loading:before {
             content: "";
             display: inline-block;
             border-radius: 50%;
-            width: 24px;
-            height: 24px;
-            margin: 0 10px -6px 0;
+            width: 1.5rem;
+            height: 1.5rem;
+            margin: 0 0.625rem -6px 0;
             border: 3px solid #18d26e;
             border-top-color: #eee;
             -webkit-animation: animate-loading 1s linear infinite;
@@ -573,24 +338,24 @@ Black: #000000 */
         .contact .php-email-form textarea {
             border-radius: 0;
             box-shadow: none;
-            font-size: 14px;
+            font-size: 0.875rem;
         }
 
         .contact .php-email-form input {
-            height: 44px;
+            height: 2.75rem;
         }
 
         .contact .php-email-form textarea {
-            padding: 10px 12px;
+            padding: 0.625rem 0.75rem;
         }
 
         .contact .php-email-form button[type=submit] {
             background: #ef6603;
             border: 0;
-            padding: 10px 24px;
+            padding: 0.625rem 1.5rem;
             color: rgba(255, 253, 236, 0.9);
             transition: 0.4s;
-            border-radius: 50px;
+            border-radius: 3.125rem;
         }
 
         .contact .php-email-form button[type=submit]:hover {
@@ -630,13 +395,13 @@ Black: #000000 */
             font-size: 20px;
             color: #ef6603;
             float: left;
-            width: 44px;
-            height: 44px;
+            width: 2.75rem;
+            height: 2.75rem;
             background: #ffecde;
             display: flex;
             justify-content: center;
             align-items: center;
-            border-radius: 50px;
+            border-radius: 3.125rem;
             transition: all 0.3s ease-in-out;
         }
 
@@ -651,13 +416,13 @@ Black: #000000 */
         .contact .info p {
             padding: 0 0 0 60px;
             margin-bottom: 0;
-            font-size: 14px;
+            font-size: 0.875rem;
             color: #555974;
         }
 
         .contact .info .email,
         .contact .info .phone {
-            margin-top: 40px;
+            margin-top: 2.5rem;
         }
 
         .contact .info .email:hover i,
@@ -681,12 +446,12 @@ Black: #000000 */
             color: rgba(255, 253, 236, 0.9);
             background: #ed3c0d;
             text-align: left;
-            padding: 15px;
+            padding: 0.938rem;
             font-weight: 600;
         }
 
         .contact .php-email-form .error-message br+br {
-            margin-top: 25px;
+            margin-top: 1.563rem;
         }
 
         .contact .php-email-form .sent-message {
@@ -694,7 +459,7 @@ Black: #000000 */
             color: rgba(255, 253, 236, 0.9);
             background: #18d26e;
             text-align: center;
-            padding: 15px;
+            padding: 0.938rem;
             font-weight: 600;
         }
 
@@ -702,16 +467,16 @@ Black: #000000 */
             display: none;
             background: rgba(255, 253, 236, 0.9);
             text-align: center;
-            padding: 15px;
+            padding: 0.938rem;
         }
 
         .contact .php-email-form .loading:before {
             content: "";
             display: inline-block;
             border-radius: 50%;
-            width: 24px;
-            height: 24px;
-            margin: 0 10px -6px 0;
+            width: 1.5rem;
+            height: 1.5rem;
+            margin: 0 0.625rem -6px 0;
             border: 3px solid #18d26e;
             border-top-color: #eee;
             -webkit-animation: animate-loading 1s linear infinite;
@@ -722,24 +487,24 @@ Black: #000000 */
         .contact .php-email-form textarea {
             border-radius: 0;
             box-shadow: none;
-            font-size: 14px;
+            font-size: 0.875rem;
         }
 
         .contact .php-email-form input {
-            height: 44px;
+            height: 2.75rem;
         }
 
         .contact .php-email-form textarea {
-            padding: 10px 12px;
+            padding: 0.625rem 0.75rem;
         }
 
         .contact .php-email-form button[type=submit] {
             background: #ef6603;
             border: 0;
-            padding: 10px 24px;
+            padding: 0.625rem 1.5rem;
             color: rgba(255, 253, 236, 0.9);
             transition: 0.4s;
-            border-radius: 50px;
+            border-radius: 3.125rem;
         }
 
         .contact .php-email-form button[type=submit]:hover {
@@ -772,7 +537,7 @@ Black: #000000 */
 
         .team {
             background: rgba(255, 253, 236, 0.9);
-            padding: 50px 0;
+            padding: 3.125rem 0;
             padding-left: 60px;
         }
 
@@ -781,7 +546,7 @@ Black: #000000 */
             overflow: hidden;
             border-radius: 5px;
             background: rgba(255, 253, 236, 0.9);
-            box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 2px 0.938rem rgba(0, 0, 0, 0.1);
         }
 
         .team .member .member-img {
@@ -792,7 +557,7 @@ Black: #000000 */
         .team .member .social {
             position: absolute;
             left: 0;
-            bottom: 30px;
+            bottom: 1.875rem;
             right: 0;
             opacity: 0;
             transition: ease-in-out 0.3s;
@@ -807,9 +572,9 @@ Black: #000000 */
 
         .team .member .social a {
             transition: color 0.3s;
-            border-radius: 50px;
-            width: 16px;
-            height: 36px;
+            border-radius: 3.125rem;
+            width: 1rem;
+            height: 2.25rem;
             background: rgba(239, 102, 3, 0.8);
             transition: ease-in-out 0.3s;
             color: rgba(255, 253, 236, 0.9);
@@ -823,18 +588,18 @@ Black: #000000 */
         }
 
         .team .member .social i {
-            font-size: 18px;
+            font-size: 1.125rem;
             line-height: 0;
         }
 
         .team .member .member-info {
-            padding: 25px 15px;
+            padding: 1.563rem 0.938rem;
         }
 
         .team .member .member-info h4 {
             font-weight: 700;
             margin-bottom: 5px;
-            font-size: 18px;
+            font-size: 1.125rem;
             color: #2a2c39;
         }
 
@@ -847,14 +612,14 @@ Black: #000000 */
 
         .team .member .member-info p {
             font-style: italic;
-            font-size: 14px;
+            font-size: 0.875rem;
             line-height: 26px;
             color: #777777;
         }
 
         .team .member:hover .social {
             opacity: 1;
-            bottom: 15px;
+            bottom: 0.938rem;
         }
 
         /* team member css for slider */
@@ -951,11 +716,11 @@ Black: #000000 */
         .button {
             background-color: blue;
             border: 2px solid white;
-            border-radius: 30px;
+            border-radius: 1.875rem;
             text-decoration: none;
-            padding: 10px 28px;
+            padding: 0.625rem 1.75rem;
             color: white;
-            margin-top: 10px;
+            margin-top: 0.625rem;
             display: inline-block;
         }
 
@@ -987,17 +752,17 @@ Black: #000000 */
         }
 
         input {
-            margin: 15px auto;
+            margin: 0.938rem auto;
             display: block;
             width: 50%;
             padding: 8px;
-            border: 1px solid gray;
+            border: 0.063rem solid gray;
         }
 
         .close {
             position: absolute;
             top: 0;
-            right: 10px;
+            right: 0.625rem;
             font-size: 42px;
             color: #333;
             transform: rotate(45deg);
@@ -1019,7 +784,7 @@ Black: #000000 */
             display: block;
             flex: none;
             width: 300px;
-            height: 415px;
+            height: 40.938rem;
             margin: 1.5em 2.5em;
             color: #fff;
             perspective: 1000px;
@@ -1058,7 +823,7 @@ Black: #000000 */
             left: 5%;
             width: 90%;
             height: 90%;
-            box-shadow: 0 30px 20px rgba(35, 32, 39, 0.5);
+            box-shadow: 0 1.875rem 20px rgba(35, 32, 39, 0.5);
         }
 
         .tilter__deco {
