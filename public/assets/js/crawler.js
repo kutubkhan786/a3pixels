@@ -1,337 +1,264 @@
-function marqueeInit(config) {
-    if (!document.createElement) return;
-    marqueeInit.ar.push(config);
-    marqueeInit.run(config.uniqueid);
+let mobileWidth = 640;
+let tabWidth = 1080;
+let desWidth = 1220;
+let pWidth, pHeight, screenWidth, screenHeight;
+let childCol = document.getElementsByClassName("quote-column");
+let ptransition = 3;
+let activeShow = "col-active";
+const arrowIcon = "<div class='arrow left-arrow ' onclick='arrowControl(-1)'><i class='arrow-icon'><i></div><div class='arrow right-arrow' onclick='arrowControl(1)'><i class='arrow-icon'><i></div>"
+const ArrowParent = document.createElement("div");
+ArrowParent.classList.add("arrows-wrap");
+ArrowParent.innerHTML = arrowIcon;
+let activeQuoteHeight = 400;
+function arrowFunc() {
+
 }
 
-(function() {
+getElem();
+function getElem() {
+    let hAndW;
+    let targetElem;
+    childCol[0].parentElement.style.minHeight = (childCol.length/2) * 140 + "px";// assign row element height
+    for (let i = 0; i < childCol.length; i++) {
+        targetElem = childCol[i];
+        pWidth = targetElem.parentElement.offsetWidth;
+        pHeight = targetElem.parentElement.offsetHeight;
 
-    if (!document.createElement) return;
+        //When viewing on desktop
+        if (screenWidth > tabWidth) {
+            hAndW = randomPos(60, (screenHeight / (childCol.length / 1.5))) + 'px';//Lets make the height and width variables randomly
 
-    if (typeof opera === 'undefined') { window.opera = false; }
-
-    marqueeInit.ar = [];
-
-    document.write('<style type="text/css">.marquee{white-space:nowrap;overflow:hidden;visibility:hidden;}' +
-        '#marq_kill_marg_bord{border:none!important;margin:0!important;}<\/style>');
-    var c = 0,
-        tTRE = [/^\s*$/, /^\s*/, /\s*$/, /[^\/]+$/],
-        req1 = { 'position': 'relative', 'overflow': 'hidden' },
-        defaultconfig = {
-            style: { //default style object for marquee containers without configured style
-                'margin': '0 auto'
-            },
-            direction: 'left',
-            inc: 2, //default speed - pixel increment for each iteration of a marquee's movement
-            mouse: 'pause' //default mouseover behavior ('pause' 'cursor driven' or false)
-        },
-        dash, ie = false,
-        oldie = 0,
-        ie5 = false,
-        iever = 0;
-
-    if (!ie5) {
-        dash = /-(.)/g;
-
-        function toHump(a, b) { return b.toUpperCase(); };
-        String.prototype.encamel = function() { return this.replace(dash, toHump); };
-    }
-
-    if (ie && iever < 8) {
-        marqueeInit.table = [];
-        window.attachEvent('onload', function() {
-            marqueeInit.OK = true;
-            var i = -1,
-                limit = marqueeInit.table.length;
-            while (++i < limit)
-                marqueeInit.run(marqueeInit.table[i]);
-        });
-    }
-
-    function intable(el) {
-        while ((el = el.parentNode))
-            if (el.tagName && el.tagName.toLowerCase() === 'table')
-                return true;
-        return false;
-    };
-
-    marqueeInit.run = function(id) {
-        if (ie && !marqueeInit.OK && iever < 8 && intable(document.getElementById(id))) {
-            marqueeInit.table.push(id);
-            return;
-        }
-        if (!document.getElementById(id))
-            setTimeout(function() { marqueeInit.run(id); }, 300);
-        else
-            new Marq(c++, document.getElementById(id));
-    }
-
-    function trimTags(tag) {
-        var r = [],
-            i = 0,
-            e;
-        while ((e = tag.firstChild) && e.nodeType === 3 && tTRE[0].test(e.nodeValue))
-            tag.removeChild(e);
-        while ((e = tag.lastChild) && e.nodeType === 3 && tTRE[0].test(e.nodeValue))
-            tag.removeChild(e);
-        if ((e = tag.firstChild) && e.nodeType === 3)
-            e.nodeValue = e.nodeValue.replace(tTRE[1], '');
-        if ((e = tag.lastChild) && e.nodeType === 3)
-            e.nodeValue = e.nodeValue.replace(tTRE[2], '');
-        while ((e = tag.firstChild))
-            r[i++] = tag.removeChild(e);
-        return r;
-    }
-
-    function randthem(tag) {
-        var els = oldie ? tag.all : tag.getElementsByTagName('*'),
-            i = els.length,
-            childels = [];
-        while (--i > -1) {
-            if (els[i].parentNode === tag) {
-                childels.push(els[i]);
+            // lets devide all the elements by less then 2 and positioning them left and right ont in the middle;
+            //this is for left side
+            if (i < childCol.length / 1.9) {
+                targetElem.style.left = randomPos(100, targetElem.parentElement.offsetWidth / 3 - 100) + 'px'; // X position left
+                targetElem.style.top = (targetElem.parentElement.offsetHeight / (childCol.length / 2)) * (i - 1) + 'px'; //Y position left
+            }
+            // this is for right side
+            else if (i > childCol.length / 1.9) {
+                targetElem.style.right = randomPos(100, targetElem.parentElement.offsetWidth / 3 - 100) + 'px'; // X position right
+                targetElem.style.left = 'auto'; // X position right
+                targetElem.style.top = (targetElem.parentElement.offsetHeight / (childCol.length / 2)) * ((childCol.length - 1) - i) + 'px'; //Y position right
             }
         }
-        childels.sort(function() { return 0.5 - Math.random(); });
-        i = childels.length;
-        while (--i > -1) {
-            tag.appendChild(childels[i]);
+
+        //When viewing on tab
+        if (screenWidth <= tabWidth && screenWidth >= mobileWidth) {
+            hAndW = randomPos(30, (screenHeight / (childCol.length / 1.5))) + 'px';
+            targetElem.parentElement.style.minHeight = "70vh";
+            targetElem.style.bottom = '0px'; //Y position
+            targetElem.style.left = (targetElem.parentElement.offsetWidth) / (childCol.length - 1) * (i - 1) + 'px'; // X position left
+            targetElem.style.zIndex = '100'; //Y position
+            targetElem.style.top = 'auto'; //Y position
         }
+
+        //When viewing on mobile
+        if (screenWidth < mobileWidth) {
+            try {
+                childCol[0].parentElement.appendChild(ArrowParent);// try insert arrow element for slide control
+            } catch (error) { }
+            targetElem.style.left = '50%'; // X position left
+            ArrowParent.style.display = "block";// When arrow added make them visible
+        }
+        else ArrowParent.style.display = "none";// otherwise hidden
+
+        //after all the work done lets sizing the element
+        targetElem.style.width = hAndW;
+        targetElem.style.height = hAndW;
+        //and the active one position default
+        if (i != 0) {
+            targetElem.addEventListener('click', quoteShow, false); //So we dont need click event on the active one
+        }
+        targetElem.classList.add("moves");
+    }
+    setTimeout(() => {
+        for (let i = 0; i < childCol.length; i++) {
+            //     targetElem.style.transition = "0s";
+        }
+    }, 2000);
+}
+
+
+let clickCheck = true, showClear;
+
+let showClear2;
+const elv = elem.closest(activeShow)
+function quoteShow(evt) {
+    if (clickCheck) {
+        clickCheck = false;
+        clearTimeout(showClear2);
+        let activeQuote = document.getElementsByClassName(activeShow);
+        let aq;
+        for (let j = 0; j < activeQuote.length; j++) {
+            aq = activeQuote[j];
+            aq.classList.remove("show");
+            aq.style.transition="0.4s";
+        }
+        this.style.transition="0.4s";
+        setTimeout(() => {
+            aq.style.top = this.offsetTop + "px";
+            aq.style.left = this.offsetLeft + "px";
+            aq.style.width = this.offsetWidth + "px";
+            aq.style.height = this.offsetHeight + "px";
+            aq.addEventListener('click', quoteShow, false);
+            aq.classList.remove(activeShow);
+        }, 600);
+
+        setTimeout(() => {
+            this.classList.add(activeShow);
+            this.removeEventListener("click", quoteShow, false);
+        }, 1200);
+
+        showClear2 = setTimeout(() => {
+           this.classList.toggle("show");
+           aq.style.transition="";
+           this.style.transition="";
+            clickCheck = true;
+        }, 1800);
+    }
+}
+
+let arrowClicked = true;  nowActive = 0;
+
+
+function arrowControl(val) {
+    // else nowActive += val;
+  if(arrowClicked){
+    arrowClicked = false;
+    for (let index = 0; index < childCol.length; index++) {
+        childCol[nowActive].classList.remove("show");
+        childCol[nowActive].style.transition=".4s";
+        childCol[nowActive].addEventListener('click', quoteShow, false);
+    }
+    setTimeout(() => {
+        for (let index = 0; index < childCol.length; index++) {
+            childCol[index].classList.remove(activeShow);
+        }
+        nowActive += val;
+        if (nowActive > childCol.length - 1) nowActive = 0;
+        else if (nowActive < 0) nowActive = childCol.length - 1;
+    }, 600);
+
+    setTimeout(() => {
+        childCol[nowActive].classList.add(activeShow);
+        childCol[nowActive].removeEventListener("click", quoteShow, false);
+    },610);
+
+    setTimeout(() => {
+        childCol[nowActive].classList.toggle("show");
+       childCol[nowActive].style.transition="";
+        arrowClicked = true
+    }, 1800);
+  }
+}
+
+function randomPos(min, max) {
+    return ranNum = Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function getScreenSize() {
+    screenWidth = window.innerWidth;
+    screenHeight = window.innerHeight;
+    getElem();
+}
+
+window.onresize = getScreenSize;
+window.addEventListener('resize', getScreenSize);
+window.addEventListener('load', function () {
+    getScreenSize();
+    getElem();
+}, true);
+
+
+//Flaoting animation class;
+class MoveAnim {
+    constructor(max, tm) {
+        this.time = tm;
+        if(Math.random() > .5) this.uDVal = max; else this.uDVal = 0;
+        if(Math.random() > .5) this.lRVal = max; else this.lRVal = 0;
+        this.max = max;
+       if(Math.random() > .5) this.uD = false; else this.uD = true;
+       if(Math.random() > .5)  this.lR = false; else  this.lR = true;
+        this.upDown(this.max);
+        this.leftRight(this.max);
+      this.scale = .01;
     }
 
-    function Marq(c, tag) {
-        var p, u, s, a, ims, ic, i, marqContent, cObj = this;
-        this.mq = marqueeInit.ar[c];
-        if (this.mq.random) {
-            if (tag.getElementsByTagName && tag.getElementsByTagName('tr').length === 1 && tag.childNodes.length === 1) {
-                randthem(tag.getElementsByTagName('tr')[0]);
-            } else {
-                randthem(tag);
+    upDown() {
+        setInterval(() => {
+            if (!this.uDVal) {
+                if (this.uD >= this.max) {this.uDVal = true;}
+                if (this.uD < this.max) {this.uD += this.scale;}
             }
-        }
-        for (p in defaultconfig)
-            if ((this.mq.hasOwnProperty && !this.mq.hasOwnProperty(p)) || (!this.mq.hasOwnProperty && !this.mq[p]))
-                this.mq[p] = defaultconfig[p];
-        this.mq.direction = this.mq.persist && this.cookie.get(this.mq.uniqueid) ? this.cookie.get(this.mq.uniqueid).split(':')[2] : this.mq.direction;
-        this.mq.style.width = !this.mq.style.width || isNaN(parseInt(this.mq.style.width)) ? '100%' : this.mq.style.width;
-        if (!tag.getElementsByTagName('img')[0])
-            this.mq.style.height = !this.mq.style.height || isNaN(parseInt(this.mq.style.height)) ? tag.offsetHeight + 3 + 'px' : this.mq.style.height;
-        else
-            this.mq.style.height = !this.mq.style.height || isNaN(parseInt(this.mq.style.height)) ? 'auto' : this.mq.style.height;
-        u = this.mq.style.width.split(/\d/);
-        this.cw = this.mq.style.width ? [parseInt(this.mq.style.width), u[u.length - 1]] : ['a'];
-        marqContent = trimTags(tag);
-        tag.className = tag.id = '';
-        tag.removeAttribute('class', 0);
-        tag.removeAttribute('id', 0);
-        if (ie)
-            tag.removeAttribute('className', 0);
-        tag.appendChild(tag.cloneNode(false));
-        tag.className = ['marquee', c].join('');
-        tag.style.overflow = 'hidden';
-        this.c = tag.firstChild;
-        this.c.appendChild(this.c.cloneNode(false));
-        this.c.style.visibility = 'hidden';
-        a = [
-            [req1, this.c.style],
-            [this.mq.style, this.c.style]
-        ];
-        for (i = a.length - 1; i > -1; --i)
-            for (p in a[i][0])
-                if ((a[i][0].hasOwnProperty && a[i][0].hasOwnProperty(p)) || (!a[i][0].hasOwnProperty))
-                    a[i][1][p.encamel()] = a[i][0][p];
-        this.m = this.c.firstChild;
-        if (this.mq.mouse === 'pause') {
-            this.c.onmouseover = function() { cObj.mq.stopped = true; };
-            this.c.onmouseout = function() { cObj.mq.stopped = false; };
-        }
-        this.m.style.position = 'absolute';
-        this.m.style.left = '-10000000px';
-        this.m.style.whiteSpace = 'nowrap';
-        if (ie5) this.c.firstChild.appendChild((this.m = document.createElement('nobr')));
-        if (!this.mq.noAddedSpace)
-            this.m.appendChild(document.createTextNode('\xa0'));
-        for (i = 0; marqContent[i]; ++i)
-            this.m.appendChild(marqContent[i]);
-        if (ie5) this.m = this.c.firstChild;
-        ims = this.m.getElementsByTagName('img');
-        if (ims.length) {
-            for (ic = 0, i = 0; i < ims.length; ++i) {
-                ims[i].style.display = 'inline';
-                if (!ims[i].alt && !this.mq.noAddedAlt) {
-                    ims[i].alt = (tTRE[3].exec(ims[i].src)) || ('Image #' + [i + 1]);
-                    if (!ims[i].title) { ims[i].title = ''; }
-                }
-                ims[i].style.display = 'inline';
-                ims[i].style.verticalAlign = ims[i].style.verticalAlign || 'top';
-                if (typeof ims[i].complete === 'boolean' && ims[i].complete)
-                    ic++;
-                else {
-                    ims[i].onload = ims[i].onerror = function() {
-                        if (++ic === ims.length)
-                            cObj.setup(c);
-                    };
-                }
-                if (ic === ims.length)
-                    this.setup(c);
+            else if (this.uDVal) {
+                if (this.uD <= -this.max) {this.uDVal = false;}
+                if (this.uD >= -this.max) {this.uD -= this.scale;}
             }
-        } else this.setup(c)
+            return this.uD;
+        },  this.time/1000);
     }
-
-    Marq.prototype.setup = function(c) {
-        if (this.mq.setup) return;
-        this.mq.setup = this;
-        var s, w, cObj = this,
-            exit = 10000;
-        if (this.c.style.height === 'auto')
-            this.c.style.height = this.m.offsetHeight + 4 + 'px';
-        this.c.appendChild(this.m.cloneNode(true));
-        this.m = [this.m, this.m.nextSibling];
-        if (typeof this.mq.initcontent === 'function') {
-            this.mq.initcontent.apply(this.mq, [this.m]);
-        }
-        if (this.mq.mouse === 'cursor driven') {
-            this.r = this.mq.neutral || 16;
-            this.sinc = this.mq.inc;
-            this.c.onmousemove = function(e) {
-                cObj.mq.stopped = false;
-                cObj.directspeed(e)
-            };
-            if (this.mq.moveatleast) {
-                this.mq.inc = this.mq.moveatleast;
-                if (this.mq.savedirection) {
-                    if (this.mq.savedirection === 'reverse') {
-                        this.c.onmouseout = function(e) {
-                            if (cObj.contains(e)) return;
-                            cObj.mq.inc = cObj.mq.moveatleast;
-                            cObj.mq.direction = cObj.mq.direction === 'right' ? 'left' : 'right';
-                        };
-                    } else {
-                        this.mq.savedirection = this.mq.direction;
-                        this.c.onmouseout = function(e) {
-                            if (cObj.contains(e)) return;
-                            cObj.mq.inc = cObj.mq.moveatleast;
-                            cObj.mq.direction = cObj.mq.savedirection;
-                        };
-                    }
-                } else
-                    this.c.onmouseout = function(e) { if (!cObj.contains(e)) cObj.mq.inc = cObj.mq.moveatleast; };
-            } else
-                this.c.onmouseout = function(e) { if (!cObj.contains(e)) cObj.slowdeath(); };
-        }
-        this.w = this.m[0].offsetWidth;
-        this.m[0].style.left = this.mq.persist && this.cookie.get(this.mq.uniqueid) ? this.cookie.get(this.mq.uniqueid).split(':')[0] : 0;
-        this.c.id = 'marq_kill_marg_bord';
-        this.m[0].style.top = this.m[1].style.top = Math.floor((this.c.offsetHeight - this.m[0].offsetHeight) / 2 - oldie) + 'px';
-        this.c.id = '';
-        this.c.removeAttribute('id', 0);
-        this.m[1].style.left = this.mq.persist && this.cookie.get(this.mq.uniqueid) ? this.cookie.get(this.mq.uniqueid).split(':')[1] : this.w + 'px';
-        s = this.mq.moveatleast ? Math.max(this.mq.moveatleast, this.sinc) : (this.sinc || this.mq.inc);
-        while (this.c.offsetWidth > this.w - s && --exit) {
-            w = isNaN(this.cw[0]) ? this.w - s : --this.cw[0];
-            if (w < 1 || this.w < Math.max(1, s)) { break; }
-            this.c.style.width = isNaN(this.cw[0]) ? this.w - s + 'px' : --this.cw[0] + this.cw[1];
-        }
-        this.c.style.visibility = 'visible';
-        this.runit();
-    }
-
-    Marq.prototype.slowdeath = function() {
-        var cObj = this;
-        if (this.mq.inc) {
-            this.mq.inc -= 1;
-            this.timer = setTimeout(function() { cObj.slowdeath(); }, 100);
-        }
-    }
-
-    Marq.prototype.runit = function() {
-        var cObj = this,
-            d = this.mq.direction === 'right' ? 1 : -1;
-        if (this.mq.stopped || this.mq.stopMarquee) {
-            setTimeout(function() { cObj.runit(); }, 300);
-            return;
-        }
-        if (this.mq.mouse != 'cursor driven')
-            this.mq.inc = Math.max(1, this.mq.inc);
-        if (d * parseInt(this.m[0].style.left) >= this.w)
-            this.m[0].style.left = parseInt(this.m[1].style.left) - d * this.w + 'px';
-        if (d * parseInt(this.m[1].style.left) >= this.w)
-            this.m[1].style.left = parseInt(this.m[0].style.left) - d * this.w + 'px';
-        this.m[0].style.left = parseInt(this.m[0].style.left) + d * this.mq.inc + 'px';
-        this.m[1].style.left = parseInt(this.m[1].style.left) + d * this.mq.inc + 'px';
-        if (window.opera && this.mq.persist) {
-            this.cookie.set(this.mq.uniqueid, this.m[0].style.left + ':' + this.m[1].style.left + ':' + this.mq.direction);
-        }
-        setTimeout(function() { cObj.runit(); }, 30 + (this.mq.addDelay || 0));
-    }
-
-    Marq.prototype.cookie = {
-        set: function(n, v, d) { // cook.set takes (name, value, optional_persist_days) - defaults to session if no days specified
-            if (d) {
-                var dt = new Date();
-                dt.setDate(dt.getDate() + d);
-                d = '; expires=' + dt.toGMTString();
+    leftRight() {
+        setInterval(() => {
+            if (!this.lRVal) {
+                if (this.lR >= this.max) {this.lRVal = true;}
+                if (this.lR < this.max) {this.lR += this.scale;}
             }
-            document.cookie = n + '=' + escape(v) + (d || '') + '; path=/';
-        },
-        get: function(n) { // cook.get takes (name)
-            var c = document.cookie.match('(^|;)\x20*' + n + '=([^;]*)');
-            return c ? unescape(c[2]) : null;
-        },
-        kill: function(n) { // cook.kill takes (name)
-            cook.set(n, '', -1);
-        },
-        killall: function() { // cook.killall takes no parameters
-            var cookies = document.cookie.split(';'),
-                i = cookies.length - 1;
-            for (i; i > -1; --i) {
-                cook.kill(cookies[i].split('=')[0]);
+            else if (this.lRVal) {
+                if (this.lR <= -this.max) { this.lRVal = false; }
+                if (this.lR >= -this.max) {this.lR -= this.scale; }
             }
-        }
-    };
-
-    Marq.prototype.directspeed = function(e) {
-        e = e || window.event;
-        if (this.timer) clearTimeout(this.timer);
-        var c = this.c,
-            w = c.offsetWidth,
-            l = c.offsetLeft,
-            mp = (typeof e.pageX === 'number' ?
-                e.pageX : e.clientX + document.body.scrollLeft + document.documentElement.scrollLeft) - l,
-            lb = (w - this.r) / 2,
-            rb = (w + this.r) / 2;
-        while ((c = c.offsetParent)) mp -= c.offsetLeft;
-        this.mq.direction = mp > rb ? 'left' : 'right';
-        this.mq.inc = Math.round((mp > rb ? (mp - rb) : mp < lb ? (lb - mp) : 0) / lb * this.sinc);
+            return this.lR;
+        },  this.time/1000);
     }
 
-    Marq.prototype.contains = function(e) {
-        if (e && e.relatedTarget) {
-            var c = e.relatedTarget;
-            if (c === this.c) return true;
-            while ((c = c.parentNode))
-                if (c === this.c) return true;
-        }
-        return false;
-    }
+    letMove(el, ud = false, lr = false) {
 
-
-
-    function unload() {
-        for (var m, i = 0; i < marqueeInit.ar.length; ++i) {
-            if (marqueeInit.ar[i] && marqueeInit.ar[i].persist && marqueeInit.ar[i].setup) {
-                m = marqueeInit.ar[i].setup;
-                m.cookie.set(m.mq.uniqueid, m.m[0].style.left + ':' + m.m[1].style.left + ':' + m.mq.direction);
+        setInterval(() => {
+            if (ud === true && lr === false) {
+                el.style.transform = "matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, " + 0 + "," + this.uD + ", 0, 1)";
             }
+            else if (ud === false && lr === true) {
+                el.style.transform = "matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, " + this.lR + "," + 0 + ", 0, 1)";
+            }
+            else {
+                el.style.transform = "matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, " + this.lR + "," + this.uD + ", 0, 1)";
+            }
+
+
+        }, 1);
+    }
+
+    start(elem, ud, lr) {
+        this.letMove(elem, ud, lr);
+        this.upDown();
+        this.leftRight();
+    }
+}
+
+class ShowAnim {
+    constructor(mElem, dist, times) {
+        this.mElem = document.getElementsByClassName(mElem);
+        this.pElem = mElem.parentElement;
+        this.cElem = mElem.children;
+        this.count = 0;
+        this.max = dist;
+        this.min = 10;
+        this.times = times;
+        this.randomCount(this.max);
+    }
+    randomCount(max) {
+        return Math.floor(Math.random() * (max - this.min - 1)) + this.min;
+    }
+    show(ud, lr) {
+        for (this.count = 0; this.count < this.mElem.length; this.count++) {
+            this.moveanim = new MoveAnim(this.randomCount(this.max), this.times,);
+            this.moveanim.start(this.mElem[this.count], ud, lr);
         }
     }
+}
 
-    if (window.addEventListener) {
-        window.addEventListener('resize', resize, false);
-        window.addEventListener('unload', unload, false);
-    } else if (window.attachEvent) {
-        window.attachEvent('onresize', resize);
-        window.attachEvent('onunload', unload);
-    }
 
-})();
+let animShow = new ShowAnim("moves", 40, 2000);// Element, Max Distance, Times in milliseconds
+
+//Start floating
+animShow.show(true, false);// Up-Down, Left-Right;

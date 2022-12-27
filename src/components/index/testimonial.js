@@ -4,7 +4,7 @@ export default function () {
   return (<>
     {/* <!-- Start DEMO HTML (Use the following code into your project)--> */}
     <section class="client pt-3 pb-5">
-      <div class="container">
+      <div class="container ">
         <div class="row text-center">
           <div class="col-12">
 
@@ -119,14 +119,16 @@ export default function () {
               </div>
             </div>
             <div class="controls push-right">
-              <a class="left fa fa-chevron-left text-white btn btn btn-outline-light" href="#carouselExampleCaptions"
-                data-bs-slide="prev"></a>
-              <a class="right fa fa-chevron-right text-white btn btn btn-outline-light" href="#carouselExampleCaptions"
+              <a class="fa fa-chevron-left text-white " href="#carouselExampleCaptions"
+                data-bs-slide="prev"></a> &nbsp;&nbsp;&nbsp;&nbsp;
+              <a class="fa fa-chevron-right text-white " href="#carouselExampleCaptions"
                 data-bs-slide="next"></a>
             </div>
           </div>
         </div>
+
       </div>
+
     </section>
     {/* <!-- END EDMO HTML (Happy Coding!)--> */}
     </>

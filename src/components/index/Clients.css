@@ -1,7 +1,6 @@
 .img-scroll {
     width: 200px;
     height: 80px;
-    animation: scroll 60s linear infinite;
 }
 
 .slide-track {

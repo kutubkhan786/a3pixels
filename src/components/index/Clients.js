@@ -1,9 +1,9 @@
-import React from 'react'
+importimport React from 'react'
 import './Clients.css'
 
 function Clients() {
   return (
-    <>
+importimportimportimport
       <div class="slider">
         <div class="container">
           <div class="section-title mb-3" data-aos="zoom-out">
@@ -11,85 +11,121 @@ function Clients() {
             {/* <h2>Who are our clients</h2> */}
           </div>
         </div>
-        <div class='row' >
-          <div class="slide-track pb-4">
-
-            <div class="slide">
-              <img class="img-scroll" src="/img/clients/Client__1.jpg" />
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class='row pl-4' >
+                <div class="slide-track pb-4">
+                  <div class="slide">
+                    <img class="img-scroll" src="/img/clients/Client__1.jpg" />
+                  </div>
+                  <div class="slide">
+                    <img class="img-scroll" src="/img/clients/Client__2.jpg" />
+                  </div>
+                  <div class="slide">
+                    <img class="img-scroll" src="/img/clients/Client__3.jpg" />
+                  </div>
+                  <div class="slide">
+                    <img class="img-scroll" src="/img/clients/Client__4.jpg" />
+                  </div>
+                </div>
+                <div class="slide-track pb-4">
+                  <div class="slide">
+                    <img class="img-scroll" src="/img/clients/Client__1.jpg" />
+                  </div>
+                  <div class="slide">
+                    <img class="img-scroll" src="/img/clients/Client__2.jpg" />
+                  </div>
+                  <div class="slide">
+                    <img class="img-scroll" src="/img/clients/Client__3.jpg" />
+                  </div>
+                  <div class="slide">
+                    <img class="img-scroll" src="/img/clients/Client__4.jpg" />
+                  </div>
+                </div>
+              </div>
+              </div>
+              <div class="carousel-item">
+              <div class='row' >
+                <div class="slide-track pb-4">
+                  <div class="slide">
+                    <img class="img-scroll" src="/img/clients/Client__1.jpg" />
+                  </div>
+                  <div class="slide">
+                    <img class="img-scroll" src="/img/clients/Client__2.jpg" />
+                  </div>
+                  <div class="slide">
+                    <img class="img-scroll" src="/img/clients/Client__3.jpg" />
+                  </div>
+                  <div class="slide">
+                    <img class="img-scroll" src="/img/clients/Client__4.jpg" />
+                  </div>
+                </div>
+                <div class="slide-track pb-4">
+                  <div class="slide">
+                    <img class="img-scroll" src="/img/clients/Client__1.jpg" />
+                  </div>
+                  <div class="slide">
+                    <img class="img-scroll" src="/img/clients/Client__2.jpg" />
+                  </div>
+                  <div class="slide">
+                    <img class="img-scroll" src="/img/clients/Client__3.jpg" />
+                  </div>
+                  <div class="slide">
+                    <img class="img-scroll" src="/img/clients/Client__4.jpg" />
+                  </div>
+                </div>
+              </div>
+              </div>
+              <div class="carousel-item">
+              <div class='row' >
+                <div class="slide-track pb-4">
+                  <div class="slide">
+                    <img class="img-scroll" src="/img/clients/Client__1.jpg" />
+                  </div>
+                  <div class="slide">
+                    <img class="img-scroll" src="/img/clients/Client__2.jpg" />
+                  </div>
+                  <div class="slide">
+                    <img class="img-scroll" src="/img/clients/Client__3.jpg" />
+                  </div>
+                  <div class="slide">
+                    <img class="img-scroll" src="/img/clients/Client__4.jpg" />
+                  </div>
+                </div>
+                <div class="slide-track pb-4">
+                  <div class="slide">
+                    <img class="img-scroll" src="/img/clients/Client__1.jpg" />
+                  </div>
+                  <div class="slide">
+                    <img class="img-scroll" src="/img/clients/Client__2.jpg" />
+                  </div>
+                  <div class="slide">
+                    <img class="img-scroll" src="/img/clients/Client__3.jpg" />
+                  </div>
+                  <div class="slide">
+                    <img class="img-scroll" src="/img/clients/Client__4.jpg" />
+                  </div>
+                </div>
+              </div>
+              </div>
             </div>
-            <div class="slide">
-              <img class="img-scroll" src="/img/clients/Client__2.jpg" />
-            </div>
-            <div class="slide">
-              <img class="img-scroll" src="/img/clients/Client__3.jpg" />
-            </div>
-            <div class="slide">
-              <img class="img-scroll" src="/img/clients/Client__4.jpg" />
-            </div>
-            <div class="slide">
-              <img class="img-scroll" src="/img/clients/Client__5.jpg" />
-            </div>
-            <div class="slide">
-              <img class="img-scroll" src="/img/clients/Client__6.jpg" />
-            </div>
-            <div class="slide">
-              <img class="img-scroll" src="/img/clients/Client__7.jpg" />
-            </div>
-            <div class="slide">
-              <img class="img-scroll" src="/img/clients/Client__8.jpg" />
-            </div>
-            <div class="slide">
-              <img class="img-scroll" src="/img/clients/Client__9.jpg" />
-            </div>
-            <div class="slide">
-              <img class="img-scroll" src="/img/clients/Client__10.jpg" />
-            </div>
-            <div class="slide">
-              <img class="img-scroll" src="/img/clients/Client__11.jpg" />
-            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
           </div>
-          <div class="slide-track">
 
 
-            <div class="slide">
-              <img class="img-scroll" src="/img/clients/Client__12.jpg" />
-            </div>
-            <div class="slide">
-              <img class="img-scroll" src="/img/clients/Client__13.jpg" />
-            </div>
-            <div class="slide">
-              <img class="img-scroll" src="/img/clients/Client__14.jpg" />
-            </div>
-            <div class="slide">
-              <img class="img-scroll" src="/img/clients/Client__15.jpg" />
-            </div>
-            <div class="slide">
-              <img class="img-scroll" src="/img/clients/Client__16.jpg" />
-            </div>
-            <div class="slide">
-              <img class="img-scroll" src="/img/clients/Client__17.jpg" />
-            </div>
-            <div class="slide">
-              <img class="img-scroll" src="/img/clients/Client__18.jpg" />
-            </div>
-            <div class="slide">
-              <img class="img-scroll" src="/img/clients/Client__19.jpg" />
-            </div>
-            <div class="slide">
-              <img class="img-scroll" src="/img/clients/Client__20.jpg" />
-            </div>
-            <div class="slide">
-              <img class="img-scroll" src="/img/clients/Client__15.jpg" />
-            </div>
-            <div class="slide">
-              <img class="img-scroll" src="/img/clients/Client__21.jpg" />
-            </div>
-          </div>
 
+          
         </div>
-      </div>
-    </>
-  )
+      </>
+      )
 }
 
-export default Clients
+      export default Clients
