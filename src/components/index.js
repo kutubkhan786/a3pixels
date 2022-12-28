@@ -10,7 +10,8 @@ import Navbar from './navbar/Nav.js';
 import Footer from './footer/Footer.js';
 
 function App() {
-
+    
+    
     return (<>
         <div id="loader" ></div>
         <div id="content1">
@@ -18,14 +19,14 @@ function App() {
 
             {/* <!-- ======= Head Section ======= --> */}
 
-            <section className="el">
+            <section id='home' className="el">
                 <div className="fit-screen">
 
 
 
                     <div className="fit-card h-1000 d-flex align-items-center justify-content-center ">
                         {/* <div className="bg-box"> */}
-                        <img src="/img/banner.png" alt=""/>
+                        <img src="/img/banner.png"  alt=""/>
 
                         <p > WE ARE
                             <b>  A3PIXELS  </b>
@@ -36,10 +37,11 @@ function App() {
                 </div>
 
             </section>
+            {/* <button id="back-to-top-btn">Back to Top</button> */}
 
             {/* <!-- ======= Services Section ======= --> */}
             {/* <!-- <div className='merg' id="services"> --> */}
-            <section className="til" data-aos="fade-up" data-aos-duration="1000">
+            <section id="services" className="til" data-aos="fade-up" data-aos-duration="1000">
                 <div className='container'>
                     <div className="row" data-aos="zoom-out">
 
@@ -85,7 +87,7 @@ function App() {
                                     <div className="row content yello-box">
 
                                     </div>
-                                    <div className="container-fluid">
+                                    <div  className="container-fluid">
                                         <div className="row">
                                             <About Aboutstyle="card yellow" Aboutlogo="\img\about\Icon_01.png" Aboutdec="Good user interface design helps people work more assertively, complete tasks more efficiently and build brand loyalty at the same time." AboutTitle="UI DESIGN" />
                                             <About Aboutstyle="card grey " Aboutlogo="\img\about\Icon_03.png" Aboutdec="We specialize in creating customized learning solutions with latest technical language to cultivate visually outstanding, animated text, frame and more informative design.
@@ -152,7 +154,7 @@ function App() {
 
             {/* <!-- =====Our Latest Work====== --> */}
 
-            <section className="latest  ">
+            <section id='latest' className="latest  ">
                 <div className="fix-latest">
                     <div className="section-title ml-4 mb-3 pl-0 w-" data-aos="zoom-out">
                         <p >OUR LATEST WORK</p>
@@ -194,8 +196,8 @@ We develop the most effective marketing solutions based on your unique business 
                         <p>Portfolio</p>
                         <h2>What we've done</h2>
                     </div>
-
-                    <ul id="portfolio-flters" className="d-flex justify-content-center p-0" data-aos="fade-up">
+                    
+                    <ul id="portfolio-flters" className=" portfolio-filter d-flex justify-content-center p-0" data-aos="fade-up">
                         <li data-filter="*" className="filter-active pl-4 pr-4">All</li>
                         <li data-filter=".e-learning" >E-LEARNING</li>
                         <li data-filter=".localization">LOCALIZATION</li>
@@ -204,6 +206,7 @@ We develop the most effective marketing solutions based on your unique business 
                         <li data-filter=".multitude">MULTIMEDIA PRESENTATION</li>
                         <li data-filter=".logo">LOGO & PRINT DESIGN</li>
                     </ul>
+                    
                     <div className="divScroll">
                         <div className="row portfolio-container" data-aos="fade-up">
                             <Portfolio logo="/img/portfolio/Elearning/0_BPCL/01_UI_design_menu.jpg" PortTitle="Banking & Finance" PortDec="E-learning" filter="e-learning" />
@@ -376,7 +379,7 @@ We develop the most effective marketing solutions based on your unique business 
             {/* <!-- Our Company --> */}
 
             <Footer />
-            <a href={"/"} className="back-to-top d-flex align-items-center justify-content-center"><i className="bi bi-arrow-up-short"></i></a>
+            
         </div>
     </>
 

@@ -75,7 +75,7 @@ function Clients() {
               <div className='row' >
                 <div className="slide-track pb-4 d-flex align-items-center justify-content-center">
                   <div className="slide">
-                    <img className="img-scroll" src="/img/clients/Client__1.jpg" alt=""/>
+                    <img className="img-scroll " src="/img/clients/Client__1.jpg" alt=""/>
                   </div>
                   <div className="slide">
                     <img className="img-scroll" src="/img/clients/Client__2.jpg" alt=""/>
@@ -101,11 +101,11 @@ function Clients() {
                   </div></div>
               </div>
             </div>
-            <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <a className="carousel-control-prev " href="#carouselExampleControls" role="button" data-slide="prev">
               <span className="carousel-control-prev-icon" aria-hidden="true"></span>
               <span className="sr-only">Previous</span>
             </a>
-            <a className="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <a className="carousel-control-next " href="#carouselExampleControls" role="button" data-slide="next">
               <span className="carousel-control-next-icon" aria-hidden="true"></span>
               <span className="sr-only">Next</span>
             </a>

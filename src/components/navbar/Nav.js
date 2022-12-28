@@ -27,7 +27,7 @@ export default function Nav() {
         }}>
         <ul  h-100 d-flex align-items-center justify-content-center>
         <div className='left'>
-            <li><a className="nav-link scrollto" href="#header">Home</a></li>
+            <li><a className="nav-link scrollto" href="#home">Home</a></li>
             <li><a className="nav-link scrollto" href="#about">About</a></li>
             <li><a className="nav-link scrollto" href="#services">Services</a></li>
         </div>
@@ -40,9 +40,9 @@ export default function Nav() {
             <li><a className="nav-link scrollto" href="#latest">Latest</a></li>
             <li><a className="nav-link scrollto" href="#cta">Contact</a></li>
         </div>
-        
         </ul>
       </nav>
+        <i class="bi bi-list fixed-top mobile-nav-toggle "></i>
       </header>
       </div>
  
@@ -50,36 +50,3 @@ export default function Nav() {
 }
 
 
-// import React from 'react';
-// import './Nav.css';
-
-// function nav() {
-//     return (<>
-//         <div className="container_nav d-flex align-items-center justify-content-between">
-//             <header id="header" className="fixed-top d-flex align-items-center">
-//                 <nav id="navbar" className="navbar">
-//                     <ul>
-//                         <div className='left'>
-//                             <li><a className="nav-link scrollto" href="#header">Home</a></li>
-//                             <li><a className="nav-link scrollto" href="#about">About</a></li>
-//                             <li><a className="nav-link scrollto" href="#services">Services</a></li>
-//                         </div>
-//                         <div className="logo">
-//                             <a href="index.html"><img src="/img/logo.png"  className="img-fluid" /></a>
-//                         </div>
-//                         <div className='right'>
-//                             <li><a className="nav-link scrollto" href="#portfolio">Portfolio</a></li>
-//                             <li><a className="nav-link scrollto" href="#latest">Latest</a></li>
-//                             <li><a className="nav-link scrollto" href="#cta">Contact</a></li>
-//                         </div>
-//                     </ul>
-//                     {/* <i className="bi bi-list mobile-nav-toggle"></i> */}
-//                 </nav>
-
-//             </header>
-
-//         </div>
-//     </>
-//     )
-// }
-// export default nav;
