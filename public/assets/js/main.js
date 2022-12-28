@@ -249,7 +249,7 @@ onReady(function () {
     setTimeout(() => {
         show('content1', true);
         show('loader', false);
-    },5200);
+    },5);
 });
 
 //   

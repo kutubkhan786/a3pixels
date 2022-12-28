@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import "./nav.css";
 export default function Nav() {
-  const [navSize, setnavSize] = useState("70px");
+  const [navSize, setnavSize] = useState("4.375rem");
   const [navWidth, setnavWidth] = useState("100%");
   const [navColor, setnavColor] = useState("transparent");
   const listenScrollEvent = () => {
     window.scrollY > 10 ? setnavColor("#000") : setnavColor("transparent");
     window.scrollY > 10 ? setnavWidth("100%") : setnavWidth("100%");
-    window.scrollY > 10 ? setnavSize("70px") : setnavSize("70px");
+    window.scrollY > 10 ? setnavSize("4.375rem") : setnavSize("4.375rem");
   };
   useEffect(() => {
     window.addEventListener("scroll", listenScrollEvent);
@@ -27,12 +27,12 @@ export default function Nav() {
         }}>
         <ul  h-100 d-flex align-items-center justify-content-center>
         <div className='left'>
-            <li><a className="nav-link scrollto" href="#home">Home</a></li>
+            <li><a className="nav-link scrollto active" href="#home">Home</a></li>
             <li><a className="nav-link scrollto" href="#about">About</a></li>
             <li><a className="nav-link scrollto" href="#services">Services</a></li>
         </div>
         <div className="logo">
-                            <a href="index.html"><img src="/img/logo.png"  alt="" /></a>
+                            <a href="#home"><img src="/img/logo.png"  alt="" /></a>
                         </div>
      
         <div className='right'>

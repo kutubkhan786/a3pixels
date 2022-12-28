@@ -22,17 +22,17 @@ function App() {
             <section id='home' className="el">
                 <div className="fit-screen">
 
-
-
                     <div className="fit-card h-1000 d-flex align-items-center justify-content-center ">
                         {/* <div className="bg-box"> */}
                         <img src="/img/banner.png"  alt=""/>
 
-                        <p > WE ARE
-                            <b>  A3PIXELS  </b>
+                        <p className='pb-0 kk'> WE ARE
+                            <b className='pb-0 '>  A3PIXELS  </b>
                             AN E-LEARNING DESIGN AND PRODUCTION HOUSE.
-                            <p className="para">We design & develop effective e-learning programs, websites and prints.
+                            <p className="para pt-2 m-0 h-100 d-flex align-items-center justify-content-center">We design & develop effective e-learning programs, websites and prints.
                                 With us, your project is sure to deliver results.</p></p>
+    
+
                     </div>
                 </div>
 
@@ -41,6 +41,7 @@ function App() {
 
             {/* <!-- ======= Services Section ======= --> */}
             {/* <!-- <div className='merg' id="services"> --> */}
+            
             <section id="services" className="til" data-aos="fade-up" data-aos-duration="1000">
                 <div className='container'>
                     <div className="row" data-aos="zoom-out">
@@ -58,7 +59,9 @@ function App() {
 
 
             {/* <!-- ======= About Section ======= --> */}
-            <section id="about" className="about">
+            <section id="about" className='p-4 m-4 '>
+            </section>
+            <section  className="about">
                 <div className="container">
                     <div className="section-title mb-2" data-aos="zoom-out">
                         <p>About Us</p>
@@ -102,10 +105,14 @@ function App() {
                     </div>
                 </div>
             </section>
+            <section id="cta" className='p-4 m-4 '>
+            </section>
             {/* <!-- End About Section --> */}
             {/* <!-- this is the call for enquiry --> */}
             {/* <!-- ======= Cta Section ======= --> */}
-            <section id="cta" className="cta">
+            {/* <section id="cta"className='p-3 '>
+            </section> */}
+            <section  className="cta">
                 <div className="container">
 
                     <div className="row" data-aos="zoom-out">
@@ -153,8 +160,9 @@ function App() {
 
 
             {/* <!-- =====Our Latest Work====== --> */}
-
-            <section id='latest' className="latest  ">
+            <section id='latest'className='p-3 '>
+            </section>
+            <section  className="latest  ">
                 <div className="fix-latest">
                     <div className="section-title ml-4 mb-3 pl-0 w-" data-aos="zoom-out">
                         <p >OUR LATEST WORK</p>
@@ -189,7 +197,9 @@ We develop the most effective marketing solutions based on your unique business 
             {/* <!-- End Testimonials Section --> */}
 
             {/* <!-- ======= Portfolio Section ======= --> */}
-            <section id="portfolio" className="portfolio">
+            <section id="portfolio" className='p-3 '>
+            </section>
+            <section  className="portfolio">
                 <div className="container">
 
                     <div className="section-title mb-3" data-aos="zoom-out">
