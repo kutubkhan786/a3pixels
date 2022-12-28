@@ -22,6 +22,7 @@
     /* padding: auto; */
     margin: auto;
     max-height: 2.5rem;
+    
     /* margin-top: 0.938rem;
             margin-left: 3.5vw; */
 }
@@ -29,6 +30,8 @@
 .navbar {
     padding: auto;
     margin: 0 auto 0 auto;
+    color: rgb(255, 255, 255);
+
 }
 
 .right {
@@ -58,6 +61,7 @@
 
 .navbar li {
     position: relative;
+    padding: 0 0.35rem;
 }
 
 .navbar a,
@@ -65,9 +69,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0.313rem 0.938rem 0.438rem 0.938rem;
-    font-size: 1.2rem;
-    color: rgb(255, 255, 255);
+    padding: 0.313rem 0.938rem 0.313rem 0.938rem;
+    font-size: 1rem;
     white-space: nowrap;
     transition: 0.3s;
     border-radius: 5.706rem;
@@ -84,6 +87,7 @@
 .navbar .active:focus,
 .navbar li:hover>a {
     background: #fdcd00;
+    color: black;
     align-items: center;
     /* height: auto;
     margin-right: 2vh;
