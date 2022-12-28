@@ -11,6 +11,7 @@ import Footer from './footer/Footer.js';
 
 function App() {
 
+   
     return (<>
         <div id="loader" ></div>
         <div id="content1">
@@ -25,7 +26,7 @@ function App() {
 
                     <div className="fit-card h-1000 d-flex align-items-center justify-content-center ">
                         {/* <div className="bg-box"> */}
-                        <img src="/img/banner.png" alt=""/>
+                        <img src="/img/banner.png" alt="" />
 
                         <p > WE ARE
                             <b>  A3PIXELS  </b>
@@ -79,7 +80,7 @@ function App() {
                             <div className="row">
                                 <div className="col-lg-5">
                                     <h4 className="section-title  mb-0"><b>WHAT WE DO</b></h4>
-                                    <img className='img-fluid about0' src="/img/logos/about-side.png" alt=""/>
+                                    <img className='img-fluid about0' src="/img/logos/about-side.png" alt="" />
                                 </div>
                                 <div className="col-lg-7 pt-4 pt-lg-0 ">
                                     <div className="row content yello-box">
@@ -119,36 +120,54 @@ function App() {
                     </div>
                 </div>
             </section>
-            {/* <!-- End Cta Section --> */}
 
-
-            {/* <!-- cta code donot remove it bsdk --> */}
             <div className="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
                 <div className="modal-dialog" role="document">
                     <div className="modal-content">
                         <div className="modal-header">
-                            <button type="button" className="close" data-dismiss="modal" aria-label="Close"><span
-                                aria-hidden="true">&times;</span></button>
-                            <h4 className="modal-title" id="myModalLabel">Modal title</h4>
+                            <button type="button" className="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&#215;</span></button>
+                            <h4 className="modal-title" id="myModalLabel">ENQUIRY</h4>
                         </div>
                         <div className="modal-body">
                             <div id="response"></div>
 
                             <div className="form-group">
-                                <input type="text" className="form-control" />
+                                <label for="requirements">Select Your requirements:</label>
+                                <select name="requirements" id="requirements" className='form-control'>
+                                    <option value="elearning">E-Learning Developement</option>
+                                    <option value="translation">Translation & Localization</option>
+                                    <option value="website">Website Developement</option>
+                                    <option value="print">Print & Media</option>
+                                </select>
                             </div>
+
+
                             <div className="form-group">
-                                <input type="text" className="form-control" />
+                            <input type="text" className="form-control" placeholder="Enter your company name" />
                             </div>
+
+                            <div className="form-group">
+                            <input type="text" className="form-control" placeholder="Enter your Name" />
+                            </div>
+                           
+                            <div className="form-group">
+                            <input type="email" className="form-control" placeholder="Enter email e.g example@xyz.com" />
+                            </div>
+
+                            <div className="form-group">
+                            <textarea type="text" className="form-control" placeholder="Enter your requirement details..." clos='10' rows='2' />
+                            </div>
+
                         </div>
                         <div className="modal-footer">
                             <button type="button" className="btn btn-default" data-dismiss="modal">Close</button>
-                            <button type="button" className="btn btn-primary">Save changes</button>
+                            <button type="button" className="btn btn-primary">Submit</button>
                         </div>
                     </div>
                 </div>
             </div>
 
+            {/* <!-- End Cta Section --> */}
 
             {/* <!-- =====Our Latest Work====== --> */}
 
@@ -163,14 +182,14 @@ function App() {
                             <Latest logo="/img/portfolio/print_01.jpg" CareerTitle="WEB SOLUTION" CareerDec="
 A Website is an extension of a company's overall communication strategy. We create websites using HTML5, CSS3, Jquery.
 " />
-                        
+
                             <Latest logo="/img/portfolio/work10.jpg" CareerTitle="WEB APPLICATION" CareerDec="
 We have expertise in Smart Phone Application Development, iPhone Game Development and Custom Mobile Application Development" />
-                       
+
                             <Latest logo="/img/portfolio/work11.jpg" CareerTitle="K12 ANIMATIONS" CareerDec="
 We offer full production services in 2D, 3D, cell animation and corporate Videos (Audio and video), Multimedia Presentations / Slideshows.
 " />
-                        
+
                             <Latest logo="/img/portfolio/work12.jpg" CareerTitle="PRINT WORK" CareerDec="
 We develop the most effective marketing solutions based on your unique business needs, aiming to maximize returns on your marketing efforts." />
                         </div>

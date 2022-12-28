@@ -16,10 +16,12 @@ export default function Nav() {
     };
   }, []);
 
+ 
+
   return (
     <div className="container_nav ">
           <header id="header" className="fixed-top ">
-      <nav id="navbarh-100 d-flex align-items-center justify-content-center" className="navbar h-100 d-flex align-items-center justify-content-center"  style={{
+      <nav id="navbar" className="navbar h-100 d-flex align-items-center justify-content-center"  style={{
           backgroundColor: navColor,
           height: navSize,
           width:navWidth,
@@ -27,7 +29,7 @@ export default function Nav() {
         }}>
         <ul  h-100 d-flex align-items-center justify-content-center>
         <div className='left'>
-            <li><a className="nav-link scrollto" href="#header">Home</a></li>
+            <li><a className="nav-link scrollto active" href="#header">Home</a></li>
             <li><a className="nav-link scrollto" href="#about">About</a></li>
             <li><a className="nav-link scrollto" href="#services">Services</a></li>
         </div>

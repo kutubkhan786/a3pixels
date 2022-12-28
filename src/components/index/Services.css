@@ -9,8 +9,6 @@
     display: flex;
     flex-direction: row;
 }
-
-
 .latest {
     padding: 2.5rem;
     background-color: #c4c4c4;
@@ -53,13 +51,8 @@
 .container_card:hover {
     transform: scale(1.1);
     transition: 0.2s ease-in;
-}
-
-.container_card:hover a {
     color: #fecd00;
-    font-weight: bold;
 }
-
 
 .container_card p {
     z-index: 9;
@@ -68,17 +61,11 @@
     align-items: center;
     font-size: smaller;
     font-weight: 500;
-}
-
-.container_card p a {
     font-size: medium;
 }
 
-.b {
-    text-decoration: solid;
-    font-size: 2vw;
-    text-align: center;
-}
+
+
 
 .container_card .imgbx {
     display: flex;
