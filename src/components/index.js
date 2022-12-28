@@ -180,6 +180,7 @@ export default class app extends Component {
                 </div>
             </div>
 
+            {/* <!-- End Cta Section --> */}
 
             {/* <!-- =====Our Latest Work====== --> */}
             <section id='latest'className='p-3 '>
@@ -239,14 +240,15 @@ We develop the most effective marketing solutions based on your unique business 
 
             
             {/* <!-- ======= Portfolio Section ======= --> */}
-            
+            <section id="portfolio" className='p-3 '>
+            </section>
             <section  className="portfolio">
                 <div className="container">
 
-                            <div className="section-title mb-3" data-aos="zoom-out">
-                                <p>Portfolio</p>
-                                <h2>What we've done</h2>
-                            </div>
+                    <div className="section-title mb-3" data-aos="zoom-out">
+                        <p>Portfolio</p>
+                        <h2>What we've done</h2>
+                    </div>
                     
                     <ul id="portfolio-flters" className=" portfolio-filter d-flex justify-content-center p-0" data-aos="fade-up">
                         <li data-filter="*" className="filter-active pl-4 pr-4">All</li>
