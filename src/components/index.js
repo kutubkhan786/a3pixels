@@ -26,17 +26,9 @@ export default class app extends Component {
 
             <section id='home' className="el">
                 <div className="fit-screen">
-
-                    <div className="fit-card h-1000 d-flex align-items-center justify-content-center ">
+                    <div className="fit-card h-100 d-flex align-items-center justify-content-center ">
                         {/* <div className="bg-box"> */}
-                        <img src="/img/banner.png"  alt=""/>
-
-                        <p className='pb-0 kk'> WE ARE
-                            <b className='pb-0 '>  A3PIXELS  </b>
-                            AN E-LEARNING DESIGN AND PRODUCTION HOUSE.
-                            <p className="para pt-2 m-0 h-100 d-flex align-items-center justify-content-center">We design & develop effective e-learning programs, websites and prints.
-                                With us, your project is sure to deliver results.</p></p>
-    
+                        <img src="/img/Banner1.png"  alt=""/>
 
                     </div>
                 </div>
