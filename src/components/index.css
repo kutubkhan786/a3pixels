@@ -42,7 +42,7 @@
             }
         }
         
-        @media (max-width:1400px) {
+        @media (min-width:1400px) {
             html {
                 font-size: larger;
                 overflow-x: hidden;
@@ -126,6 +126,11 @@
                 transition-delay: 0 !important;
             }
         }
+
+        .fit-card{
+            height: 20rem;
+            width: auto;
+        }
         
         .fit-screen {
             height: 80vh;
@@ -162,7 +167,24 @@
         .kk {
             z-index: 99;
         }
-        
+        @media only screen and (max-width: 992px) {
+            .fit-screen {
+              height: 80;
+            }
+          }
+          
+          @media only screen and (max-width: 768px) {
+            .fit-card {
+              height: 60;
+            }
+          }
+          
+          @media only screen and (max-width: 576px) {
+            .fit-card {
+              height: 50;
+            }
+          }
+/*         
         @media (max-width:576px) {
             #home img {
                 height: 10rem;
@@ -196,7 +218,7 @@
                 height: 20rem;
                 width: auto;
             }
-        }
+        } */
         /* demo style */
         /*--------------------------------------------------------------
 # Sections General
