@@ -137,6 +137,8 @@
     /**
      * Mobile nav dropdowns activate
      */
+
+    
     on('click', '.navbar .dropdown > a', function(e) {
         if (select('#navbar').classList.contains('navbar-mobile')) {
             e.preventDefault()
@@ -243,17 +245,7 @@
 })()
 
 
-$('.open-form').click(function() {
-    if (!$(this).hasClass('open')) {
-        $('.form').css('display', 'block')
-        $(this).addClass('open');
-        $(this).text('CLOSE FORM');
-    } else {
-        $('.form').css('display', 'none')
-        $(this).removeClass('open');
-        $(this).text('OPEN FORM');
-    }
-});
+// 
 
 function onReady(callback) {
     var intervalID = window.setInterval(checkReady, 1000);
@@ -273,8 +265,8 @@ onReady(function () {
     setTimeout(() => {
         show('content1', true);
         show('loader', false);
-    }, 5);
+    },5);
 });
 
-
+//   
 

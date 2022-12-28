@@ -3,6 +3,7 @@
     visibility: visible;
 }
 
+
 /* latest work */
 
 .row1 {
@@ -16,13 +17,12 @@
 
 .latest img {
     width: 100%;
-    border-radius: 0.313rem 0.313rem 0 0 ;
+    border-radius: 0.313rem 0.313rem 0 0;
     height: 100%;
     object-fit: contain;
     /* padding: 1vh; */
     /* background-color: navy; */
 }
-
 
 .heading-text {
     margin-bottom: 2rem;
