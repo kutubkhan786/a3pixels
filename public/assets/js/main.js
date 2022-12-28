@@ -42,27 +42,55 @@
     const onscroll = (el, listener) => {
         el.addEventListener('scroll', listener)
     }
+    // 
+    // 
 
+    // const sections = document.querySelectorAll("section");
+    // const navLi = document.querySelectorAll("navbar ul li");
+    // window.onscroll = () => {
+    //   var current = "";
+    
+    //   sections.forEach((section) => {
+    //     const sectionTop = section.offsetTop;
+    //     if (scrollY >= sectionTop - 60) {
+    //       current = section.getAttribute("id"); }
+    //   });
+    
+    //   navLi.forEach((li) => {
+    //     li.classList.remove("active");
+    //     if (li.classList.contains(current)) {
+    //       li.classList.add("active");
+    //     }
+    //   });
+    // };
     /**
      * Navbar links active state on scroll
-     */
-    let navbarlinks = select('#navbar .scrollto', true)
-    const navbarlinksActive = () => {
-        let position = window.scrollY + 200
-        navbarlinks.forEach(navbarlink => {
-            if (!navbarlink.hash) return
-            let section = select(navbarlink.hash)
-            if (!section) return
-            if (position >= section.offsetTop && position <= (section.offsetTop + section.offsetHeight)) {
-                navbarlink.classList.add('active')
-            } else {
-                navbarlink.classList.remove('active')
-            }
-        })
-    }
-    window.addEventListener('load', navbarlinksActive)
-    onscroll(document, navbarlinksActive)
+     * 
+     * 
+    //  */
+    var navLinks = document.querySelectorAll('#navbar .scrollto');
 
+    // Add an event listener to the window object to listen for the scroll event
+    window.addEventListener('scroll', function() {
+      // Get the current scroll position
+      var scrollPos = window.scrollY;
+    
+      // Loop through all the navbar links
+      navLinks.forEach(function(link) {
+        // Get the element that the link points to
+        var section = document.querySelector(link.hash);
+    
+        // Check if the scroll position is within the bounds of the element
+        if (scrollPos >= section.offsetTop && scrollPos < (section.offsetTop + section.offsetHeight)) {
+          // Add the active class to the link
+          link.classList.add('active');
+        } else {
+          // Remove the active class from the link
+          link.classList.remove('active');
+        }
+      });
+    });
+   
     /**
      * Scrolls to an element with header offset
      */
@@ -80,19 +108,7 @@
     /**
      * Toggle .header-scrolled class to #header when page is scrolled
      */
-    let selectHeader = select('#header')
-    if (selectHeader) {
-        const headerScrolled = () => {
-            if (window.scrollY > 100) {
-                selectHeader.classList.add('header-scrolled')
-            } else {
-                selectHeader.classList.remove('header-scrolled')
-            }
-        }
-        window.addEventListener('load', headerScrolled)
-        onscroll(document, headerScrolled)
-    }
-
+    
     /**
      * Back to top button
      */
@@ -121,6 +137,8 @@
     /**
      * Mobile nav dropdowns activate
      */
+
+    
     on('click', '.navbar .dropdown > a', function(e) {
         if (select('#navbar').classList.contains('navbar-mobile')) {
             e.preventDefault()
@@ -227,17 +245,7 @@
 })()
 
 
-$('.open-form').click(function() {
-    if (!$(this).hasClass('open')) {
-        $('.form').css('display', 'block')
-        $(this).addClass('open');
-        $(this).text('CLOSE FORM');
-    } else {
-        $('.form').css('display', 'none')
-        $(this).removeClass('open');
-        $(this).text('OPEN FORM');
-    }
-});
+// 
 
 function onReady(callback) {
     var intervalID = window.setInterval(checkReady, 1000);
@@ -257,5 +265,8 @@ onReady(function () {
     setTimeout(() => {
         show('content1', true);
         show('loader', false);
-    }, 5);
+    },5);
 });
+
+//   
+
