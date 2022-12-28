@@ -12,7 +12,22 @@ import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 
-
+const options={
+    loop:'true',
+                                        center:'true',
+                                        items:3,
+                                        margin:0,
+                                        autoplay:'true',
+                                        dots:'true',
+                                        autoplayTimeout:3000,
+                                        smartSpeed:450,
+    responsive:{
+        0:{
+            items:1
+        },
+        
+    }
+};
 export default class app extends Component {
 
     render() {
@@ -223,14 +238,7 @@ We develop the most effective marketing solutions based on your unique business 
                             <div class="row">
                                 <div class="col-sm-12 newone" >
 
-                                    <OwlCarousel loop={true}
-                                        center={true}
-                                        items={3}
-                                        margin={0}
-                                        autoplay={false}
-                                        dots={true}
-                                        autoplayTimeout={3000}
-                                        smartSpeed={450} id="customers-testimonials" class="owl-carousel">
+                                    <OwlCarousel {...options} id="customers-testimonials" class="owl-carousel">
                                         <Testimonial testidesc=" A terrific team to work with: splendid support and excellent work! With your extraordinary efforts, we delivered an eLearning program that met nearly all expectations and an aggressive deadline. I would like to thank everyone who worked on the project. Highly recommend this team and would seek out every opportunity to work with you in future." testiposition="Project Manager, Aptara Inc." testiname="ShabbeerZafar"/>
                                         <Testimonial testidesc="“ Excellent team, led by a well-informed manager. " testiname="Neel Parnaik" testiposition="Associate Project Manager,  Aptara Inc."/>
                                         <Testimonial testidesc="“ The A3 Pixels team understands the work well and then performs with full enthusiasm. Output provided in our project was good. Help is extended whenever asked. We look forward working with you in future too. " testiname="Heeshma Shah" testiposition="Manager-Technical Services, Signet Chemical Corporation Pvt. Ltd."/>

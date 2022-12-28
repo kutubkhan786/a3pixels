@@ -6,7 +6,7 @@ function Clients() {
     <>
       <div className="slider">
         <div className="container">
-          <div className="section-title mb-3" data-aos="zoom-out">
+          <div className="section-title mb-0" data-aos="zoom-out">
             <p>Our Clients</p>
             {/* <h2>Who are our clients</h2> */}
           </div>
@@ -17,87 +17,87 @@ function Clients() {
               <div className='row ' >
                 <div className="slide-track pb-4 d-flex align-items-center justify-content-center">
                   <div className="slide ">
-                    <img className="img-scroll" src="/img/clients/Client__1.jpg" alt=""/>
+                    <img className="img-scroll" src="/img/clients/Client__1.jpg" alt="" />
                   </div>
                   <div className="slide">
-                    <img className="img-scroll" src="/img/clients/Client__2.jpg" alt=""/>
+                    <img className="img-scroll" src="/img/clients/Client__2.jpg" alt="" />
                   </div>
                   <div className="slide">
-                    <img className="img-scroll" src="/img/clients/Client__3.jpg" alt=""/>
+                    <img className="img-scroll" src="/img/clients/Client__3.jpg" alt="" />
                   </div>
                   <div className="slide">
-                    <img className="img-scroll" src="/img/clients/Client__4.jpg" alt=""/>
+                    <img className="img-scroll" src="/img/clients/Client__4.jpg" alt="" />
                   </div></div>
                 <div className="slide-track d-flex align-items-center justify-content-center">
                   <div className="slide">
-                    <img className="img-scroll" src="/img/clients/Client__12.jpg" alt=""/>
+                    <img className="img-scroll" src="/img/clients/Client__12.jpg" alt="" />
                   </div>
                   <div className="slide">
-                    <img className="img-scroll" src="/img/clients/Client__13.jpg" alt=""/>
+                    <img className="img-scroll" src="/img/clients/Client__13.jpg" alt="" />
                   </div>
                   <div className="slide">
-                    <img className="img-scroll" src="/img/clients/Client__14.jpg" alt=""/>
+                    <img className="img-scroll" src="/img/clients/Client__14.jpg" alt="" />
                   </div>
                   <div className="slide">
-                    <img className="img-scroll" src="/img/clients/Client__15.jpg" alt=""/>
+                    <img className="img-scroll" src="/img/clients/Client__15.jpg" alt="" />
                   </div></div>
               </div></div>
             <div className="carousel-item">
               <div className='row' >
                 <div className="slide-track pb-4 d-flex align-items-center justify-content-center">
                   <div className="slide">
-                    <img className="img-scroll" src="/img/clients/Client__1.jpg" alt=""/>
+                    <img className="img-scroll" src="/img/clients/Client__1.jpg" alt="" />
                   </div>
                   <div className="slide">
-                    <img className="img-scroll" src="/img/clients/Client__2.jpg" alt=""/>
+                    <img className="img-scroll" src="/img/clients/Client__2.jpg" alt="" />
                   </div>
                   <div className="slide">
-                    <img className="img-scroll" src="/img/clients/Client__3.jpg" alt=""/>
+                    <img className="img-scroll" src="/img/clients/Client__3.jpg" alt="" />
                   </div>
                   <div className="slide">
-                    <img className="img-scroll" src="/img/clients/Client__4.jpg" alt=""/>
+                    <img className="img-scroll" src="/img/clients/Client__4.jpg" alt="" />
                   </div></div>
                 <div className="slide-track d-flex align-items-center justify-content-center">
                   <div className="slide">
-                    <img className="img-scroll" src="/img/clients/Client__12.jpg" alt=""/>
+                    <img className="img-scroll" src="/img/clients/Client__12.jpg" alt="" />
                   </div>
                   <div className="slide">
-                    <img className="img-scroll" src="/img/clients/Client__13.jpg" alt=""/>
+                    <img className="img-scroll" src="/img/clients/Client__13.jpg" alt="" />
                   </div>
                   <div className="slide">
-                    <img className="img-scroll" src="/img/clients/Client__14.jpg" alt=""/>
+                    <img className="img-scroll" src="/img/clients/Client__14.jpg" alt="" />
                   </div>
                   <div className="slide">
-                    <img className="img-scroll" src="/img/clients/Client__15.jpg" alt=""/>
+                    <img className="img-scroll" src="/img/clients/Client__15.jpg" alt="" />
                   </div></div>
               </div></div>
             <div className="carousel-item">
               <div className='row' >
                 <div className="slide-track pb-4 d-flex align-items-center justify-content-center">
                   <div className="slide">
-                    <img className="img-scroll " src="/img/clients/Client__1.jpg" alt=""/>
+                    <img className="img-scroll " src="/img/clients/Client__1.jpg" alt="" />
                   </div>
                   <div className="slide">
-                    <img className="img-scroll" src="/img/clients/Client__2.jpg" alt=""/>
+                    <img className="img-scroll" src="/img/clients/Client__2.jpg" alt="" />
                   </div>
                   <div className="slide">
-                    <img className="img-scroll" src="/img/clients/Client__3.jpg" alt=""/>
+                    <img className="img-scroll" src="/img/clients/Client__3.jpg" alt="" />
                   </div>
                   <div className="slide">
-                    <img className="img-scroll" src="/img/clients/Client__4.jpg" alt=""/>
+                    <img className="img-scroll" src="/img/clients/Client__4.jpg" alt="" />
                   </div></div>
                 <div className="slide-track d-flex align-items-center justify-content-center">
                   <div className="slide">
-                    <img className="img-scroll" src="/img/clients/Client__12.jpg" alt=""/>
+                    <img className="img-scroll" src="/img/clients/Client__12.jpg" alt="" />
                   </div>
                   <div className="slide">
-                    <img className="img-scroll" src="/img/clients/Client__13.jpg" alt=""/>
+                    <img className="img-scroll" src="/img/clients/Client__13.jpg" alt="" />
                   </div>
                   <div className="slide">
-                    <img className="img-scroll" src="/img/clients/Client__14.jpg" alt=""/>
+                    <img className="img-scroll" src="/img/clients/Client__14.jpg" alt="" />
                   </div>
                   <div className="slide">
-                    <img className="img-scroll" src="/img/clients/Client__15.jpg" alt=""/>
+                    <img className="img-scroll" src="/img/clients/Client__15.jpg" alt="" />
                   </div></div>
               </div>
             </div>
