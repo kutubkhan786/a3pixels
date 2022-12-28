@@ -11,16 +11,19 @@ import Footer from './footer/Footer.js';
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
+import Glightbox from 'glightbox';
 
 const options={
+    
+
     loop:'true',
-                                        center:'true',
-                                        items:3,
-                                        margin:0,
-                                        autoplay:'true',
-                                        dots:'true',
-                                        autoplayTimeout:3000,
-                                        smartSpeed:450,
+            center:'true',
+            items:3,
+            margin:0,
+            autoplay:'true',
+            dots:'true',
+            autoplayTimeout:3000,
+            smartSpeed:450,
     responsive:{
         0:{
             items:1
@@ -29,6 +32,12 @@ const options={
     }
 };
 export default class app extends Component {
+    componentDidMount() {
+        const portfolioLightbox=Glightbox({
+          selector: '.portfolio-lightbox'
+    
+    });
+}
 
     render() {
         return (
@@ -40,10 +49,10 @@ export default class app extends Component {
                     {/* <!-- ======= Head Section ======= --> */}
 
             <section id='home' className="el">
-                <div className="fit-screen">
-                    <div className="fit-card h-100 d-flex align-items-center justify-content-center ">
+                <div className="fit-screen d-flex align-items-center justify-content-center">
+                    <div className="fit-card  ">
                         {/* <div className="bg-box"> */}
-                        <img src="/img/Banner1.png"  alt=""/>
+                        <img src="/img/Banner1.png" className=" img-fluid " alt=""/>
 
                     </div>
                 </div>
@@ -261,7 +270,7 @@ We develop the most effective marketing solutions based on your unique business 
                     </ul>
                     
                     <div className="divScroll">
-                        <div className="row portfolio-container" data-aos="fade-up">
+                        <div className="row portfolio-container my-lightbox-gallery" data-aos="fade-up">
                             <Portfolio logo="/img/portfolio/Elearning/0_BPCL/01_UI_design_menu.jpg" PortTitle="Banking & Finance" PortDec="E-learning" filter="e-learning" />
                             <Portfolio logo="/img/portfolio/Elearning/0_BPCL/02_UI_design_Intro.jpg" PortTitle="Banking & Finance" PortDec="E-learning" filter="e-learning" />
                             <Portfolio logo="/img/portfolio/Elearning/0_BPCL/05_UI_design_interactive(popup)_04.jpg" PortTitle="Banking & Finance" PortDec="E-learning" filter="e-learning" />
