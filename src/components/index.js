@@ -14,8 +14,6 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 import Glightbox from 'glightbox';
 
 const options={
-    
-
     loop:'true',
             center:'true',
             items:3,
@@ -31,6 +29,7 @@ const options={
         
     }
 };
+
 export default class app extends Component {
     componentDidMount() {
         const portfolioLightbox=Glightbox({
@@ -69,10 +68,10 @@ export default class app extends Component {
                 <div className='container'>
                     <div className="row" data-aos="zoom-out">
 
-                                <Services linker="e-learning" name1="E-LEARNING &" name2="DEVELOPMENT" logo="/img/logos/1.png" logoh="/img/logos/1_H.png" />
-                                <Services linker="https://www.a3pixels.com/localization.php" name1="TRANSLATION &" name2="LOCALIZATION" logo="/img/logos/4.png" logoh="/img/logos/4_H.png" />
-                                <Services linker="website" name1="WEBSITE & MULTIMEDIA" name2=" DEVELOPEMENT" logo="/img/logos/3.png" logoh="/img/logos/3_H.png" />
-                                <Services linker="print" name1="PRINT & IDENTITY" logo="/img/logos/2.png" logoh="/img/logos/2_H.png" />
+                                <Services linker="/services/#e-learning" name1="E-LEARNING &" name2="DEVELOPMENT" logo="/img/logos/1.png" logoh="/img/logos/1_H.png" />
+                                <Services linker="/services/#translation" name1="TRANSLATION &" name2="LOCALIZATION" logo="/img/logos/4.png" logoh="/img/logos/4_H.png" />
+                                <Services linker="/services/#website" name1="WEBSITE & MULTIMEDIA" name2=" DEVELOPEMENT" logo="/img/logos/3.png" logoh="/img/logos/3_H.png" />
+                                <Services linker="/services/#print" name1="PRINT & IDENTITY" logo="/img/logos/2.png" logoh="/img/logos/2_H.png" />
 
                             </div>
                         </div>
