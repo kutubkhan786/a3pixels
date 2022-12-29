@@ -31,17 +31,17 @@ export default function Nav() {
         <ul  >
         <div className='left'>
             <li><a className="nav-link scrollto active" href="#home">Home</a></li>
-            <li><a className="nav-link scrollto" href="#about">About</a></li>
             <li><a className="nav-link scrollto" href="#services">Services</a></li>
+            <li><a className="nav-link scrollto" href="#about">About</a></li>
         </div>
         <div className="logo">
                             <a href="#home"><img src="/img/logo.png"  alt="" /></a>
                         </div>
      
         <div className='right'>
-            <li><a className="nav-link scrollto" href="#portfolio">Portfolio</a></li>
-            <li><a className="nav-link scrollto" href="#latest">Latest</a></li>
             <li><a className="nav-link scrollto" href="#cta">Contact</a></li>
+            <li><a className="nav-link scrollto" href="#latest">Latest</a></li>
+            <li><a className="nav-link scrollto" href="#portfolio">Portfolio</a></li>
         </div>
         </ul>
       </nav>

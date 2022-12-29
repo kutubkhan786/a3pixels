@@ -4,7 +4,7 @@ import './footer.css';
 
 export default function Footer() {
     return (
-      <div className="row footer">
+      <div className="row footer" id="cta">
       <div className="col-12 col-md-5">
         <div className="maplogo p-5 pb-0">
           <img src="/img/logos/footer_logo.png" className="img-fluid" alt="" />

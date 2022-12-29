@@ -127,7 +127,7 @@ export default class app extends Component {
                     </div>
                 </div>
             </section>
-            <section id="cta" className='p-3 m-4 '>
+            <section  className='p-3 m-4 '>
             </section>
             {/* <!-- End About Section --> */}
             {/* <!-- this is the call for enquiry --> */}
