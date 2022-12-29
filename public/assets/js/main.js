@@ -31,6 +31,21 @@
         }
     });
    
+
+    
+
+    var navLinks = document.querySelectorAll('#navbar .scrollto');
+    window.addEventListener('scroll', function() {
+      var scrollPos = window.scrollY;
+      navLinks.forEach(function(link) {
+        var section = document.querySelector(link.hash);
+        if (scrollPos >= section.offsetTop && scrollPos < (section.offsetTop + section.offsetHeight)) {
+          link.classList.add('active');
+        } else {
+          link.classList.remove('active');
+        }
+      });
+    });
     /**
      * Easy selector helper function
      */
@@ -89,28 +104,7 @@
      * 
      * 
     //  */
-    var navLinks = document.querySelectorAll('#navbar .scrollto');
-
-    // Add an event listener to the window object to listen for the scroll event
-    window.addEventListener('scroll', function() {
-      // Get the current scroll position
-      var scrollPos = window.scrollY;
-    
-      // Loop through all the navbar links
-      navLinks.forEach(function(link) {
-        // Get the element that the link points to
-        var section = document.querySelector(link.hash);
-    
-        // Check if the scroll position is within the bounds of the element
-        if (scrollPos >= section.offsetTop && scrollPos < (section.offsetTop + section.offsetHeight)) {
-          // Add the active class to the link
-          link.classList.add('active');
-        } else {
-          // Remove the active class from the link
-          link.classList.remove('active');
-        }
-      });
-    });
+   
    
     /**
      * Scrolls to an element with header offset

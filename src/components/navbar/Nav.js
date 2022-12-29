@@ -16,7 +16,8 @@ export default function Nav() {
     };
   }, []);
 
- 
+  
+
 
   return (
     <div className="container_nav ">
@@ -27,7 +28,7 @@ export default function Nav() {
           width:navWidth,
           transition: "all 1s"
         }}>
-        <ul  h-100 d-flex align-items-center justify-content-center>
+        <ul  >
         <div className='left'>
             <li><a className="nav-link scrollto active" href="#home">Home</a></li>
             <li><a className="nav-link scrollto" href="#about">About</a></li>

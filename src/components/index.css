@@ -12,6 +12,7 @@
             font-family: 'Montserrat', sans-serif;
             color: #444444;
             overflow-x: hidden;
+            position: relative;
         }
         
         @media (max-width:576px) {

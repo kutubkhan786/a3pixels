@@ -6,7 +6,7 @@ function services(props) {
     
     return (<>
         <div className="col-xs-6 col-sm-3">
-           <Link to='/s' className="b" style={{textDecoration: 'none'}}>
+           <Link to={props.linker} className="b" style={{textDecoration: 'none'}}>
             <div className='container7'>
                 <div className="container_card">
                     <div className="imgbx">

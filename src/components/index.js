@@ -67,10 +67,10 @@ export default class app extends Component {
                 <div className='container'>
                     <div className="row" data-aos="zoom-out">
 
-                                <Services name1="E-LEARNING &" name2="DEVELOPMENT" logo="/img/logos/1.png" logoh="/img/logos/1_H.png" />
-                                <Services name1="TRANSLATION &" name2="LOCALIZATION" logo="/img/logos/4.png" logoh="/img/logos/4_H.png" />
-                                <Services name1="WEBSITE & MULTIMEDIA" name2=" DEVELOPEMENT" logo="/img/logos/3.png" logoh="/img/logos/3_H.png" />
-                                <Services name1="PRINT & IDENTITY" logo="/img/logos/2.png" logoh="/img/logos/2_H.png" />
+                                <Services linker="e-learning" name1="E-LEARNING &" name2="DEVELOPMENT" logo="/img/logos/1.png" logoh="/img/logos/1_H.png" />
+                                <Services linker="https://www.a3pixels.com/localization.php" name1="TRANSLATION &" name2="LOCALIZATION" logo="/img/logos/4.png" logoh="/img/logos/4_H.png" />
+                                <Services linker="website" name1="WEBSITE & MULTIMEDIA" name2=" DEVELOPEMENT" logo="/img/logos/3.png" logoh="/img/logos/3_H.png" />
+                                <Services linker="print" name1="PRINT & IDENTITY" logo="/img/logos/2.png" logoh="/img/logos/2_H.png" />
 
                             </div>
                         </div>
