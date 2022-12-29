@@ -129,6 +129,13 @@
 # Disable AOS delay on mobile
 --------------------------------------------------------------*/
         
+        .temp {
+            /* background-color: #18d26e; */
+            margin-top: -20rem;
+            margin-bottom: 15rem;
+            z-index: 99;
+        }
+        
         @media screen and (max-width: 768px) {
             [data-aos-delay] {
                 transition-delay: 0 !important;

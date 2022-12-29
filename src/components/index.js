@@ -48,22 +48,24 @@ export default class app extends Component {
 
                     {/* <!-- ======= Head Section ======= --> */}
 
-            <section id='home' className="el">
+            <section id='home1' className="el">
                 <div className="fit-screen d-flex align-items-center justify-content-center">
                     <div className="fit-card  ">
                         {/* <div className="bg-box"> */}
-                        <img src="/img/Banner1.png" className=" img-fluid " alt=""/>
+                        <img id="home" src="/img/Banner1.png" className=" img-fluid " alt=""/>
 
                     </div>
                 </div>
 
+                <section id='services' className="temp">
+            </section>
             </section>
             {/* <button id="back-to-top-btn">Back to Top</button> */}
 
             {/* <!-- ======= Services Section ======= --> */}
             {/* <!-- <div className='merg' id="services"> --> */}
             
-            <section id="services" className="til" data-aos="fade-up" data-aos-duration="1000">
+            <section className="til" data-aos="fade-up" data-aos-duration="1000">
                 <div className='container'>
                     <div className="row" data-aos="zoom-out">
 
