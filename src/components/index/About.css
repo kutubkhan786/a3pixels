@@ -36,6 +36,10 @@
     position: relative;
 }
 
+.card-body {
+    padding-left: 0;
+}
+
 .about .content ul li+li {
     margin-top: 0.625rem;
 }

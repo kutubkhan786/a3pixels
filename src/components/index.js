@@ -65,7 +65,7 @@ export default class app extends Component {
             {/* <!-- ======= Services Section ======= --> */}
             {/* <!-- <div className='merg' id="services"> --> */}
             
-            <section className="til" data-aos="fade-up" data-aos-duration="1000">
+            <section className="til pb-0" data-aos="fade-up" data-aos-duration="1000">
                 <div className='container'>
                     <div className="row" data-aos="zoom-out">
 
@@ -82,9 +82,9 @@ export default class app extends Component {
 
 
             {/* <!-- ======= About Section ======= --> */}
-            <section id="about" className='p-4 m-4 '>
+            <section id="about" className='p-4 mb-4 '>
             </section>
-            <section  className="about">
+            <section  className="about pb-0">
                 <div className="container">
                     <div className="section-title mb-2" data-aos="zoom-out">
                         <p>About Us</p>
@@ -111,7 +111,6 @@ export default class app extends Component {
                                 </div>
                                 <div className="col-lg-7 pt-4 pt-lg-0 ">
                                     <div className="row content yello-box">
-
                                     </div>
                                     <div  className="container-fluid">
                                         <div className="row">
@@ -128,7 +127,7 @@ export default class app extends Component {
                     </div>
                 </div>
             </section>
-            <section id="cta" className='p-4 m-4 '>
+            <section id="cta" className='p-3 m-4 '>
             </section>
             {/* <!-- End About Section --> */}
             {/* <!-- this is the call for enquiry --> */}
@@ -230,8 +229,9 @@ We develop the most effective marketing solutions based on your unique business 
 
                         </div>
                     </section>
-
+                   
                     {/* <!-- ======= Testimonials Section ======= -->- */}
+                    
                     <section id="testimonials" className='testi'>
                         <div class="container">
                             <div className="section-title mb-3" data-aos="zoom-out">
@@ -246,7 +246,8 @@ We develop the most effective marketing solutions based on your unique business 
                                         <Testimonial testidesc="“ Excellent team, led by a well-informed manager. " testiname="Neel Parnaik" testiposition="Associate Project Manager,  Aptara Inc."/>
                                         <Testimonial testidesc="“ The A3 Pixels team understands the work well and then performs with full enthusiasm. Output provided in our project was good. Help is extended whenever asked. We look forward working with you in future too. " testiname="Heeshma Shah" testiposition="Manager-Technical Services, Signet Chemical Corporation Pvt. Ltd."/>
                                         <Testimonial testidesc="“ A3 Pixels is a highly responsive team. During our interaction, changes or additions were immediately implemented either on the same day or the next. On completion of the task, we were informed of the same via email by their Admin. Much appreciated! " testiname="Roshni Udyavar Yehuda" testiposition="Head, Rachana Sansad Institute of Environmental Architecture"/>
-                                    </OwlCarousel></div></div></div></section>
+                                    </OwlCarousel></div></div></div>
+                                    </section>
                     {/* <!-- End Testimonials Section --> */}
 
             

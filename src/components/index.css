@@ -36,7 +36,7 @@
             }
         }
         
-        @media (max-width:1200px) {
+        @media (max-width:1300px) {
             html {
                 font-size: medium;
                 overflow-x: hidden;
@@ -59,6 +59,11 @@
         
         a {
             color: white;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            color: #fdcd00;
             text-decoration: none;
         }
         
@@ -250,7 +255,7 @@
             width: 120px;
             height: 0.063rem;
             display: inline-block;
-            background: #fd9042;
+            background: #000;
             margin: 4px 0.625rem;
         }
         
@@ -471,14 +476,8 @@
         }
         
         .cta h3 {
-            color: #7f6600;
             font-size: 1.75rem;
             font-weight: 700;
-        }
-        
-        .cta p {
-            color: #7f6600;
-            font-size: 1rem;
         }
         
         .cta .cta-btn {
@@ -517,11 +516,6 @@
         /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
-        
-        .til {
-            margin-top: -15%;
-            visibility: visible;
-        }
         /* latest work */
         
         .row1 {
@@ -529,8 +523,31 @@
             flex-direction: row;
         }
         
+        #latest {
+            margin-top: -39px;
+            /* background-color: ; */
+            /* background-color: #000; */
+        }
+        
         .latest {
-            padding: 40px;
+            padding: 10px;
+            padding-top: 10px;
+        }
+        
+        #cta {
+            margin-top: -39px;
+        }
+        
+        #portfolio {
+            margin-top: -39px;
+        }
+        
+        #about {
+            margin-top: -39px;
+        }
+        
+        .latest {
+            padding: 15px;
             background-color: #c4c4c4;
         }
         

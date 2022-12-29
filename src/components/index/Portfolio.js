@@ -11,7 +11,7 @@ function portfolio(props) {
     
 
   <div className={classnames('col-lg-3 portfolio-item portfolio-details-slider my-lightbox-gallery',props.filter)}>
-              <Link to= {props.logo} data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" >
+              <Link to= {props.logo}  className='portfolio-lightboxpreview-link' data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" >
               
             <div className="portfolio-img"><img src={props.logo} className="img-fluid" alt=""/></div>
             <div className="portfolio-info">
@@ -20,12 +20,6 @@ function portfolio(props) {
             </div>
             </Link>
           </div>
-
-              {/* <a href={props.logo}    title="App 1"><i className="bx bx-plus"></i></a> */}
-  
-              
-
-
     </>
   )
 }
