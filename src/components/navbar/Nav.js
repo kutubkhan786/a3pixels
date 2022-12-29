@@ -39,7 +39,7 @@ export default function Nav() {
                         </div>
      
         <div className='right'>
-            <li><a className="nav-link scrollto" href="#latest">Latest</a></li>
+            <li><a className="nav-link scrollto" href="">Career</a></li>
             <li><a className="nav-link scrollto" href="#portfolio">Portfolio</a></li>
             <li><a className="nav-link scrollto" href="#cta">Contact</a></li>
         </div>

@@ -32,6 +32,7 @@
 
 .portfolio .portfolio-item {
     margin-bottom: 1.875rem;
+    border-radius: 10px;
 }
 
 .portfolio .portfolio-item .portfolio-img {
@@ -40,6 +41,7 @@
 
 .portfolio .portfolio-item .portfolio-img img {
     transition: all 0.8s ease-in-out;
+    border-radius: 10px;
 }
 
 .portfolio .portfolio-item .portfolio-info {
@@ -111,6 +113,7 @@
 
 .portfolio .portfolio-item:hover .portfolio-img img {
     transform: scale(1.2);
+    border-radius: 10px;
 }
 
 .portfolio .portfolio-item:hover .portfolio-info {
