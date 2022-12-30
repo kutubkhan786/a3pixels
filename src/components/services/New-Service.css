@@ -6,3 +6,52 @@ section  #elearning{
 ul{
     list-style-type: style type dash;
 }
+
+.serport{
+    margin-top: -2%;
+}
+.grey1{
+    background-color: #e5e5e5 ;
+
+}
+
+.fixed{
+    position: fixed;
+    top: 0%;
+    width: 100%;
+}
+.bacimg{
+    background-image: url(../../../public/img/services2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+}
+
+.yellowless{
+    background-color: rgba(253, 205, 0,15%);
+    padding: 40px;
+}
+
+.greyless{
+    background-color:rgba(137, 137, 137,22%);
+    padding: 40px;
+}
+
+.lanbox{
+    display: flex;
+}
+.img-square-wrapper{
+    background-color:rgba(0, 0, 0,70%);
+    height: 100%;
+    align-items: center;
+    padding: 1rem;
+    color: white;
+    width: 60%;
+}
+.card-body{
+    background-color: rgba(0, 0, 0,40%);
+    padding: 1rem;
+    color: white;
+}
