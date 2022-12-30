@@ -26,9 +26,19 @@ const options={
         0:{
             items:1
         },
-        700:{
+        480:{
+            items:1
+        },
+        770:{
+            items:1
+        },
+        1024:{
+            items:1
+        },
+        1200:{
             items:3
         }
+        
         
     }
 };
@@ -116,7 +126,7 @@ export default class app extends Component {
                             <div className="row">
                                 <div className="col-lg-5">
                                     <h4 className="section-title  mb-0"><b>WHAT WE DO</b></h4>
-                                    <img className='img-fluid about0' src="/img/logos/about-side.png" alt="" />
+                                    <img className='img-fluid ' src="/img/logos/about-side.png" alt="" />
                                 </div>
                                 <div className="col-lg-7 pt-4 pt-lg-0 ">
                                     <div className="row content yello-box">
@@ -164,7 +174,7 @@ export default class app extends Component {
                 <div className="modal-dialog" role="document">
                     <div className="modal-content">
                         <div className="modal-header">
-                            <button type="button" className="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&#215;</span></button>
+                            <button type="button" className="close" data-dismiss="modal" aria-label="Close"></button>
                             <h4 className="modal-title" id="myModalLabel">ENQUIRY</h4>
                         </div>
                         <div className="modal-body">
@@ -209,16 +219,15 @@ export default class app extends Component {
             {/* <!-- End Cta Section --> */}
 
             {/* <!-- =====Our Latest Work====== --> */}
-            <section id='latest'className='p-3 '>
-            </section>
-            <section  className="latest  ">
-                <div className="fix-latest">
-                    <div className="section-title ml-4 mb-3 pl-0 w-" data-aos="zoom-out">
+         
+            <section  className="latest p-5 "  data-aos="fade-up" data-aos-duration="1000" >
+               
+                    <div className="section-title ml-4 mb-4 pl-0 " data-aos="zoom-out">
                         <p >OUR LATEST WORK</p>
                         {/* <h2>jreiute5yhguteh eurhwe </h2> */}
                     </div>
-                    <div className="row m-0 p-0 ">
-                        <div className="col-2 d-flex float-right ">
+                   
+                        <div className=" new_latest   h-100 d-flex align-items-center justify-content-center ">
                             <Latest logo="/img/portfolio/work1.jpg" CareerTitle="WEB SOLUTION" CareerDec="
 A Website is an extension of a company's overall communication strategy. We create websites using HTML5, CSS3, Jquery.
 " />
@@ -233,10 +242,10 @@ We offer full production services in 2D, 3D, cell animation and corporate Videos
                             <Latest logo="/img/portfolio/work4.jpg" CareerTitle="PRINT WORK" CareerDec="
 We develop the most effective marketing solutions based on your unique business needs, aiming to maximize returns on your marketing efforts." />
                                 </div>
-                            </div>
+                           
 
 
-                        </div>
+                       
                     </section>
                    
                     {/* <!-- ======= Testimonials Section ======= -->- */}
@@ -271,14 +280,15 @@ We develop the most effective marketing solutions based on your unique business 
                         <h2>What we've done</h2>
                     </div>
                     
-                    <ul id="portfolio-flters" className=" portfolio-filter d-flex justify-content-center p-0" data-aos="fade-up">
-                        <li data-filter="*" className="filter-active pl-4 pr-4">All</li>
-                        <li data-filter=".Elearning" >E-LEARNING</li>
-                        <li data-filter=".Localization">LOCALIZATION</li>
-                        <li data-filter=".webdesigns">WEB DESIGN</li>
-                        <li data-filter=".Mobile_solution">Mobile_solution</li>
-                        <li data-filter=".Multimedia_solution">MULTIMEDIA PRESENTATION</li>
-                        <li data-filter=".printwork">LOGO & PRINT DESIGN</li>
+                    <ul id="portfolio-flters" className="nav-pills portfolio-filter d-flex justify-content-center p-0" data-aos="fade-up">
+                    
+                        <li button type="button" class="btn btn-warning" data-filter="*" className="filter-active btn btn-warning ">All</li>
+                        <li button type="button" class="btn btn-warning"data-filter=".Elearning" >E-LEARNING</li>
+                        <li button type="button" class="btn btn-warning" data-filter=".Localization">LOCALIZATION</li>
+                        <li button type="button" class="btn btn-warning"data-filter=".Mobile_solution">Mobile_solution</li>
+                        <li button type="button" class="btn btn-warning"data-filter=".webdesigns">WEB DESIGN</li>
+                        <li button type="button" class="btn btn-warning" data-filter=".Multimedia_solution">MULTIMEDIA PRESENTATION</li>
+                        <li button type="button" class="btn btn-warning" data-filter=".printwork">LOGO & PRINT DESIGN</li>
                     </ul>
                     
                     <div className="divScroll">

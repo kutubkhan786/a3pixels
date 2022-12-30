@@ -17,3 +17,7 @@ iframe {
     height: 4.6rem;
     width: auto;
 }
+
+.footer p i {
+    color: white;
+}

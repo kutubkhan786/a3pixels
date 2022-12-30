@@ -2,7 +2,7 @@ import React from 'react'
 import './latest.css'
 function Latest(props) {
   return (<>
-  <div className="container11 .col-xs-6 .col-sm-3">
+  <div className="container11 .col-xs-6 .col-sm-3 ">
                 <div className="card">
                     <div className="imgbx">
                         <div className="row2">
@@ -14,7 +14,8 @@ function Latest(props) {
                         <p>{props.CareerDec}</p>
                     </div>
                 </div>
-            </div></>
+            </div>
+            </>
   )
 }
 

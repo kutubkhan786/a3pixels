@@ -15,7 +15,9 @@ export default class testimonial extends Component {
                 <p>{this.props.testidesc}<br/><b>{this.props.testiposition}</b></p>
               </div>
               <div class="testimonial-name">
-                <img class="img-circle upimg w-10" src="/img/logos/dummy.png" alt=""/>{this.props.testiname}</div>
+              {this.props.testiname}
+                
+                </div>
             </div>
             {/* <!--END OF TESTIMONIAL 2 --> */}
  

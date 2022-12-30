@@ -29,6 +29,9 @@ export default function Nav() {
           transition: "all 1s"
         }}>
         <ul  >
+        <div className="logo_drop">
+                            <a href="#home"><img src="/img/logo.png"  alt="" /></a>
+                        </div>
         <div className='left'>
             <li><a className="nav-link scrollto active" href="#home">Home</a></li>
             <li><a className="nav-link scrollto" href="#services">Services</a></li>
@@ -45,7 +48,19 @@ export default function Nav() {
         </div>
         </ul>
       </nav>
-        <i class="bi bi-list fixed-top mobile-nav-toggle "></i>
+        <div class="container dropleft fixed-top hider float-right">
+      
+      <button class="bi bi-list btn-lg button1 " type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      </button>
+      <div class="dropdown-menu " aria-labelledby="dropdownMenu2">
+        <button class="dropdown-item" type="button"> <a className="nav-link scrollto active" href="#home">Home</a></button>
+        <button class="dropdown-item" type="button"><a className="nav-link scrollto" href="#services">Services</a></button>
+        <button class="dropdown-item" type="button"><a className="nav-link scrollto" href="#about">About</a></button>
+        <button class="dropdown-item" type="button"> <a className="nav-link scrollto" href="">Career</a></button>
+        <button class="dropdown-item" type="button"><a className="nav-link scrollto" href="#portfolio">Portfolio</a></button>
+        <button class="dropdown-item" type="button"><a className="nav-link scrollto" href="#cta">Contact</a></button>
+       </div>
+         </div>
       </header>
       </div>
  

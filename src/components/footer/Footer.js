@@ -9,9 +9,9 @@ export default function Footer() {
         <div className="maplogo p-5 pb-0">
           <img src="/img/logos/footer_logo.png" className="img-fluid" alt="" />
         </div>
-        <p className="font-weight-bold ">
-          <i className="fas fa-envelope pt-5 pl-5 text-secondary"></i>&nbsp;&nbsp;
-          a3pixels@a3pixels.com
+        <p>
+          <i className="fas fa-envelope pt-5 pl-5">&nbsp;&nbsp;
+          sales@a3pixels.com <br/> <br/> Hind Service Industries, SVS Rd, Chandrakant Dhuru Wadi, Dadar, Mumbai, Maharashtra 400028</i>
         </p>
       </div>
       <div className="col-12 col-md-7 mapsize">

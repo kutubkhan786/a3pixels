@@ -263,8 +263,8 @@ onReady(function () {
     setTimeout(() => {
         show('content1', true);
         show('loader', false);
-    },5000);
+    },0);
 });
 
 //   
-
+$('#maindiv').width($('#div1').width());
