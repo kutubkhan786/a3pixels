@@ -1,26 +1,27 @@
-section  #elearning{
+section #elearning {
     padding: 3.125rem;
     padding-top: 6.25rem;
 }
 
-ul{
+ul {
     list-style-type: style type dash;
 }
 
-.serport{
+.serport {
     margin-top: -2%;
 }
-.grey1{
-    background-color: #e5e5e5 ;
 
+.grey1 {
+    background-color: #e5e5e5;
 }
 
-.fixed{
+.fixed {
     position: fixed;
     top: 0%;
     width: 100%;
 }
-.bacimg{
+
+.bacimg {
     background-image: url(../../../public/img/services2.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -29,29 +30,29 @@ ul{
     margin-left: 0;
 }
 
-.yellowless{
-    background-color: rgba(253, 205, 0,15%);
+.yellowless {
+    background-color: rgba(253, 205, 0, 15%);
     padding: 40px;
 }
 
-.greyless{
-    background-color:rgba(137, 137, 137,22%);
+.greyless {
+    background-color: rgba(137, 137, 137, 22%);
     padding: 40px;
 }
 
-.lanbox{
+.lanbox {
     display: flex;
 }
-.img-square-wrapper{
-    background-color:rgba(0, 0, 0,70%);
+
+.img-square-wrapper {
     height: 100%;
     align-items: center;
     padding: 1rem;
     color: white;
     width: 60%;
 }
-.card-body{
-    background-color: rgba(0, 0, 0,40%);
+
+.card-body {
     padding: 1rem;
     color: white;
 }

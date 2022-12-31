@@ -3,6 +3,10 @@
     height: 5rem;
 }
 
+#maindiv {
+    display: none;
+}
+
 .slide-track {
     width: 100%;
     display: flex;
@@ -25,7 +29,7 @@
     .carousel-control-prev {
         position: absolute;
         float: left;
-        visibility: hidden;
+        display: none;
     }
     .carousel-control-next {
         position: absolute;
@@ -39,6 +43,7 @@
         border: 2px solid black;
         overflow: hidden;
         white-space: nowrap;
+        display: flex;
     }
     #div1 {
         display: inline-block;
