@@ -83,7 +83,7 @@
         height: 100vh;
         z-index: 100;
         overflow: visible;
-        background: black url(/public/img/logos/pre-loader.gif) no-repeat center center;
+        background: black url(/src/new_imgs/pre-loader.gif) no-repeat center center;
         transition: all ease-in-out 1s;
     }
     
