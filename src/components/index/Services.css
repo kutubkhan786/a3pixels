@@ -90,7 +90,7 @@
     padding: 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     .till {
         display: flex;
         flex-direction: column;
@@ -102,6 +102,9 @@
         border-radius: 10px;
         /* background-color: #00ab15; */
     }
+    .container_card p {
+        font-size: small;
+    }
     .container_card {
         margin: 10%;
         padding: auto;
@@ -112,5 +115,11 @@
         align-items: center;
         background-color: grey;
         border-radius: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .container_card p {
+        font-size: xx-small;
     }
 }

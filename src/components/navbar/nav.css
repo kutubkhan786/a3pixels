@@ -103,16 +103,18 @@
     margin: 0.5rem;
     float: right;
     display: none;
+    background-color: transparent;
+    color: #ffff;
 }
 
 
 /* dropdown section */
 
 .logo_drop {
-    margin-left: 5%;
+    /* margin-left: 5%; */
     margin-right: 5%;
     background-color: #f6f6f6;
-    border-radius: 20vh;
+    /* border-radius: 20vh; */
     /* z-index: 999; */
     height: auto;
     width: 12rem;
@@ -144,6 +146,12 @@
     .logo_drop {
         display: flex;
         margin-right: 10rem;
+    }
+    #home_mobile {
+        display: block;
+    }
+    #home {
+        display: none;
     }
 }
 

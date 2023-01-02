@@ -71,7 +71,9 @@ export default class app extends Component {
                 <div className="fit-screen d-flex align-items-center justify-content-center">
                     <div className="fit-card  ">
                         {/* <div className="bg-box"> */}
+
                         <img id="home" src="/img/Banner1.png" className=" img-fluid " alt=""/>
+                        <img id="home_mobile" src="/img/logos/vert2.jpg" className=" img-fluid " alt=""/>
 
                     </div>
                 </div>
@@ -85,13 +87,17 @@ export default class app extends Component {
             {/* <!-- <div className='merg' id="services"> --> */}
             
             <section className="til pb-0" data-aos="fade-up" data-aos-duration="1000">
-                <div className='container'>
+                <div className='container new7'>
                     <div className="row" data-aos="zoom-out">
 
-                                <Services linker="/services/#e-learning" name1="E-LEARNING &" name2="DEVELOPMENT" logo="/img/logos/1.png" logoh="/img/logos/1_H.png" />
+                                <Services linker="#home" name1="E-LEARNING &" name2="DEVELOPMENT" logo="/img/logos/1.png" logoh="/img/logos/1_H.png" />
+                                <Services linker="#home" name1="TRANSLATION &" name2="LOCALIZATION" logo="/img/logos/4.png" logoh="/img/logos/4_H.png" />
+                                <Services linker="#home" name1="WEBSITE & MULTIMEDIA" name2=" DEVELOPEMENT" logo="/img/logos/3.png" logoh="/img/logos/3_H.png" />
+                                <Services linker="#home" name1="PRINT & " name2="IDENTITY" logo="/img/logos/2.png" logoh="/img/logos/2_H.png" />
+                                {/* <Services linker="/services/#e-learning" name1="E-LEARNING &" name2="DEVELOPMENT" logo="/img/logos/1.png" logoh="/img/logos/1_H.png" />
                                 <Services linker="/services/#translation" name1="TRANSLATION &" name2="LOCALIZATION" logo="/img/logos/4.png" logoh="/img/logos/4_H.png" />
                                 <Services linker="/services/#website" name1="WEBSITE & MULTIMEDIA" name2=" DEVELOPEMENT" logo="/img/logos/3.png" logoh="/img/logos/3_H.png" />
-                                <Services linker="/services/#print" name1="PRINT & IDENTITY" logo="/img/logos/2.png" logoh="/img/logos/2_H.png" />
+                                <Services linker="/services/#print" name1="PRINT & IDENTITY" logo="/img/logos/2.png" logoh="/img/logos/2_H.png" /> */}
 
                             </div>
                         </div>
@@ -220,7 +226,7 @@ export default class app extends Component {
 
             {/* <!-- =====Our Latest Work====== --> */}
          
-            <section  className="latest p-5 "  data-aos="fade-up" data-aos-duration="1000" >
+            <section  className="latest p-0 m-0"  data-aos="fade-up" data-aos-duration="1000" >
                
                     <div className="section-title ml-4 mb-4 pl-0 " data-aos="zoom-out">
                         <p >OUR LATEST WORK</p>
