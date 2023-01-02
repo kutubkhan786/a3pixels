@@ -17,7 +17,7 @@ class Clients extends Component {
   render() {
     return (
       <>
-        <div className="slider">
+        <div className="slider pl-0 pr-0">
           <div className="container">
             <div className="section-title mb-0" data-aos="zoom-out">
               <p>Our Clients</p>

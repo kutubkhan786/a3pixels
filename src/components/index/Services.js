@@ -5,7 +5,7 @@ import './Services.css';
 function services(props) {
     
     return (<>
-        <div className="col-xs-6 col-sm-3">
+        <div className="col-6 col-sm-6 col-xl-3 col-md-3 col-lg-3 ">
            <Link to={props.linker} >
             <div className='container7'>
                 <div className="container_card">

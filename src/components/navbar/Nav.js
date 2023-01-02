@@ -33,7 +33,7 @@ export default function Nav() {
         }}>
         <ul  >
         <div className="logo_drop">
-                            <a href="#home"><img src="/img/logo.png"  alt="" /></a>
+                            <Link to="/#home"><img src="/img/logo.png"  alt="" /></Link>
                         </div>
         <div className='left'>
             <li><Link className="nav-link scrollto active" to="/#home">Home</Link></li>
@@ -41,11 +41,11 @@ export default function Nav() {
             <li><a className="nav-link scrollto" href="#about">About</a></li>
         </div>
         <div className="logo">
-                            <a href="#home"><img src="/img/logo.png"  alt="" /></a>
+                            <Link to="/#home"><img src="/img/logo.png"  alt="" /></Link>
                         </div>
      
         <div className='right'>
-            <li><a className="nav-link scrollto" href="">Career</a></li>
+            <li><a className="nav-link scrollto" href="career">Career</a></li>
             <li><a className="nav-link scrollto" href="#portfolio">Portfolio</a></li>
             <li><a className="nav-link scrollto" href="#cta">Contact</a></li>
         </div>
@@ -53,21 +53,25 @@ export default function Nav() {
       </nav>
         <div class="container dropleft fixed-top hider float-right">
       
-      <button class="bi bi-list btn-lg button1 " type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <button class="fa fa-bars btn-lg button1"  type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       </button>
-      <div class="dropdown-menu " aria-labelledby="dropdownMenu2">
-        <button class="dropdown-item" type="button"> <a className="nav-link scrollto active" href="#home">Home</a></button>
+      
+
+      <section class="dropdown-menu " aria-labelledby="dropdownMenu2">
+        <button class="dropdown-item" type="button"><a className="nav-link scrollto active" href="#home_mobile">Home</a></button>
         <button class="dropdown-item" type="button"><a className="nav-link scrollto" href="#services">Services</a></button>
         <button class="dropdown-item" type="button"><a className="nav-link scrollto" href="#about">About</a></button>
         <button class="dropdown-item" type="button"> <a className="nav-link scrollto" href="">Career</a></button>
         <button class="dropdown-item" type="button"><a className="nav-link scrollto" href="#portfolio">Portfolio</a></button>
         <button class="dropdown-item" type="button"><a className="nav-link scrollto" href="#cta">Contact</a></button>
-       </div>
+       </section>
+      
          </div>
       </header>
       </div>
  
   );
+
 }
 
 

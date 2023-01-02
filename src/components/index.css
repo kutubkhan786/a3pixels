@@ -57,7 +57,7 @@
         }
     }
     
-    a {
+    .new7 a {
         color: white;
         text-decoration: none;
     }
@@ -83,7 +83,7 @@
         height: 100vh;
         z-index: 100;
         overflow: visible;
-        background: black url(/src/new_imgs/pre-loader.gif) no-repeat center center;
+        background: black url(../css_img/pre-loader.gif) no-repeat center center;
         transition: all ease-in-out 1s;
     }
     
@@ -142,6 +142,10 @@
     
     .kk {
         z-index: 99;
+    }
+    
+    #home_mobile {
+        display: none;
     }
     
     #home img {

@@ -19,7 +19,7 @@ ul {
 
 
 .bacimg {
-    background-image: url(/src/new_imgs/services2.png);
+    background-image: url(../../css_img/pre-loader.gif);
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
