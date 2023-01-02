@@ -6,7 +6,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route exact path="/" element={<Index />}/>
+        <Route  path="/" element={<Index />}/>
           <Route path="/services" element={<NServices />} />
       </Routes>
     </BrowserRouter>

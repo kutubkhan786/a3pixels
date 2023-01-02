@@ -1,6 +1,8 @@
 section #elearning {
     padding: 3.125rem;
     padding-top: 6.25rem;
+    z-index: -1;
+    margin-top: 1000px;
 }
 
 ul {
@@ -15,11 +17,6 @@ ul {
     background-color: #e5e5e5;
 }
 
-.fixed {
-    position: fixed;
-    top: 0%;
-    width: 100%;
-}
 
 .bacimg {
     background-image: url(/src/new_imgs/services2.png);
@@ -44,15 +41,86 @@ ul {
     display: flex;
 }
 
-.img-square-wrapper {
+.lanbox .img-square-wrapper {
     height: 100%;
     align-items: center;
     padding: 1rem;
     color: white;
     width: 60%;
+    background-color: black ;
+    opacity: 0.5;
 }
 
-.card-body {
+
+.card-body1 {
     padding: 1rem;
     color: white;
+    background-color: black ;
+    opacity: 0.3;
 }
+
+.probutton{
+    border-radius: 50px;
+    margin: 0.625rem;
+    background-color: #e5e5e5;
+    height: 100%;
+    width: auto;
+}
+
+ul .probutton{
+    height: 5rem;
+    margin-top:auto ;
+    margin-bottom: auto;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    padding: 2rem;
+    display: flex;
+    text-align: center;
+}
+
+.yellowcir{
+    border-radius:0 200px 200px 0 ;
+    background-color: #fdcd00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column ;
+}
+
+
+.lightyellcir{
+    border-radius:0 200px 200px 0 ;
+    background-color: #fcce0041;
+    text-align: left;
+    display: flex;
+    height: 11.8rem;
+}
+
+.yellowcir1{
+    border-radius: 200px 0 0 200px  ;
+    background-color: #898989;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column ;
+}
+
+
+.lightyellcir1{
+    border-radius: 200px 0 0 200px  ;
+    background-color: #e5e5e5;
+    text-align: left;
+    display: flex;
+    height: 11.8rem;
+}
+
+.extrasize{
+    font-size: 80px;
+    font-weight: 800;
+}
+
+.extrasize1{
+    font-size: 26px;
+}
+

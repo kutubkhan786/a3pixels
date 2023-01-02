@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./nav.css";
+import { Link } from 'react-router-dom';
+
 export default function Nav() {
   const [navSize, setnavSize] = useState("4.375rem");
   const [navWidth, setnavWidth] = useState("100%");
@@ -20,6 +22,7 @@ export default function Nav() {
 
 
   return (
+    
     <div className="container_nav ">
           <header id="header" className="fixed-top ">
       <nav id="navbar" className="navbar h-100 d-flex align-items-center justify-content-center"  style={{
@@ -33,7 +36,7 @@ export default function Nav() {
                             <a href="#home"><img src="/img/logo.png"  alt="" /></a>
                         </div>
         <div className='left'>
-            <li><a className="nav-link scrollto active" href="#home">Home</a></li>
+            <li><Link className="nav-link scrollto active" to="/#home">Home</Link></li>
             <li><a className="nav-link scrollto" href="#services">Services</a></li>
             <li><a className="nav-link scrollto" href="#about">About</a></li>
         </div>
