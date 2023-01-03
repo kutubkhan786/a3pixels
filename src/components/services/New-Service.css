@@ -2,7 +2,10 @@ section #elearning {
     padding: 3.125rem;
     padding-top: 6.25rem;
     z-index: -1;
-    margin-top: 1000px;
+}
+
+.elearning {
+    margin-top: 300px;
 }
 
 ul {
@@ -19,7 +22,7 @@ ul {
 
 
 .bacimg {
-    background-image: url(../../css_img/pre-loader.gif);
+    background-image: url(../../css_img/services2.png);
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
@@ -47,7 +50,7 @@ ul {
     padding: 1rem;
     color: white;
     width: 60%;
-    background-color: black ;
+    background-color: black;
     opacity: 0.5;
 }
 
@@ -55,11 +58,11 @@ ul {
 .card-body1 {
     padding: 1rem;
     color: white;
-    background-color: black ;
+    background-color: black;
     opacity: 0.3;
 }
 
-.probutton{
+.probutton {
     border-radius: 50px;
     margin: 0.625rem;
     background-color: #e5e5e5;
@@ -67,9 +70,9 @@ ul {
     width: auto;
 }
 
-ul .probutton{
+ul .probutton {
     height: 5rem;
-    margin-top:auto ;
+    margin-top: auto;
     margin-bottom: auto;
     justify-content: center;
     align-items: center;
@@ -79,48 +82,65 @@ ul .probutton{
     text-align: center;
 }
 
-.yellowcir{
-    border-radius:0 200px 200px 0 ;
+.yellowcir {
+    border-radius: 0 200px 200px 0;
     background-color: #fdcd00;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction:column ;
+    flex-direction: column;
 }
 
 
-.lightyellcir{
-    border-radius:0 200px 200px 0 ;
+.lightyellcir {
+    border-radius: 0 200px 200px 0;
     background-color: #fcce0041;
     text-align: left;
     display: flex;
     height: 11.8rem;
 }
 
-.yellowcir1{
-    border-radius: 200px 0 0 200px  ;
+.yellowcir1 {
+    border-radius: 200px 0 0 200px;
     background-color: #898989;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction:column ;
+    flex-direction: column;
 }
 
 
-.lightyellcir1{
-    border-radius: 200px 0 0 200px  ;
+.lightyellcir1 {
+    border-radius: 200px 0 0 200px;
     background-color: #e5e5e5;
     text-align: left;
     display: flex;
-    height: 11.8rem;
+    height: 13rem;
 }
 
-.extrasize{
-    font-size: 80px;
+.extrasize {
+    font-size: 500%;
     font-weight: 800;
 }
 
-.extrasize1{
+.extrasize1 {
     font-size: 26px;
 }
 
+span {
+    position: absolute;
+    top: -200px;
+}
+
+@media (max-width: 768px) {
+    ul {
+      flex-direction: column;  /* Change flex direction to column */
+      align-items: center;
+
+    }
+  
+    li {
+      padding: 10px;  /* Add padding to make list items easier to tap on mobile devices */
+    }
+  }
+  

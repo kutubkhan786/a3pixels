@@ -4,6 +4,8 @@ import Navbar from '../navbar/Nav.js';
 import Footer from '../footer/Footer.js';
 import Clients from '../index/Clients.js';
 import Translation from './translation.js';
+import WebMul from './web&mul.js';
+import { HashLink } from 'react-router-hash-link';
 
 
 export default class NewService extends Component {
@@ -34,82 +36,85 @@ export default class NewService extends Component {
     render() {
         return (<>
             {/* ========navbar========== */}
-            <Navbar />
+            <div className='fixed-top'>
+                <Navbar />
 
-            {/* =============E-learning section========= */}
-            <section id='elearning' className="mt-3 fixed-top " >
-                <div className='row grey1'>
-                    <div className='row  p-3 col-12'>
-                        <div className='col-1'></div>
-                        <div className="col-md-5 col-sm-12 d-flex justify-content-left my-auto ">
-                            <p className='font-weight-bold text-left ' ><h1 className='extrasize'>{this.state.bannertext1}</h1>
-                                <p className='extrasize1'>{this.state.bannertext2}</p></p>
-                        </div>
-                        <div className="col-md-6 col-sm-12">
-                            {/* <img src="\img\services1.png" className='img-fluid' alt='' /> */}
+                {/* =============E-learning section========= */}
+                <section id='elearning' className="mt-3" >
+                    <div className='row grey1'>
+                        <div className='row  p-3 col-12'>
+                            <div className='col-1'></div>
+                            <div className="col-md-5 col-sm-12 d-flex justify-content-left my-auto ">
+                                <p className='font-weight-bold text-left ' ><h1 className='extrasize'>{this.state.bannertext1}</h1>
+                                    <p className='extrasize1'>{this.state.bannertext2}</p></p>
+                            </div>
+                            <div className="col-md-6 col-sm-12">
+                                <img src="\img\serlogo\services1.png" className='img-fluid' alt='' />
 
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className='row portfolio'>
-                    <ul id="portfolio-flters" className="col-12 d-flex justify-content-center serport" data-aos="fade-up">
-                        <li id='E-LEARNING DEVELOPEMENT' onClick={this.updateState} className="filter-active pl-4 pr-4">E-LEARNING DEVELOPEMENT</li>
-                        <li id='TRANSLATION & LOCALIZATION' onClick={this.updateState} >TRANSLATION & LOCALIZATION</li>
-                        <li id='WEB & MULTIMIDIA DEVELOPEMENT' onClick={this.updateState} >WEB & MULTIMIDIA DEVELOPEMENT</li>
-                        <li id='PRINT & IDENTITY' onClick={this.updateState}>PRINT & IDENTITY</li>
-                    </ul>
-                </div>
-            </section>
-            <div className='elearning'>
-                <p className='m-4 p-4'>
+                    <div className='row portfolio'>
+                        <ul id="portfolio-flters" className="col-12 d-flex justify-content-center serport" data-aos="fade-up">
+                            <a href='#elearning'><li id='E-LEARNING DEVELOPEMENT' onClick={this.updateState} className="filter-active pl-4 pr-4"> E-LEARNING DEVELOPEMENT</li></a>
+                            <a href='#trans'><li id='TRANSLATION & LOCALIZATION' onClick={this.updateState} > TRANSLATION & LOCALIZATION</li></a>
+                            <a href='#web'><li id='WEB & MULTIMIDIA DEVELOPEMENT' onClick={this.updateState} > WEB & MULTIMIDIA DEVELOPEMENT</li></a>
+                            <a href='#print'><li id='PRINT & IDENTITY' onClick={this.updateState}> PRINT & IDENTITY</li></a>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+            <div className='row elearning '>
+                <p className=' container mt-4   '>
                     We have expertise in both: across -the -board -support to serious e-Learning solutions; and custom e-learning content creation in areas like Behavioral/Soft Skills, Software Simulation, Standard Operating Procedures, Domain Skills - Sales, Finance, HR, and Operations etc. Product Training, Interactive Game Based Approach, Vocational Courses.
                     <br />
                     <br />
                     Our wbt/cbt's are powerful, intuitive, self-paced, self-learning tools which impart in-depth know-how to employees in a simple and lucid style. We integrate audio-visuals to make the content more interesting and the learning experience more exciting.</p><br /><br />
 
-                <section className='row bacimg'>
+                <section className='row bacimg '>
                     <div className='col-lg-6 yellowless d-flex justify-content-center'>
                         <div>
-                        <b>CUSTOM E-LEARNING CONTENT CREATION</b>
-                        <ul>
-                            <li>Behavioral/Soft Skills</li>
-                            <li>Software Simulation</li>
-                            <li>Standard Operating Procedures</li>
-                            <li>Domain Skills - Sales, Finance, HR, Operations etc.</li>
-                            <li>Product Training</li>
-                            <li>Interactive Game Based Approach</li>
-                            <li>Vocational Courses</li>
-                        </ul>
+                            <b>CUSTOM E-LEARNING CONTENT CREATION</b>
+                            <ul>
+                                <li>Behavioral/Soft Skills</li>
+                                <li>Software Simulation</li>
+                                <li>Standard Operating Procedures</li>
+                                <li>Domain Skills - Sales, Finance, HR, Operations etc.</li>
+                                <li>Product Training</li>
+                                <li>Interactive Game Based Approach</li>
+                                <li>Vocational Courses</li>
+                            </ul>
                         </div>
                     </div>
                     <div className='col-lg-6 greyless'>
-                        <b>REPURPOSING OF CONTENT</b>
-                        <ul>
-                            <li>Technical/Version Upgrade</li>
-                            <li>Interactivity Enhancement – Using of Graphics, Templates, Illustrations, 2D animations, Voiceover</li>
-                            <li>SCORM compliance - Making content compliant with SCORM and accessibility guidelines</li>
-                        </ul>
-                        <b>Our technical experts are well-versed with appropriate languages and tools, and develop effective wbt/cbt's training programmes.</b><br /><br />
-                        <div className='row'>
-                            <div className="lanbox">
-                                <div className="img-square-wrapper d-flex justify-content-center my-auto">
-                                    <b>LANGUAGES</b>
+                        <div className='col-11'>
+                            <b>REPURPOSING OF CONTENT</b>
+                            <ul>
+                                <li>Technical/Version Upgrade</li>
+                                <li>Interactivity Enhancement – Using of Graphics, Templates, Illustrations, 2D animations, Voiceover</li>
+                                <li>SCORM compliance - Making content compliant with SCORM and accessibility guidelines</li>
+                            </ul>
+                            <b>Our technical experts are well-versed with appropriate languages and tools, and develop effective wbt/cbt's training programmes.</b><br /><br />
+                            <div className='row'>
+                                <div className="lanbox">
+                                    <div className="img-square-wrapper d-flex justify-content-center my-auto">
+                                        <b>LANGUAGES</b>
+                                    </div>
+                                    <div className="card-body1">
+                                        <p className='m-0'>HTML5 / CSS3 / JQUERY / JAVASCRIPT / ACTIONSCRIPT 2.0 / XML / SILVERLIGHT 1.0 / JOOMLA / WORDPRESS / DRUPAL<br /></p>
+                                    </div>
                                 </div>
-                                <div className="card-body1">
-                                    <p className='m-0'>HTML5 / CSS3 / JQUERY / JAVASCRIPT / ACTIONSCRIPT 2.0 / XML / SILVERLIGHT 1.0 / JOOMLA / WORDPRESS / DRUPAL<br /></p>
+                                <br />
+
+                                <div className="lanbox">
+                                    <div className="img-square-wrapper d-flex justify-content-center my-auto">
+                                        <b >TOOL</b>
+                                    </div>
+                                    <div className="card-body1">
+                                        <p className='m-0'>ARTICULATE STORYLINE / ARTICULATE STUDIO / FLASH / LECTORA / CAPTIVATE / AUTHORWARE / BREEZ / EXPRESSION BLEND<br /></p>
+                                    </div>
                                 </div>
                             </div>
-                            <br />
-
-                            <div className="lanbox">
-                                <div className="img-square-wrapper d-flex justify-content-center my-auto">
-                                    <b >TOOL</b>
-                                </div>
-                                <div className="card-body1">
-                                    <p className='m-0'>ARTICULATE STORYLINE / ARTICULATE STUDIO / FLASH / LECTORA / CAPTIVATE / AUTHORWARE / BREEZ / EXPRESSION BLEND<br /></p>
-                                </div>
-                            </div>
-
                         </div>
                     </div>
                 </section>
@@ -126,11 +131,12 @@ export default class NewService extends Component {
                 </ul>
             </div>
 
-            <div className='row desc p-3'>
+
+            <div className='row desc pb-3'>
                 <div className='lightyellcir col-11'>
                     <div className='yellowcir col-3   text-center justify-content-center'>
                         <img src='\img\serlogo\Logo_01.png' className='img-fluid' alt='' />
-                        PLANNING <br />THE PROJECT
+                        <p class="text-uppercase"> PLANNING <br />THE PROJECT</p>
                     </div> <p className='col-9 p-4 my-auto'>
                         At this stage, the client's e-learning requirement is analysed and the project is broken down into key issues to be addressed at each stage of the project. The Project Plan also clearly outlines and identifies the scope of work, the people on the team and their individual responsibilities, the process break-down with estimated timelines, and a clear documented understanding of the final deliverable.
 
@@ -181,11 +187,11 @@ export default class NewService extends Component {
                 </div>
             </div>
 
-
+            {/* =============Translation============== */}
             <Translation />
 
-
-
+            {/* ==========WebMul======== */}
+            <WebMul />
             {/* ===========clients=========== */}
             <Clients />
             {/* =============footer========== */}

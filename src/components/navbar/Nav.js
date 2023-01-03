@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import "./nav.css";
 import { Link } from 'react-router-dom';
 
+import { HashLink } from 'react-router-hash-link';
+
 export default function Nav() {
   const [navSize, setnavSize] = useState("4.375rem");
   const [navWidth, setnavWidth] = useState("100%");
@@ -18,58 +20,58 @@ export default function Nav() {
     };
   }, []);
 
-  
+
 
 
   return (
-    
+
     <div className="container_nav ">
-          <header id="header" className="fixed-top ">
-      <nav id="navbar" className="navbar h-100 d-flex align-items-center justify-content-center"  style={{
+      <header id="header" className="fixed-top ">
+        <nav id="navbar" className="navbar h-100 d-flex align-items-center justify-content-center" style={{
           backgroundColor: navColor,
           height: navSize,
-          width:navWidth,
+          width: navWidth,
           transition: "all 1s"
         }}>
-        <ul  >
-        <div className="logo_drop">
-                            <Link to="/#home"><img src="/img/logo.png"  alt="" /></Link>
-                        </div>
-        <div className='left'>
-            <li><Link className="nav-link scrollto active" to="/#home">Home</Link></li>
-            <li><a className="nav-link scrollto" href="#services">Services</a></li>
-            <li><a className="nav-link scrollto" href="#about">About</a></li>
-        </div>
-        <div className="logo">
-                            <Link to="/#home"><img src="/img/logo.png"  alt="" /></Link>
-                        </div>
-     
-        <div className='right'>
-            <li><a className="nav-link scrollto" href="career">Career</a></li>
-            <li><a className="nav-link scrollto" href="#portfolio">Portfolio</a></li>
-            <li><a className="nav-link scrollto" href="#cta">Contact</a></li>
-        </div>
-        </ul>
-      </nav>
-        <div class="container dropleft fixed-top hider float-right">
-      
-      <button class="fa fa-bars btn-lg button1"  type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      </button>
-      
+          <ul  >
+            <div className="logo_drop">
+              <HashLink to="/#home"><img src="/img/logo.png" alt="" /></HashLink>
+            </div>
+            <div className='left'>
+              <li><HashLink className="nav-link scrollto active" to="/#home">Home</HashLink></li>
+              <li><a className="nav-link scrollto" href="#services">Services</a></li>
+              <li><a className="nav-link scrollto" href="#about">About</a></li>
+            </div>
+            <div className="logo">
+              <HashLink to="/#home"><img src="/img/logo.png" alt="" /></HashLink>
+            </div>
 
-      <section class="dropdown-menu " aria-labelledby="dropdownMenu2">
-        <button class="dropdown-item" type="button"><a className="nav-link scrollto active" href="#home_mobile">Home</a></button>
-        <button class="dropdown-item" type="button"><a className="nav-link scrollto" href="#services">Services</a></button>
-        <button class="dropdown-item" type="button"><a className="nav-link scrollto" href="#about">About</a></button>
-        <button class="dropdown-item" type="button"> <a className="nav-link scrollto" href="">Career</a></button>
-        <button class="dropdown-item" type="button"><a className="nav-link scrollto" href="#portfolio">Portfolio</a></button>
-        <button class="dropdown-item" type="button"><a className="nav-link scrollto" href="#cta">Contact</a></button>
-       </section>
-      
-         </div>
+            <div className='right'>
+              <li><a className="nav-link scrollto" href="career">Career</a></li>
+              <li><a className="nav-link scrollto" href="#portfolio">Portfolio</a></li>
+              <li><a className="nav-link scrollto" href="#cta">Contact</a></li>
+            </div>
+          </ul>
+        </nav>
+        <div class="container dropleft fixed-top hider float-right">
+
+          <button class="fa fa-bars btn-lg button1" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          </button>
+
+
+          <section class="dropdown-menu " aria-labelledby="dropdownMenu2">
+            <button class="dropdown-item" type="button"><a className="nav-link scrollto active" href="#home_mobile">Home</a></button>
+            <button class="dropdown-item" type="button"><a className="nav-link scrollto" href="#services">Services</a></button>
+            <button class="dropdown-item" type="button"><a className="nav-link scrollto" href="#about">About</a></button>
+            <button class="dropdown-item" type="button"> <a className="nav-link scrollto" href="">Career</a></button>
+            <button class="dropdown-item" type="button"><a className="nav-link scrollto" href="#portfolio">Portfolio</a></button>
+            <button class="dropdown-item" type="button"><a className="nav-link scrollto" href="#cta">Contact</a></button>
+          </section>
+
+        </div>
       </header>
-      </div>
- 
+    </div>
+
   );
 
 }

@@ -16,7 +16,6 @@ export default class testimonial extends Component {
               </div>
               <div class="testimonial-name">
               {this.props.testiname}
-                
                 </div>
             </div>
             {/* <!--END OF TESTIMONIAL 2 --> */}

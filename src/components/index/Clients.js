@@ -5,13 +5,24 @@ import c_json from "./clients.json"
 
 class Clients extends Component {
 
-  DisplayData=c_json.map(
-    (info)=>{
-        return(
-          <img className="img-scroll" src={info.path} alt="" />
-        )
+  DisplayData = c_json.map(
+    (info) => {
+      return (
+        <img className="img-scroll" src={info.path} alt="" />
+      )
     }
-)
+  )
+
+  marData = c_json.map(
+    (info) => {
+      return (
+        <div className="slide ">
+          <img className="img-scroll" src={info.path} alt="" />
+        </div>
+      )
+    }
+  )
+
 
 
   render() {
@@ -40,7 +51,8 @@ class Clients extends Component {
                     </div>
                     <div className="slide">
                       <img className="img-scroll" src="/img/clients/Client__4.jpg" alt="" />
-                    </div></div>
+                    </div>
+                  </div>
                   <div className="slide-track d-flex align-items-center justify-content-center">
                     <div className="slide">
                       <img className="img-scroll" src="/img/clients/Client__12.jpg" alt="" />
@@ -53,8 +65,10 @@ class Clients extends Component {
                     </div>
                     <div className="slide">
                       <img className="img-scroll" src="/img/clients/Client__15.jpg" alt="" />
-                    </div></div>
-                </div></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div className="carousel-item">
                 <div className='row' >
                   <div className="slide-track pb-4 d-flex align-items-center justify-content-center">
@@ -124,25 +138,25 @@ class Clients extends Component {
               </a>
             </div>
           </div>
-  
-  
+
+
           <div id="maindiv">
-    <div id="div1">
-    {this.DisplayData}
-    </div>
-    <div id="div2">
-    {this.DisplayData}
-      </div>
-  </div>
-  
-  
+            <div id="div1">
+              {this.DisplayData}
+            </div>
+            <div id="div2">
+              {this.DisplayData}
+            </div>
           </div>
-  
-         
-  
-  
-  
-  
+
+
+        </div>
+
+
+
+
+
+
       </>
     );
   }

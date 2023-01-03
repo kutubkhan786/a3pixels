@@ -24,7 +24,7 @@
     
     @media (min-width:768px) {
         html {
-            font-size: small;
+            font-size: xx-small;
             overflow-x: hidden;
         }
     }
