@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./nav.css";
-import { Link } from 'react-router-dom';
-
 import { HashLink } from 'react-router-hash-link';
 
 export default function Nav() {
@@ -21,12 +19,10 @@ export default function Nav() {
   }, []);
 
 
-
-
   return (
 
     <div className="container_nav ">
-      <header id="header" className="fixed-top ">
+      <header id="header" className="fixed-top">
         <nav id="navbar" className="navbar h-100 d-flex align-items-center justify-content-center" style={{
           backgroundColor: navColor,
           height: navSize,
@@ -47,7 +43,7 @@ export default function Nav() {
             </div>
 
             <div className='right'>
-              <li><a className="nav-link scrollto" href="career">Career</a></li>
+              <li><HashLink className="nav-link scrollto" smooth to="/career">Career</HashLink></li>
               <li><a className="nav-link scrollto" href="#portfolio">Portfolio</a></li>
               <li><a className="nav-link scrollto" href="#cta">Contact</a></li>
             </div>
@@ -60,10 +56,10 @@ export default function Nav() {
 
 
           <section class="dropdown-menu " aria-labelledby="dropdownMenu2">
-            <button class="dropdown-item" type="button"><a className="nav-link scrollto active" href="#home_mobile">Home</a></button>
+            <button class="dropdown-item" type="button"><HashLink className="nav-link scrollto active" smooth to="/#home">Home</HashLink></button>
             <button class="dropdown-item" type="button"><a className="nav-link scrollto" href="#services">Services</a></button>
             <button class="dropdown-item" type="button"><a className="nav-link scrollto" href="#about">About</a></button>
-            <button class="dropdown-item" type="button"> <a className="nav-link scrollto" href="">Career</a></button>
+            <button class="dropdown-item" type="button"> <HashLink className="nav-link scrollto" smooth to="/career">Career</HashLink></button>
             <button class="dropdown-item" type="button"><a className="nav-link scrollto" href="#portfolio">Portfolio</a></button>
             <button class="dropdown-item" type="button"><a className="nav-link scrollto" href="#cta">Contact</a></button>
           </section>

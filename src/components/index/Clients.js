@@ -1,41 +1,59 @@
 import React, { Component } from 'react';
 import './Clients.css'
 import c_json from "./clients.json"
+import OwlCarousel from 'react-owl-carousel';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
 
+const options = {
+  loop: 'true',
+  center: 'true',
+  margin: 0,
+  items:3,
+  autoplay: 'true',
+  dots: 'true',
+  autoplayTimeout: 1000,
+  smartSpeed: 450,
+  responsive: {
+    700: {
+      items: 5
+    },
+
+  }
+};
 
 class Clients extends Component {
 
   DisplayData = c_json.map(
     (info) => {
       return (
-        <img className="img-scroll" src={info.path} alt="" />
+        <img className="img-scroll img-fluid" src={info.path} alt="" />
       )
     }
   )
-
-  marData = c_json.map(
-    (info) => {
-      return (
-        <div className="slide ">
-          <img className="img-scroll" src={info.path} alt="" />
-        </div>
-      )
-    }
-  )
-
-
 
   render() {
     return (
       <>
-        <div className="slider pl-0 pr-0">
+        <div className="slider pl-0 pr-0 ">
           <div className="container">
             <div className="section-title mb-0" data-aos="zoom-out">
               <p>Our Clients</p>
               {/* <h2>Who are our clients</h2> */}
             </div>
           </div>
-          <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
+
+          {/* <!-- ======= Clients Section ======= --> */}
+
+          <OwlCarousel {...options} id="customers-carousel" class="owl-carousel container">
+            {this.DisplayData.slice(1,10)}
+          </OwlCarousel>
+          <OwlCarousel {...options} id="customers-carousel" class="owl-carousel container">
+            {this.DisplayData.slice(10,20)}
+          </OwlCarousel>
+         
+          {/* <!-- End Clients Section --> */}
+          {/* <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
             <div className="carousel-inner">
               <div className="carousel-item active">
                 <div className='row ' >
@@ -137,17 +155,17 @@ class Clients extends Component {
                 <span className="sr-only">Next</span>
               </a>
             </div>
-          </div>
+          </div> */}
 
 
-          <div id="maindiv">
+          {/* <div id="maindiv">
             <div id="div1">
               {this.DisplayData}
             </div>
             <div id="div2">
               {this.DisplayData}
             </div>
-          </div>
+          </div> */}
 
 
         </div>

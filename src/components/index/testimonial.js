@@ -11,6 +11,7 @@ export default class testimonial extends Component {
             {/* <!--TESTIMONIAL 2 --> */}
             <div class="item">
               <div class="top11"></div>
+              <img src='\img\logos\dummy.png' alt='' className='owl-img'/>
               <div class="shadow-effect">
                 <p>{this.props.testidesc}<br/><b>{this.props.testiposition}</b></p>
               </div>

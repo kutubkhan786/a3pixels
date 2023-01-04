@@ -116,6 +116,7 @@ ul .probutton {
     text-align: left;
     display: flex;
     height: 13rem;
+    cursor: grabbing;
 }
 
 .extrasize {
@@ -127,10 +128,6 @@ ul .probutton {
     font-size: 26px;
 }
 
-span {
-    position: absolute;
-    top: -200px;
-}
 
 @media (max-width: 768px) {
     ul {

@@ -1,8 +1,8 @@
 .til {
     margin-top: -17%;
     visibility: visible;
+    /* position: absolute; */
 }
-
 
 /* latest work */
 
@@ -123,3 +123,4 @@
         font-size: xx-small;
     }
 }
+

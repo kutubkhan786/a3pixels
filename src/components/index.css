@@ -61,10 +61,16 @@
         color: white;
         text-decoration: none;
     }
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    
     
     a:hover {
         color: #fdcd00;
         text-decoration: none;
+        cursor: grab;
     }
     
     h1,
@@ -84,7 +90,6 @@
         z-index: 100;
         overflow: visible;
         background: black url(../css_img/pre-loader.gif) no-repeat center center;
-        transition: all ease-in-out 1s;
     }
     
     #content1 {
@@ -148,8 +153,11 @@
         display: none;
     }
     
+    #home{
+        background-color: #fdcd00;
+    }
     #home img {
-        margin-top: -5rem;
+        padding: 3rem;
     }
     
     @media only screen and (max-width: 992px) {
@@ -501,7 +509,7 @@
     }
     
     #portfolio {
-        margin-top: -39px;
+        margin-top: -90px;       
     }
     
     #about {
@@ -594,6 +602,7 @@
     .contact .info .phone:hover i {
         background: #ef6603;
         color: rgba(255, 253, 236, 0.9);
+        cursor: grab;
     }
     
     .contact .php-email-form {
@@ -673,6 +682,7 @@
     
     .contact .php-email-form button[type=submit]:hover {
         background: #fc8129;
+        cursor: grab;
     }
     
     @-webkit-keyframes animate-loading {
@@ -740,6 +750,7 @@
     .contact .info .phone:hover i {
         background: #ef6603;
         color: rgba(255, 253, 236, 0.9);
+        cursor: grab;
     }
     
     .contact .php-email-form {
@@ -819,6 +830,7 @@
     
     .contact .php-email-form button[type=submit]:hover {
         background: #fc8129;
+        cursor: grab;
     }
     
     @-webkit-keyframes animate-loading {
@@ -892,6 +904,7 @@
     
     .team .member .social a:hover {
         background: #fc8129;
+        cursor: grab;
     }
     
     .team .member .social i {
@@ -927,6 +940,7 @@
     .team .member:hover .social {
         opacity: 1;
         bottom: 0.938rem;
+        cursor: grab;
     }
     /* team member css for slider */
     
@@ -987,6 +1001,7 @@
         background-color: white;
         color: #898989;
         border: 2px solid #898989;
+        cursor: grab;
     }
     
     .bg-modal {
@@ -1030,6 +1045,7 @@
     
     .close:hover {
         color: #666;
+        cursor: grab;
     }
     
     #main {
@@ -1056,6 +1072,7 @@
     .tilter:focus {
         color: #fff;
         outline: none;
+        cursor: grab;
     }
     
     .tilter__figure,

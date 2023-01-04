@@ -31,18 +31,32 @@ const options = {
             items: 1
         },
         770: {
-            items: 1
+            items: 2
         },
         1024: {
-            items: 1
-        },
-        1200: {
             items: 3
-        }
+        },
 
 
     }
 };
+const options1 = {
+    loop: 'true',
+    autoplay: 'true',
+    dots: 'false',
+    autoplayTimeout: 4000,
+    smartSpeed: 450,
+    responsive: {
+        0: {
+            items: 1
+        },
+    }
+};
+
+
+function show(id, value) {
+    document.getElementById(id).style.display = value ? 'block' : 'none';
+}
 
 export default class app extends Component {
     DisplayData = JsonData.map(
@@ -52,31 +66,35 @@ export default class app extends Component {
             )
         }
     )
+
     componentDidMount() {
         const portfolioLightbox = Glightbox({
             selector: '.portfolio-lightbox'
-
         });
+        setTimeout(() => {
+            show('loader', false);
+            show('content1', true);
+        }, 0);
     }
 
     render() {
         return (
             <>
-                <div id="loader" ></div>
+                <div id="loader"  ></div>
                 <div id="content1">
                     <Navbar />
                     {/* <!-- ======= Head Section ======= --> */}
 
-                    <section id='home1' className="el">
-                        <div className="fit-screen d-flex align-items-center justify-content-center">
-                            <div className="fit-card  ">
-                                {/* <div className="bg-box"> */}
+                    <section id='home' className="el ">
+                        <OwlCarousel {...options1} id="customers-banner" class="owl-carousel">
 
-                                <img id="home" src="/img/Banner1.png" className=" img-fluid " alt="" />
-                                <img id="home_mobile" src="/img/logos/vert2.jpg" className=" img-fluid " alt="" />
+                            <img src="\img\about\Banner_01.png" alt="" className='img-fluid ' />
+                            <img src="\img\about\Banner_02.png" alt="" className='img-fluid ' />
+                            <img src="\img\about\Banner_03.png" alt="" className='img-fluid ' />
+                            <img src="\img\about\Banner_04.png" alt="" className='img-fluid ' />
+                            <img src="\img\about\Banner_05.png" alt="" className='img-fluid ' />
 
-                            </div>
-                        </div>
+                        </OwlCarousel>
 
                         <section id='services' className="temp">
                         </section>
@@ -86,19 +104,14 @@ export default class app extends Component {
                     {/* <!-- ======= Services Section ======= --> */}
                     {/* <!-- <div className='merg' id="services"> --> */}
 
-                    <section className="til pb-0" data-aos="fade-up" data-aos-duration="1000">
+                    <section className="til pb-0 z-5 " data-aos="fade-up" data-aos-duration="1000">
                         <div className='container new7'>
-                            <div className="row" data-aos="zoom-out">
-
-                                {/* <Services linker="#home" name1="E-LEARNING &" name2="DEVELOPMENT" logo="/img/logos/1.png" logoh="/img/logos/1_H.png" />
-                                <Services linker="#home" name1="TRANSLATION &" name2="LOCALIZATION" logo="/img/logos/4.png" logoh="/img/logos/4_H.png" />
-                                <Services linker="#home" name1="WEBSITE & MULTIMEDIA" name2=" DEVELOPEMENT" logo="/img/logos/3.png" logoh="/img/logos/3_H.png" />
-                                <Services linker="#home" name1="PRINT & " name2="IDENTITY" logo="/img/logos/2.png" logoh="/img/logos/2_H.png" /> */}
+                            <div className='top11'></div>
+                            <div className="row " data-aos="zoom-out">
                                 <Services linker="/services/#e-learning" name1="E-LEARNING &" name2="DEVELOPMENT" logo="/img/logos/1.png" logoh="/img/logos/1_H.png" />
                                 <Services linker="/services/#translation" name1="TRANSLATION &" name2="LOCALIZATION" logo="/img/logos/4.png" logoh="/img/logos/4_H.png" />
                                 <Services linker="/services/#website" name1="WEBSITE & MULTIMEDIA" name2=" DEVELOPEMENT" logo="/img/logos/3.png" logoh="/img/logos/3_H.png" />
                                 <Services linker="/services/#print" name1="PRINT & IDENTITY" logo="/img/logos/2.png" logoh="/img/logos/2_H.png" />
-
                             </div>
                         </div>
                         {/* <!-- End Services Section --> */}
@@ -130,9 +143,9 @@ export default class app extends Component {
                                 </ul>
                                 <div className="container-fluid">
                                     <div className="row">
-                                        <div className="col-lg-5">
-                                            <h4 className="section-title  mb-0"><b>WHAT WE DO</b></h4>
-                                            <img className='img-fluid ' src="/img/logos/about-side.png" alt="" />
+                                        <div className="col-lg-5 d-flex align-items-start flex-column">
+                                            <h4 className="section-title  "><b>WHAT WE DO</b></h4>
+                                            <img className='img-fluid  mt-auto' src="/img/logos/about-side.png" alt="" />
                                         </div>
                                         <div className="col-lg-7 pt-4 pt-lg-0 ">
                                             <div className="row content yello-box">
@@ -185,7 +198,6 @@ export default class app extends Component {
                                 </div>
                                 <div className="modal-body">
                                     <div id="response"></div>
-
                                     <div className="form-group">
                                         <label for="requirements">Select Your requirements:</label>
                                         <select name="requirements" id="requirements" className='form-control'>
@@ -195,24 +207,18 @@ export default class app extends Component {
                                             <option value="print">Print & Media</option>
                                         </select>
                                     </div>
-
-
                                     <div className="form-group">
                                         <input type="text" className="form-control" placeholder="Enter your company name" />
                                     </div>
-
                                     <div className="form-group">
                                         <input type="text" className="form-control" placeholder="Enter your Name" />
                                     </div>
-
                                     <div className="form-group">
                                         <input type="email" className="form-control" placeholder="Enter email e.g example@xyz.com" />
                                     </div>
-
                                     <div className="form-group">
                                         <textarea type="text" className="form-control" placeholder="Enter your requirement details..." clos='10' rows='2' />
                                     </div>
-
                                 </div>
                                 <div className="modal-footer">
                                     <button type="button" className="btn btn-default" data-dismiss="modal">Close</button>
@@ -227,29 +233,16 @@ export default class app extends Component {
                     {/* <!-- =====Our Latest Work====== --> */}
 
                     <section className="latest  " data-aos="fade-up" data-aos-duration="1000" >
-
                         <div className="section-title  container" data-aos="zoom-out">
                             <p >OUR LATEST WORK</p>
                             {/* <h2>jreiute5yhguteh eurhwe </h2> */}
                         </div>
-
                         <div className=" new_latest   h-10 d-flex align-items-center justify-content-center container">
-                            <Latest logo="/img/portfolio/work1.jpg" CareerTitle="WEB SOLUTION" CareerDec="
-A Website is an extension of a company's overall communication strategy. We create websites using HTML5, CSS3, Jquery.
-" />
-
-                            <Latest logo="/img/portfolio/work2.jpg" CareerTitle="WEB APPLICATION" CareerDec="
-We have expertise in Smart Phone Application Development, iPhone Game Development and Custom Mobile Application Development" />
-
-                            <Latest logo="/img/portfolio/work3.jpg" CareerTitle="K12 ANIMATIONS" CareerDec="
-We offer full production services in 2D, 3D, cell animation and corporate Videos (Audio and video), Multimedia Presentations / Slideshows.
-" />
-
-                            <Latest logo="/img/portfolio/work4.jpg" CareerTitle="PRINT WORK" CareerDec="
-We develop the most effective marketing solutions based on your unique business needs, aiming to maximize returns on your marketing efforts." />
+                            <Latest logo="/img/portfolio/work1.jpg" CareerTitle="WEB SOLUTION" CareerDec="A Website is an extension of a company's overall communication strategy. We create websites using HTML5, CSS3, Jquery." />
+                            <Latest logo="/img/portfolio/work2.jpg" CareerTitle="WEB APPLICATION" CareerDec="We have expertise in Smart Phone Application Development, iPhone Game Development and Custom Mobile Application Development" />
+                            <Latest logo="/img/portfolio/work3.jpg" CareerTitle="K12 ANIMATIONS" CareerDec="We offer full production services in 2D, 3D, cell animation and corporate Videos (Audio and video), Multimedia Presentations / Slideshows." />
+                            <Latest logo="/img/portfolio/work4.jpg" CareerTitle="PRINT WORK" CareerDec="We develop the most effective marketing solutions based on your unique business needs, aiming to maximize returns on your marketing efforts." />
                         </div>
-
-
                     </section>
 
                     {/* <!-- ======= Testimonials Section ======= -->- */}
@@ -261,7 +254,7 @@ We develop the most effective marketing solutions based on your unique business 
                                 {/* <h2>Who are our clients</h2> */}
                             </div>
                             <div class="row">
-                                <div class="col-sm-12 newone p-0" >
+                                <div class="col-sm-12 newone" >
                                     <OwlCarousel {...options} id="customers-testimonials" class="owl-carousel">
                                         <Testimonial testidesc=" A terrific team to work with: splendid support and excellent work! With your extraordinary efforts, we delivered an eLearning program that met nearly all expectations and an aggressive deadline. I would like to thank everyone who worked on the project. Highly recommend this team and would seek out every opportunity to work with you in future." testiposition="Project Manager, Aptara Inc." testiname="Shabbeer Zafar" />
                                         <Testimonial testidesc="“ Excellent team, led by a well-informed manager. " testiname="Neel Parnaik" testiposition="Associate Project Manager,  Aptara Inc." />
@@ -276,18 +269,15 @@ We develop the most effective marketing solutions based on your unique business 
 
 
                     {/* <!-- ======= Portfolio Section ======= --> */}
-                    <section id="portfolio" className='p-3 '>
+                    <section id="portfolio" >
                     </section>
                     <section className="portfolio">
                         <div className="container">
-
                             <div className="section-title mb-3" data-aos="zoom-out">
                                 <p>Portfolio</p>
                                 <h2>What we've done</h2>
                             </div>
-
                             <ul id="portfolio-flters" className="nav-pills portfolio-filter d-flex justify-content-center p-0" data-aos="fade-up">
-
                                 <li button type="button" class="btn btn-warning" data-filter="*" className="filter-active btn btn-warning ">All</li>
                                 <li button type="button" class="btn btn-warning" data-filter=".Elearning" >E-LEARNING</li>
                                 <li button type="button" class="btn btn-warning" data-filter=".Localization">LOCALIZATION</li>
@@ -296,27 +286,21 @@ We develop the most effective marketing solutions based on your unique business 
                                 <li button type="button" class="btn btn-warning" data-filter=".Multimedia_solution">MULTIMEDIA PRESENTATION</li>
                                 <li button type="button" class="btn btn-warning" data-filter=".printwork">LOGO & PRINT DESIGN</li>
                             </ul>
-
                             <div className="divScroll">
                                 <div className="row portfolio-container my-lightbox-gallery" data-aos="fade-up">
-
                                     {this.DisplayData}
-
-
                                 </div>
                             </div>
                         </div>
-
-
                     </section>
                     {/* <!-- End Portfolio Section --> */}
 
                     {/* client logo start here */}
                     <Clients />
                     {/* client logo end here */}
-                 
 
-                    {/* <!-- Our Company --> */}
+
+                    {/* <!-- footer --> */}
 
                     <Footer />
 

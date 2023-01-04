@@ -5,13 +5,15 @@ import './footer.css';
 export default function Footer() {
   return (
     <div className="row footer " id="cta">
-      <div className="col-12 col-md-5 p-0">
-        <div className="maplogo p-5 pb-0">
+      <div className="col-12 col-md-5 pt-5 pl-5">
+        <div className="maplogo pb-5">
           <img src="/img/logos/footer_logo.png" className="img-fluid" alt="" />
         </div>
-        <p>
-          <i className="fas fa-envelope pt-5 pl-5">&nbsp;&nbsp;
-            sales@a3pixels.com <br /> <br /> Hind Service Industries, SVS Rd, Chandrakant Dhuru Wadi, Dadar, Mumbai, Maharashtra 400028</i>
+        <p className='text-white'>
+          <i className="fas fa-envelope"></i>&nbsp;&nbsp;
+            sales@a3pixels.com <br /> <br />
+            <div className='d-flex align-items-start'>
+            <i className="fas fa-map-marker-alt pt-2"></i>&nbsp;&nbsp;<p>Hind Service Industries, SVS Rd, Chandrakant Dhuru Wadi, Dadar, Mumbai, Maharashtra 400028</p></div>
         </p>
       </div>
       <div className="col-12 col-md-7 mapsize p-0">
