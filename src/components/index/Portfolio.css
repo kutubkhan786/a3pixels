@@ -27,7 +27,7 @@
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
     background-color: #fdcd00;
-    color: white;
+    color: #444444;
 }
 
 .portfolio .portfolio-item {

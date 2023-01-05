@@ -9,7 +9,7 @@ export default function translation() {
           We understand the challenges you face in training your global workforce. Our translation and localization solutions can help you create accurate and culturally-relevant translations of content and training courses. This makes your eLearning comprehensible across varied cultures in a language that ensures your training programs are not just accessible but effective as well.
           We also handle production for English to Localization in various languages. We help in production phase to translate the courses by producing Media, XML and HTML text file into multiple languages.
         </p>
-        <div className='col-6 d-flex justify-content-center yellow'>
+        <div className='col-lg-6 col-12 d-flex justify-content-center yellow'>
           <div className='col-8  '>
             <div className='justify-content-center d-flex btn grey m-4 font-weight-bold'>LANGUAGES</div>
             <div>
@@ -46,7 +46,7 @@ export default function translation() {
             </div>
           </div>
         </div>
-        <div className='col-6 d-flex justify-content-center grey'>
+        <div className='col-lg-6 col-12 d-flex justify-content-center grey'>
           <div className='col-8  '>
             <div className='justify-content-center d-flex btn yellow font-weight-bold m-4 '>SCOPE OF SERVICES</div>
             <p className="text-uppercase justify-content-center text-center d-flex pt-4 "> Creating scripts from given base <br />language scripts or ready courses</p>

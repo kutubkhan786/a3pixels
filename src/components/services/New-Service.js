@@ -40,7 +40,7 @@ export default class NewService extends Component {
                 <Navbar />
 
                 {/* =============E-learning section========= */}
-                <section id='elearning' className="mt-3" >
+                <section  className="mt-3" >
                     <div className='row grey1'>
                         <div className='row  p-3 col-12'>
                             <div className='col-1'></div>
@@ -55,7 +55,7 @@ export default class NewService extends Component {
                         </div>
                     </div>
                     <div className='row portfolio'>
-                        <ul id="portfolio-flters" className="col-12 d-flex justify-content-center serport" data-aos="fade-up">
+                        <ul id="portfolio-flters" className="col-12 d-flex justify-content-center serport nav-pills portfolio-filter" data-aos="fade-up">
                             <a href='#elearning'><li id='E-LEARNING DEVELOPEMENT' onClick={this.updateState} className="filter-active pl-4 pr-4"> E-LEARNING DEVELOPEMENT</li></a>
                             <a href='#trans'><li id='TRANSLATION & LOCALIZATION' onClick={this.updateState} > TRANSLATION & LOCALIZATION</li></a>
                             <a href='#web'><li id='WEB & MULTIMIDIA DEVELOPEMENT' onClick={this.updateState} > WEB & MULTIMIDIA DEVELOPEMENT</li></a>
@@ -64,8 +64,8 @@ export default class NewService extends Component {
                     </div>
                 </section>
             </div>
-            <div className='row elearning '>
-                <p className=' container mt-4   '>
+            <div className='row elearning ' id='elearning'>
+                <p className=' container mt-5 mb-0 '>
                     We have expertise in both: across -the -board -support to serious e-Learning solutions; and custom e-learning content creation in areas like Behavioral/Soft Skills, Software Simulation, Standard Operating Procedures, Domain Skills - Sales, Finance, HR, and Operations etc. Product Training, Interactive Game Based Approach, Vocational Courses.
                     <br />
                     <br />
@@ -84,7 +84,16 @@ export default class NewService extends Component {
                                 <li>Interactive Game Based Approach</li>
                                 <li>Vocational Courses</li>
                             </ul>
+                            <div className="lanbox">
+                                    <div className="img-square-wrapper ">
+                                        <b >TOOL</b>
+                                    </div>
+                                    <div className="card-body1">
+                                        <p className='m-0'>ARTICULATE STORYLINE / ARTICULATE STUDIO / FLASH / LECTORA / CAPTIVATE / AUTHORWARE / BREEZ / EXPRESSION BLEND<br /></p>
+                                    </div>
+                                </div>
                         </div>
+                        
                     </div>
                     <div className='col-lg-6 greyless'>
                         <div className='col-11'>
@@ -97,35 +106,26 @@ export default class NewService extends Component {
                             <b>Our technical experts are well-versed with appropriate languages and tools, and develop effective wbt/cbt's training programmes.</b><br /><br />
                             <div className='row'>
                                 <div className="lanbox">
-                                    <div className="img-square-wrapper d-flex justify-content-center my-auto">
+                                    
                                         <b>LANGUAGES</b>
-                                    </div>
-                                    <div className="card-body1">
+                                    
                                         <p className='m-0'>HTML5 / CSS3 / JQUERY / JAVASCRIPT / ACTIONSCRIPT 2.0 / XML / SILVERLIGHT 1.0 / JOOMLA / WORDPRESS / DRUPAL<br /></p>
                                     </div>
                                 </div>
                                 <br />
 
-                                <div className="lanbox">
-                                    <div className="img-square-wrapper d-flex justify-content-center my-auto">
-                                        <b >TOOL</b>
-                                    </div>
-                                    <div className="card-body1">
-                                        <p className='m-0'>ARTICULATE STORYLINE / ARTICULATE STUDIO / FLASH / LECTORA / CAPTIVATE / AUTHORWARE / BREEZ / EXPRESSION BLEND<br /></p>
-                                    </div>
-                                </div>
-                            </div>
+                                
                         </div>
                     </div>
                 </section>
             </div>
             <p className='text-center justify-content-center font-weight-bold'>
                 At A3Pixels, our people are equipped and trained to develop and deliver world-class e-learning products time after time.<br /> Product development includes the following stages.</p>
-            <div className='' >
-                <ul className="col-12 d-flex  d-flex justify-content-center">
+            <div id='trans' >
+                <ul className="d-flex justify-content-center ">
                     <li className='probutton text-center'>Project planning</li>
                     <li className='probutton'>Conceptualizing <br /> Storyboarding</li>
-                    <li className='probutton'>Executing<br /> Development of design and<br /> actual Learning Materials</li>
+                    <li className='probutton '>Executing<br /> Development of design and<br /> actual Learning Materials</li>
                     <li className='probutton'>Fine tuning<br /> Material Revision</li>
                     <li className='probutton'>Final Cut<br /> Course Delivery</li>
                 </ul>

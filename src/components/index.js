@@ -86,7 +86,7 @@ export default class app extends Component {
                     {/* <!-- ======= Head Section ======= --> */}
 
                     <section id='home' className="el ">
-                        <OwlCarousel {...options1} id="customers-banner" class="owl-carousel">
+                        <OwlCarousel {...options1} id="customers-banner" className="owl-carousel">
 
                             <img src="\img\about\Banner_01.png" alt="" className='img-fluid ' />
                             <img src="\img\about\Banner_02.png" alt="" className='img-fluid ' />
@@ -107,7 +107,7 @@ export default class app extends Component {
                     <section className="til pb-0 z-5 " data-aos="fade-up" data-aos-duration="1000">
                         <div className='container new7'>
                             <div className='top11'></div>
-                            <div className="row " data-aos="zoom-out">
+                            <div className="row d-flex justify-content-center " data-aos="zoom-out">
                                 <Services linker="/services/#e-learning" name1="E-LEARNING &" name2="DEVELOPMENT" logo="/img/logos/1.png" logoh="/img/logos/1_H.png" />
                                 <Services linker="/services/#translation" name1="TRANSLATION &" name2="LOCALIZATION" logo="/img/logos/4.png" logoh="/img/logos/4_H.png" />
                                 <Services linker="/services/#website" name1="WEBSITE & MULTIMEDIA" name2=" DEVELOPEMENT" logo="/img/logos/3.png" logoh="/img/logos/3_H.png" />
@@ -139,7 +139,7 @@ export default class app extends Component {
                                     <li>
                                         <h4 className="section-title mb-0"><b>OUR MISSION:</b></h4>
                                     </li>
-                                    <li className="mt-0"> To provide our customers timely and cost-effective e-learning solutions and services aligned to their business goals. </li>
+                                    <li className="mt-0"><p> To provide our customers timely and cost-effective e-learning solutions and services aligned to their business goals. </p></li>
                                 </ul>
                                 <div className="container-fluid">
                                     <div className="row">
@@ -178,7 +178,7 @@ export default class app extends Component {
                             <div className="row" data-aos="zoom-out">
                                 <div className="col-lg-9 text-center text-lg-start">
                                     <h3>Call To Action</h3>
-                                    <p> click the button and fill the form if having any query or want to contact us we will reach to you as soon as we recive your form</p>
+                                    <p> Click the button and fill the form if having any query or want to contact us we will reach to you as soon as we recive your form</p>
                                 </div>
 
                                 <div className="col-lg-3 cta-btn-container text-center">
@@ -237,11 +237,12 @@ export default class app extends Component {
                             <p >OUR LATEST WORK</p>
                             {/* <h2>jreiute5yhguteh eurhwe </h2> */}
                         </div>
-                        <div className=" new_latest   h-10 d-flex align-items-center justify-content-center container">
-                            <Latest logo="/img/portfolio/work1.jpg" CareerTitle="WEB SOLUTION" CareerDec="A Website is an extension of a company's overall communication strategy. We create websites using HTML5, CSS3, Jquery." />
-                            <Latest logo="/img/portfolio/work2.jpg" CareerTitle="WEB APPLICATION" CareerDec="We have expertise in Smart Phone Application Development, iPhone Game Development and Custom Mobile Application Development" />
-                            <Latest logo="/img/portfolio/work3.jpg" CareerTitle="K12 ANIMATIONS" CareerDec="We offer full production services in 2D, 3D, cell animation and corporate Videos (Audio and video), Multimedia Presentations / Slideshows." />
-                            <Latest logo="/img/portfolio/work4.jpg" CareerTitle="PRINT WORK" CareerDec="We develop the most effective marketing solutions based on your unique business needs, aiming to maximize returns on your marketing efforts." />
+                        <div className="d-flex px-5 row justify-content-center pt-4">
+                            
+                            <Latest logo="/img/about/work1.jpg" CareerTitle="WEB SOLUTION" CareerDec="A Website is an extension of a company's overall communication strategy. We create websites using HTML5, CSS3, Jquery." />
+                            <Latest logo="/img/about/work2.jpg" CareerTitle="WEB APPLICATION" CareerDec="We have expertise in Smart Phone Application Development, iPhone Game Development and Custom Mobile Application Development" />
+                            <Latest logo="/img/about/work3.jpg" CareerTitle="K12 ANIMATIONS" CareerDec="We offer full production services in 2D, 3D, cell animation and corporate Videos (Audio and video), Multimedia Presentations / Slideshows." />
+                            <Latest logo="/img/about/work4.jpg" CareerTitle="PRINT WORK" CareerDec="We develop the most effective marketing solutions based on your unique business needs, aiming to maximize returns on your marketing efforts." />
                         </div>
                     </section>
 
@@ -271,20 +272,20 @@ export default class app extends Component {
                     {/* <!-- ======= Portfolio Section ======= --> */}
                     <section id="portfolio" >
                     </section>
-                    <section className="portfolio">
+                    <section className="portfolio ">
                         <div className="container">
                             <div className="section-title mb-3" data-aos="zoom-out">
                                 <p>Portfolio</p>
                                 <h2>What we've done</h2>
                             </div>
                             <ul id="portfolio-flters" className="nav-pills portfolio-filter d-flex justify-content-center p-0" data-aos="fade-up">
-                                <li button type="button" class="btn btn-warning" data-filter="*" className="filter-active btn btn-warning ">All</li>
-                                <li button type="button" class="btn btn-warning" data-filter=".Elearning" >E-LEARNING</li>
-                                <li button type="button" class="btn btn-warning" data-filter=".Localization">LOCALIZATION</li>
-                                <li button type="button" class="btn btn-warning" data-filter=".Mobile_solution">Mobile_solution</li>
-                                <li button type="button" class="btn btn-warning" data-filter=".webdesigns">WEB DESIGN</li>
-                                <li button type="button" class="btn btn-warning" data-filter=".Multimedia_solution">MULTIMEDIA PRESENTATION</li>
-                                <li button type="button" class="btn btn-warning" data-filter=".printwork">LOGO & PRINT DESIGN</li>
+                                <li button  className=" probutton filter-active px-3" data-filter=".ALL">All</li>
+                                <li button  className=" probutton" data-filter=".Elearning" >E-LEARNING</li>
+                                <li button  className=" probutton" data-filter=".Localization">LOCALIZATION</li>
+                                <li button  className=" probutton" data-filter=".Mobile_solution">Mobile_solution</li>
+                                <li button  className=" probutton" data-filter=".webdesigns">WEB DESIGN</li>
+                                <li button  className=" probutton" data-filter=".Multimedia_solution">MULTIMEDIA PRESENTATION</li>
+                                <li button  className=" probutton" data-filter=".printwork">LOGO & PRINT DESIGN</li>
                             </ul>
                             <div className="divScroll">
                                 <div className="row portfolio-container my-lightbox-gallery" data-aos="fade-up">

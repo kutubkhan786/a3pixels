@@ -35,8 +35,8 @@ export default function Nav() {
             </div>
             <div className='left'>
               <li><HashLink className="nav-link scrollto active" to="/#home">Home</HashLink></li>
-              <li><a className="nav-link scrollto" href="#services">Services</a></li>
-              <li><a className="nav-link scrollto" href="#about">About</a></li>
+              <li><HashLink className="nav-link scrollto" smooth to="/#services">Services</HashLink></li>
+              <li><HashLink className="nav-link scrollto" smooth to="/#about">About</HashLink></li>
             </div>
             <div className="logo">
               <HashLink to="/#home"><img src="/img/logo.png" alt="" /></HashLink>
@@ -44,8 +44,8 @@ export default function Nav() {
 
             <div className='right'>
               <li><HashLink className="nav-link scrollto" smooth to="/career">Career</HashLink></li>
-              <li><a className="nav-link scrollto" href="#portfolio">Portfolio</a></li>
-              <li><a className="nav-link scrollto" href="#cta">Contact</a></li>
+              <li><HashLink className="nav-link scrollto" smooth to="/#portfolio">Portfolio</HashLink></li>
+              <li><HashLink className="nav-link scrollto" smooth to="/#cta">Contact</HashLink></li>
             </div>
           </ul>
         </nav>

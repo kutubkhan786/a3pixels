@@ -71,15 +71,11 @@
 .yellow {
     background-color: #fdcd00;
     color: black;
-    /* font-weight:bold ; */
-    font-size: 1rem;
 }
 
 .grey {
     background-color: gray;
     color: white;
-    /* font-weight:bold ; */
-    font-size: 1rem;
 }
 
 

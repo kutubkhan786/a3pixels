@@ -13,7 +13,7 @@ export default function webmul() {
 
                 The screen sizes are: Desktop/TV (769px plus), Tablets (321px – 768px), and smart devices (up to 320px).
                 Whether you already have a company website or are planning to put one up, you must ensure your website is viewable across all different platforms. At A3Pixels, we have expertise in SmartPhone Application Development, iPhone Game Development and Custom Mobile Application Development. We design, develop & deploy successful applications for multiple platforms like iPad, iPhone, Blackberry, Nokia & Android. Our mobile applications evangelists help convert an idea into a real application. We help define the features & navigation to best suit the business, target audience of the application as well as the target device.</p>
-            <div className='greyless'>
+            <div className='greyless' id='web'>
                 <div className='container'>
                     <div className="section-title mb-3" data-aos="zoom-out">
                         <p>INTERACTIVE PRESENTATIONS (CD/DVD):</p>
@@ -92,9 +92,9 @@ export default function webmul() {
 
                     Trade shows are an opportunity to reaffirm your presence in your existing market and reach out to new buyers, vendors and business associates. A3Pixels provides you audio-visual and graphic communication solutions that will let you make the perfect impact in your industry. Corporate AV and training videos for such events are created to be sharp, concise and highly engaging, ensuring you are able to reach out to your visitors in the shortest possible times.
                 </p>
-                <div className='row '>
+                <div className='row 'id='print'>
                     
-                        <div className='col-6 d-flex justify-content-center yellow pt-4'>
+                        <div className='col-lg-6 col-12 d-flex justify-content-center yellow pt-4'>
                         <div className='justify-content-center d-flex btn grey m-4  font-weight-bold posprint'>OTHER SUPPORT SERVICES LIKE:</div>
                             <div className='col-8  '>
                                 <div>
@@ -116,7 +116,7 @@ export default function webmul() {
                                 </div>
                             </div>
                         </div>
-                        <div className='col-6 d-flex justify-content-center grey pt-4'>
+                        <div className='col-lg-6 col-12 d-flex justify-content-center grey pt-4'>
                             <div className='col-8  '>
 
                                 <p className="text-uppercase justify-content-center text-center d-flex pt-3 "> e-Book Conversion</p>
