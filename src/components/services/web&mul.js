@@ -13,7 +13,7 @@ export default function webmul() {
 
                 The screen sizes are: Desktop/TV (769px plus), Tablets (321px – 768px), and smart devices (up to 320px).
                 Whether you already have a company website or are planning to put one up, you must ensure your website is viewable across all different platforms. At A3Pixels, we have expertise in SmartPhone Application Development, iPhone Game Development and Custom Mobile Application Development. We design, develop & deploy successful applications for multiple platforms like iPad, iPhone, Blackberry, Nokia & Android. Our mobile applications evangelists help convert an idea into a real application. We help define the features & navigation to best suit the business, target audience of the application as well as the target device.</p>
-            <div className='greyless' id='web'>
+            <section className='greyless' id='web'>
                 <div className='container'>
                     <div className="section-title mb-3" data-aos="zoom-out">
                         <p>INTERACTIVE PRESENTATIONS (CD/DVD):</p>
@@ -57,12 +57,12 @@ export default function webmul() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
             <div className='greyless1'>
                 <div className='row desc pb-3'>
                     <div className='lightyellcir col-11'>
-                        <div className='yellowcir col-3   text-center justify-content-center'>
+                        <div className='yellowcir col-lg-3 col-4   text-center justify-content-center'>
                             <img src='\img\serlogo\Logo_03.png' className='img-fluid' alt='' />
                             <p class="text-uppercase">VIDEO PRODUCTION:</p>
                         </div> <p className='col-8 p-4 my-auto'>
@@ -72,13 +72,13 @@ export default function webmul() {
                 </div>
 
                 <div className='row desc justify-content-end pb-3'>
-                    <div className='lightyellcir2 col-11 justify-content-end'>
+                    <div className='lightyellcir2 lightyellcir1 col-11 justify-content-end'>
                         <p className='col-8 p-4 my-auto'>
 
                             Whether it's a quarterly flash-based newsletters emailed to your existing customers or a company newsletter on your intranet, A3pixels can deliver the ideal newsletter. We also help integrate interactive quiz games to break the monotony of routine communication.
 
                             This is a great way to add an element of excitement to a seemingly mundane corporate communication activity. Interactive quizzes and games engage your employees, get them to read the information shared a little more seriously and is a great way to keep your team updated on the latest company developments.</p>
-                        <div className='yellowcir1 col-3   text-center justify-content-center'>
+                        <div className='yellowcir1 col-lg-3 col-5   text-center justify-content-center'>
                             <img src='\img\serlogo\Logo_02.png' className='img-fluid' alt='' />
                             <p class="text-uppercase text-white">E-NEWSLETTERS:</p>
                         </div>
@@ -95,7 +95,7 @@ export default function webmul() {
                 <div className='row 'id='print'>
                     
                         <div className='col-lg-6 col-12 d-flex justify-content-center yellow pt-4'>
-                        <div className='justify-content-center d-flex btn grey m-4  font-weight-bold posprint'>OTHER SUPPORT SERVICES LIKE:</div>
+                        {/* <div className='justify-content-center d-flex btn grey m-4  font-weight-bold posprint'>OTHER SUPPORT SERVICES LIKE:</div> */}
                             <div className='col-8  '>
                                 <div>
                                     <p className="text-uppercase justify-content-center d-flex pt-3 "> Online Data Entry</p>

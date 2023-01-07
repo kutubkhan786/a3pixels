@@ -5,7 +5,6 @@ import Footer from '../footer/Footer.js';
 import Clients from '../index/Clients.js';
 import Translation from './translation.js';
 import WebMul from './web&mul.js';
-import { HashLink } from 'react-router-hash-link';
 
 
 export default class NewService extends Component {
@@ -40,13 +39,13 @@ export default class NewService extends Component {
                 <Navbar />
 
                 {/* =============E-learning section========= */}
-                <section  className="mt-3" >
+                <section className="mt-3" >
                     <div className='row grey1'>
                         <div className='row  p-3 col-12'>
                             <div className='col-1'></div>
-                            <div className="col-md-5 col-sm-12 d-flex justify-content-left my-auto ">
-                                <p className='font-weight-bold text-left ' ><h1 className='extrasize'>{this.state.bannertext1}</h1>
-                                    <p className='extrasize1'>{this.state.bannertext2}</p></p>
+                            <div className="col-md-5 col-sm-12 d-flex justify-content-left my-auto hidden">
+                                <p className='font-weight-bold text-left  ' ><h1 className='extrasize'>{this.state.bannertext1}</h1>
+                                    <p className='extrasize1 '>{this.state.bannertext2}</p></p>
                             </div>
                             <div className="col-md-6 col-sm-12">
                                 <img src="\img\serlogo\services1.png" className='img-fluid' alt='' />
@@ -56,10 +55,10 @@ export default class NewService extends Component {
                     </div>
                     <div className='row portfolio'>
                         <ul id="portfolio-flters" className="col-12 d-flex justify-content-center serport nav-pills portfolio-filter" data-aos="fade-up">
-                            <a href='#elearning'><li id='E-LEARNING DEVELOPEMENT' onClick={this.updateState} className="filter-active pl-4 pr-4"> E-LEARNING DEVELOPEMENT</li></a>
-                            <a href='#trans'><li id='TRANSLATION & LOCALIZATION' onClick={this.updateState} > TRANSLATION & LOCALIZATION</li></a>
-                            <a href='#web'><li id='WEB & MULTIMIDIA DEVELOPEMENT' onClick={this.updateState} > WEB & MULTIMIDIA DEVELOPEMENT</li></a>
-                            <a href='#print'><li id='PRINT & IDENTITY' onClick={this.updateState}> PRINT & IDENTITY</li></a>
+                            <a href='#elearning'><li id='E-LEARNING DEVELOPEMENT' onClick={this.updateState} className="filter-active pl-4 pr-4 probutton"> E-LEARNING DEVELOPEMENT</li></a>
+                            <a href='#trans'><li className='probutton' id='TRANSLATION & LOCALIZATION' onClick={this.updateState} > TRANSLATION & LOCALIZATION</li></a>
+                            <a href='#web'><li className='probutton' id='WEB & MULTIMIDIA DEVELOPEMENT' onClick={this.updateState} > WEB & MULTIMIDIA DEVELOPEMENT</li></a>
+                            <a href='#print'><li className='probutton' id='PRINT & IDENTITY' onClick={this.updateState}> PRINT & IDENTITY</li></a>
                         </ul>
                     </div>
                 </section>
@@ -72,10 +71,10 @@ export default class NewService extends Component {
                     Our wbt/cbt's are powerful, intuitive, self-paced, self-learning tools which impart in-depth know-how to employees in a simple and lucid style. We integrate audio-visuals to make the content more interesting and the learning experience more exciting.</p><br /><br />
 
                 <section className='row bacimg '>
-                    <div className='col-lg-6 yellowless d-flex justify-content-center'>
-                        <div>
-                            <b>CUSTOM E-LEARNING CONTENT CREATION</b>
-                            <ul>
+                    <div className='col-lg-6 yellow pt-5  pb-4 d-flex justify-content-center'>
+                        <div className='col-9'>
+                            <b className='font-20'>CUSTOM E-LEARNING CONTENT CREATION</b>
+                            <ul className='pl-4 gap'>
                                 <li>Behavioral/Soft Skills</li>
                                 <li>Software Simulation</li>
                                 <li>Standard Operating Procedures</li>
@@ -84,7 +83,28 @@ export default class NewService extends Component {
                                 <li>Interactive Game Based Approach</li>
                                 <li>Vocational Courses</li>
                             </ul>
-                            <div className="lanbox">
+                        </div>
+                    </div>
+                    <div className='col-lg-6 grey pt-5 d-flex justify-content-center'>
+                        <div className='col-10 '>
+                            <b className='font-20'>REPURPOSING OF CONTENT</b>
+                            <ul className='pl-4 gap'>
+                                <li>Technical/Version Upgrade</li>
+                                <li>Interactivity Enhancement – Using of Graphics, Templates, Illustrations, 2D animations, Voiceover</li>
+                                <li>SCORM compliance - Making content compliant with SCORM and accessibility guidelines</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section className='container'>
+                    <div className='yellowless'>
+                    <b  >Our technical experts are well-versed with appropriate languages and tools, and develop effective wbt/cbt's training programmes.</b><br /><br />
+                    <div className=' row '>
+                        <div className='col-lg-6 col-12 p-4'>
+
+                            <div className='row  '>
+                                <div className="lanbox">
                                     <div className="img-square-wrapper ">
                                         <b >TOOL</b>
                                     </div>
@@ -92,49 +112,44 @@ export default class NewService extends Component {
                                         <p className='m-0'>ARTICULATE STORYLINE / ARTICULATE STUDIO / FLASH / LECTORA / CAPTIVATE / AUTHORWARE / BREEZ / EXPRESSION BLEND<br /></p>
                                     </div>
                                 </div>
+                            </div>
                         </div>
-                        
-                    </div>
-                    <div className='col-lg-6 greyless'>
-                        <div className='col-11'>
-                            <b>REPURPOSING OF CONTENT</b>
-                            <ul>
-                                <li>Technical/Version Upgrade</li>
-                                <li>Interactivity Enhancement – Using of Graphics, Templates, Illustrations, 2D animations, Voiceover</li>
-                                <li>SCORM compliance - Making content compliant with SCORM and accessibility guidelines</li>
-                            </ul>
-                            <b>Our technical experts are well-versed with appropriate languages and tools, and develop effective wbt/cbt's training programmes.</b><br /><br />
-                            <div className='row'>
+
+                        <div className=' col-lg-6  col-12 p-4'>
+                            <div className='row  '>
                                 <div className="lanbox">
-                                    
+                                    <div className='img-square-wrapper'>
                                         <b>LANGUAGES</b>
-                                    
+                                    </div>
+                                    <div className="card-body1">
                                         <p className='m-0'>HTML5 / CSS3 / JQUERY / JAVASCRIPT / ACTIONSCRIPT 2.0 / XML / SILVERLIGHT 1.0 / JOOMLA / WORDPRESS / DRUPAL<br /></p>
                                     </div>
                                 </div>
-                                <br />
-
-                                
+                            </div>
+                            <br />
                         </div>
                     </div>
+                    </div>
                 </section>
+
+
             </div>
             <p className='text-center justify-content-center font-weight-bold'>
                 At A3Pixels, our people are equipped and trained to develop and deliver world-class e-learning products time after time.<br /> Product development includes the following stages.</p>
-            <div id='trans' >
-                <ul className="d-flex justify-content-center ">
-                    <li className='probutton text-center'>Project planning</li>
-                    <li className='probutton'>Conceptualizing <br /> Storyboarding</li>
-                    <li className='probutton '>Executing<br /> Development of design and<br /> actual Learning Materials</li>
-                    <li className='probutton'>Fine tuning<br /> Material Revision</li>
-                    <li className='probutton'>Final Cut<br /> Course Delivery</li>
+            <div id='trans' className='row portfolio' >
+                <ul className="d-flex justify-content-center portfolio-filter">
+                    <li className='probutton1'>Project planning</li>
+                    <li className='probutton1'>Conceptualizing <br /> Storyboarding</li>
+                    <li className='probutton1 '>Executing<br /> Development of design and<br /> actual Learning Materials</li>
+                    <li className='probutton1'>Fine tuning<br /> Material Revision</li>
+                    <li className='probutton1'>Final Cut<br /> Course Delivery</li>
                 </ul>
             </div>
 
 
             <div className='row desc pb-3'>
                 <div className='lightyellcir col-11'>
-                    <div className='yellowcir col-3   text-center justify-content-center'>
+                    <div className='yellowcir col-lg-3 col-4  text-center justify-content-center'>
                         <img src='\img\serlogo\Logo_01.png' className='img-fluid' alt='' />
                         <p class="text-uppercase"> PLANNING <br />THE PROJECT</p>
                     </div> <p className='col-9 p-4 my-auto'>
@@ -148,7 +163,7 @@ export default class NewService extends Component {
                 <div className='lightyellcir1 col-11 justify-content-end'>
                     <p className='col-8 p-4 my-auto'>
                         Once the project plan is approved by the client, the team initiates the design work. Instructional designers and / or concept developers on the project develop a storyboard that outlines visuals, text and audio, video elements, interactions, navigation and content sequencing in the e-learning course. Storyboards serve as the course blueprint or design guide and give direction to the course development team.</p>
-                    <div className='yellowcir1 col-3   text-center justify-content-center'>
+                    <div className='yellowcir1 col-lg-3 col-4  text-center justify-content-center'>
                         <img src='\img\serlogo\Logo_02.png' className='img-fluid' alt='' />
                         <p class="text-uppercase text-white">Creating the  <br />Storyboard</p>
                     </div>
@@ -157,7 +172,7 @@ export default class NewService extends Component {
 
             <div className='row desc pb-3'>
                 <div className='lightyellcir col-11'>
-                    <div className='yellowcir col-3   text-center justify-content-center'>
+                    <div className='yellowcir col-lg-3 col-4  text-center justify-content-center'>
                         <img src='\img\serlogo\Logo_03.png' className='img-fluid' alt='' />
                         <p class="text-uppercase">Producing the  <br />Learning Materials</p>
                     </div> <p className='col-8 p-4 my-auto'>
@@ -169,7 +184,7 @@ export default class NewService extends Component {
                 <div className='lightyellcir1 col-11 justify-content-end'>
                     <p className='col-8 p-4 my-auto'>
                         By conducting ongoing formative evaluation, we at A3pixels improve the e-learning product as it is being developed. While a Summative Evaluation is usually conducted to do the final assessment of the product, the project is constantly undergoing formative evaluation for improvement. The learners' feedback from the pilot testing rounds is seriously considered and analyzed to revise the course materials. This responsive evaluation and development process enables us to quickly revise the material and check effectiveness of the new material as well.</p>
-                    <div className='yellowcir1 col-3   text-center justify-content-center'>
+                    <div className='yellowcir1 col-lg-3 col-4  text-center justify-content-center'>
                         <img src='\img\serlogo\Logo_04.png' className='img-fluid' alt='' />
                         <p class="text-uppercase text-white">Fine tuning and   <br />revising Course Material</p>
                     </div>
@@ -178,7 +193,7 @@ export default class NewService extends Component {
 
             <div className='row desc pb-3'>
                 <div className='lightyellcir col-11'>
-                    <div className='yellowcir col-3   text-center justify-content-center'>
+                    <div className='yellowcir col-lg-3 col-4  text-center justify-content-center'>
                         <img src='\img\serlogo\Logo_05.png' className='img-fluid' alt='' />
                         <p class="text-uppercase">Course Delivered</p>
                     </div> <p className='col-8 p-4 my-auto'>

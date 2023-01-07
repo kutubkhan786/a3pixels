@@ -68,9 +68,7 @@ export default class app extends Component {
     )
 
     componentDidMount() {
-        const portfolioLightbox = Glightbox({
-            selector: '.portfolio-lightbox'
-        });
+       
         setTimeout(() => {
             show('loader', false);
             show('content1', true);

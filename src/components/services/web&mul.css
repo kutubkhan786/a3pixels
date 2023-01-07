@@ -21,13 +21,7 @@
     background-color: #E5E5E5;
 }
 
-.lightyellcir2 {
-    border-radius: 200px 0 0 200px;
-    background-color: white;
-    text-align: left;
-    display: flex;
-    height: 13rem;
-}
+
 
 .posprint {
     position: absolute;

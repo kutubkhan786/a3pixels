@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "./nav.css";
 import { HashLink } from 'react-router-hash-link';
+import $ from "jquery";
+
+
 
 export default function Nav() {
   const [navSize, setnavSize] = useState("4.375rem");
@@ -18,6 +21,7 @@ export default function Nav() {
     };
   }, []);
 
+  
 
   return (
 

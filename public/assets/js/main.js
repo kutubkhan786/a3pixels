@@ -67,18 +67,18 @@
 
     
 
-    var navLinks = document.querySelectorAll('#navbar .scrollto');
-    window.addEventListener('scroll', function() {
-      var scrollPos = window.scrollY;
-      navLinks.forEach(function(link) {
-        var section = document.querySelector(link.hash);
-        if (scrollPos >= section.offsetTop && scrollPos < (section.offsetTop + section.offsetHeight)) {
-          link.classList.add('active');
-        } else {
-          link.classList.remove('active');
-        }
-      });
-    });
+    // var navLinks = document.querySelectorAll('#navbar .scrollto');
+    // window.addEventListener('scroll', function() {
+    //   var scrollPos = window.scrollY;
+    //   navLinks.forEach(function(link) {
+    //     var section = document.querySelector(link.hash);
+    //     if (scrollPos >= section.offsetTop && scrollPos < (section.offsetTop + section.offsetHeight)) {
+    //       link.classList.add('active');
+    //     } else {
+    //       link.classList.remove('active');
+    //     }
+    //   });
+    // });
     /**
      * Easy selector helper function
      */
@@ -185,30 +185,30 @@
      */
 
     
-    on('click', '.navbar .dropdown > a', function(e) {
-        if (select('#navbar').classList.contains('navbar-mobile')) {
-            e.preventDefault()
-            this.nextElementSibling.classList.toggle('dropdown-active')
-        }
-    }, true)
+    // on('click', '.navbar .dropdown > a', function(e) {
+    //     if (select('#navbar').classList.contains('navbar-mobile')) {
+    //         e.preventDefault()
+    //         this.nextElementSibling.classList.toggle('dropdown-active')
+    //     }
+    // }, true)
 
     /**
      * Scrool with ofset on links with a class name .scrollto
      */
-    on('click', '.scrollto', function(e) {
-        if (select(this.hash)) {
-            e.preventDefault()
+    // on('click', '.scrollto', function(e) {
+    //     if (select(this.hash)) {
+    //         e.preventDefault()
 
-            let navbar = select('#navbar')
-            if (navbar.classList.contains('navbar-mobile')) {
-                navbar.classList.remove('navbar-mobile')
-                let navbarToggle = select('.mobile-nav-toggle')
-                navbarToggle.classList.toggle('bi-list')
-                navbarToggle.classList.toggle('bi-x')
-            }
-            scrollto(this.hash)
-        }
-    }, true)
+    //         let navbar = select('#navbar')
+    //         if (navbar.classList.contains('navbar-mobile')) {
+    //             navbar.classList.remove('navbar-mobile')
+    //             let navbarToggle = select('.mobile-nav-toggle')
+    //             navbarToggle.classList.toggle('bi-list')
+    //             navbarToggle.classList.toggle('bi-x')
+    //         }
+    //         scrollto(this.hash)
+    //     }
+    // }, true)
 
     /**
      * Scroll with ofset on page load with hash links in the url
@@ -243,7 +243,10 @@
 })()
 
 
-// 
+// 'use strict';
+
+
+
 
 
 

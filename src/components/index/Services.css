@@ -54,6 +54,8 @@
     transform: scale(1.1);
     transition: 0.2s ease-in;
     color: #fecd00;
+    background-color: #444444;
+    
 }
 
 .container_card p {
